@@ -1,0 +1,60 @@
+\documentclass[12pt]{report}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{setspace}
+\usepackage{titlepic}
+
+\graphicspath{{figures/}}
+
+\title{four quarks, scalar things, and more.}
+\author{Daniel James Darvish}
+\titlepic{\vfill\includegraphics[scale=0.8]{figures/cmu.eps}}
+\date{September, 2020}
+
+\begin{document}
+\onehalfspace
+\maketitle
+% \begin{titlepage}
+%     \centering
+%     \vfill
+%     {\bfseries\Large
+%         Performance Report\\
+%         First Quarter 2011\\
+%         \vskip2cm
+%         A. Uthor\\
+%     }    
+%     \vfill
+%     \includegraphics[width=4cm]{cmu.pdf} % also works with logo.pdf
+%     \vfill
+%     \vfill
+% \end{titlepage}
+\begin{abstract}
+``Young man, in mathematics you don't understand things. You just get used to them.'' --- John von Neumann
+\end{abstract}
+
+\chapter*{Dedication}
+For my dog.
+ 
+\chapter*{Declaration}
+I declare bankruptcy! 
+ 
+\chapter*{Acknowledgements}
+I want to thank my dog.
+ 
+\tableofcontents
+
+\chapter{Introduction}
+\input{chapters/introduction}
+
+\chapter{Lattice QCD}
+\input{chapters/latticeQCD}
+
+\chapter{Scattering resonances in a two-scalar field theory}
+\input{chapters/phi_rho}
+
+\chapter{Investigating the tetraquark content of the light scalar mesons $\kappa$ and $a_0(980)$}
+
+\input{chapters/tetraquarks}
+
+\end{document}
