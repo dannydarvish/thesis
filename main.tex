@@ -1,46 +1,44 @@
 \documentclass[12pt]{report}
+\usepackage{amsfonts}
+\usepackage{color}
+\usepackage{float}
 \usepackage[margin=1in]{geometry}
 \usepackage{graphicx}
+\usepackage{multicol}
 \usepackage{physics}
 \usepackage{setspace}
+\usepackage{subcaption}
+\usepackage{tikz}
 \usepackage{titlepic}
 
 \graphicspath{{figures/}}
 
-\title{four quarks, scalar things, and more.}
-\author{Daniel James Darvish}
-\titlepic{\vfill\includegraphics[scale=0.8]{figures/cmu.eps}}
+\title{Tetraquarks, $\Sigma$ baryon spectroscopy, and small-interaction scattering from lattice field theory}
+\author{Daniel James Darvish\\\\
+Submitted in partial fulfillments of the requirements for the degree of\\
+Doctor of Philosophy\\
+at\\
+Carnegie Mellon University\\
+Department of Physics\\
+Pittsburgh, Pennsylvania\\
+Advisor: Colin J. Morningstar}
+\titlepic{\vfill\includegraphics[scale=0.6]{figures/cmu.eps}}
 \date{September, 2020}
 
 \begin{document}
 \onehalfspace
 \maketitle
-% \begin{titlepage}
-%     \centering
-%     \vfill
-%     {\bfseries\Large
-%         Performance Report\\
-%         First Quarter 2011\\
-%         \vskip2cm
-%         A. Uthor\\
-%     }    
-%     \vfill
-%     \includegraphics[width=4cm]{cmu.pdf} % also works with logo.pdf
-%     \vfill
-%     \vfill
-% \end{titlepage}
 \begin{abstract}
 ``Young man, in mathematics you don't understand things. You just get used to them.'' --- John von Neumann
 \end{abstract}
-
 \chapter*{Dedication}
-For my dog.
- 
+Lorem ipsum.
+
 \chapter*{Declaration}
-I declare bankruptcy! 
- 
+Lorem ipsum.
+
 \chapter*{Acknowledgements}
-I want to thank my dog.
+Lorem ipsum.
  
 \tableofcontents
 
@@ -50,11 +48,24 @@ I want to thank my dog.
 \chapter{Lattice QCD}
 \input{chapters/latticeQCD}
 
-\chapter{Scattering resonances in a two-scalar field theory}
+\chapter{Building Operators for Finite-Volume Spectroscopy}
+\input{chapters/operators}
+
+\chapter{Monte Carlo Calculation of Correlators}
+\input{chapters/monte_carlo}
+
+\chapter{Correlator Analysis: Determining the Finite-Volume Spectrum}\label{ch:analysis}
+\input{chapters/analysis}
+
+\chapter{Scattering Resonances in a Two-Scalar Field Theory}
 \input{chapters/phi_rho}
 
-\chapter{Investigating the tetraquark content of the light scalar mesons $\kappa$ and $a_0(980)$}
-
+\chapter{Investigating the Tetraquark Content of the Light Scalar Mesons $\kappa$ and $a_0(980)$}
 \input{chapters/tetraquarks}
 
+\chapter{Conclusions}
+\input{chapters/conclusions}
+
+\bibliographystyle{plain}
+\bibliography{thebib}
 \end{document}
