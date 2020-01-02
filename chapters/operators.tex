@@ -174,23 +174,123 @@
     \end{table}
     \renewcommand{\arraystretch}{1.0}
     \subsubsection{Moving irreps}
+    In order to construct operators that create and annihilate particles of definite momentum $\boldsymbol p$, we must subduce the representations of $O_h^D$ onto the little group of $\boldsymbol p$. The little group of $\boldsymbol p$ consists of the subgroup of the abelian group of lattice translations which leave the momentum invariant. For $\boldsymbol p = (0, 0, 0)$, the little group is simply the point group $O_h$. For any on-axis momentum, e.g. $\boldsymbol p = (0, 0, 1)$, the little group is $C_{4v}$, which includes four rotations of angle $\frac{\pi}{2}$ about the axis along $\boldsymbol p$, as well as four reflections about reflection planes containing that axis. The group elements are contained in three conjugacy classes, which are included in Table~\ref{table:c4vD}.  For any planar-diagonal momentum, e.g. $\boldsymbol p = (0, 1, 1)$, the little group is $C_{2v}$, the elements and conjugacy classes of which are included in Table~\ref{table:c2vD}. For any cubic-diagonal fmomentum, e.g. $\boldsymbol p = (1,1,1)$, the little group is $C_{3v}$; its elements and their conjugacy classes are includeds in Table~\ref{table:c3vD}. Additionally, in order to construct the analogous spinorial little groups (called $C_{4v}^D$, $C_{2v}^D$, and $C_{3v}^D$, respectively), we include the $2\pi$-rotation generator $\overline E$. Tables~\ref{table:c4vD}---\ref{table:c3vD} give the elements and conjugacy classes for the spinorial little groups.
+    \begin{table}
+        \centering
+        \begin{minipage}{0.32\linewidth}
+            \begin{tabular}{l|l}
+                $C_{4vD}$ & \\
+                \hline
+                $\mathcal{C}_{1}$ & $\{E\}$ \\
+                $\mathcal{C}_{2}$ & $\left\{C_{2 z}, \overline{C}_{2 z}\right\}$ \\
+                $\mathcal{C}_{3}$ & $\left\{C_{4 z}, C_{4 z}^{-1}\right\}$ \\
+                $\mathcal{C}_{4}$ & $\left\{I_{s} C_{2 x}, I_{s} C_{2 y},\right.$\\
+                & $\left.\quad I_{s} \overline{C}_{2 x}, I_{s} \overline{C}_{2 y}\right\}$ \\
+                $\mathcal{C}_{5}$ & $\left\{I_{s} C_{2 a}, I_{s} C_{2 b},\right.$\\
+                & $\left.\quad I_{s} \overline{C}_{2 a}, I_{s} \overline{C}_{2 b}\right\}$ \\
+                $\mathcal{C}_{6}$ & $\{\overline{E}\}$ \\
+                $\mathcal{C}_{7}$ & $\left\{\overline{C}_{4 z}, \overline{C}_{4 z}^{-1}\right\}$
+            \end{tabular}
+            \caption{}
+            \label{table:c4vD}
+        \end{minipage}
+        \begin{minipage}{0.32\linewidth}
+            \begin{tabular}{l|l}
+                $C_{2vD}$ & \\
+                \hline
+                $\mathcal{C}_{1}$ & $\{E\}$ \\
+                $\mathcal{C}_{2}$ & $\left\{C_{2 e}, \overline{C}_{2 e}\right\}$ \\
+                $\mathcal{C}_{3}$ & $\left\{I_{s} C_{2 f}, I_{s} \overline{C}_{2 f}\right\}$ \\
+                $\mathcal{C}_{4}$ & $\left\{I_{\overline{c}} C_{2 f}, I_{s} \overline{C}_{2 x}\right\}$ \\
+                $\mathcal{C}_{5}$ & $\{\overline{E}\}$
+            \end{tabular}
+            \caption{}
+            \label{table:c2vD}
+        \end{minipage}
+        \begin{minipage}{0.32\linewidth}
+            \begin{tabular}{l|l}
+                $C_{3vD}$ & \\
+                \hline
+                $\mathcal{C}_{1}$ & $\{E\}$ \\
+                $\mathcal{C}_{2}$ & $\left\{C_{3 \delta}, C_{3 \delta}^{-1}\right\}$ \\
+                $\mathcal{C}_{3}$ & $\left\{I_{s} C_{2 b}, I_{s} C_{2 d}, I_{s} C_{2 f}\right\}$ \\
+                $\mathcal{C}_{4}$ & $\{\overline{E}\}$ \\
+                $\mathcal{C}_{5}$ & $\left\{\overline{C}_{3 \delta}, \overline{C}_{3 \delta}^{-1}\right\}$ \\
+                $\mathcal{C}_{6}$ & $\left\{I_{s} \overline{C}_{2 b}, I_{s} \overline{C}_{2 d}, I_{s} \overline{C}_{2 f}\right\}$
+            \end{tabular}
+            \caption{}
+            \label{table:c3vD}
+        \end{minipage}
+    \end{table}               
+    Finally, the subductions of the irreps of $O_h^D$ onto the above little groups leaves us with the irreps in which we expect to find moving particles. These subductions are given in Table~\ref{table:subductions}.
+    \begin{table}
+        \centering
+        \begin{tabular}{c|c|c|c}
+            $\Lambda(O_h)$ & $\Lambda(O_h)\downarrow C_{4v}$ & $\Lambda(O_h) \downarrow C_
+            {3v}$ & $\Lambda(O_h) \downarrow C_{2v}$ \\
+            \hline
+            $A_{1g}$ & $A_1$ & $A_1$ & $A_1$ \\
+            $A_{1u}$ & $A_2$ & $A_2$ & $A_2$ \\
+            $A_{2g}$ & $B_1$ & $A_2$ & $B_2$ \\
+            $A_{2u}$ & $B_2$ & $A_1$ & $B_1$ \\
+            $E_g$ & $A_1 \oplus B_1$ & $E$ & $A_1 \oplus B_2$ \\
+            $E_u$ & $A_2 \oplus B_2$ & $E$ & $A_2 \oplus B_1$ \\
+            $T_{1g}$ & $A_2 \oplus E$ & $A_2 \oplus E$ & $A_2 \oplus B_1 \oplus B_2$ \\
+            $T_{1u}$ & $A_1 \oplus E$ & $A_1 \oplus E$ & $A_1 \oplus B_1 \oplus B_2$ \\
+            $T_{2g}$ & $B_2 \oplus E$ & $A_1 \oplus E$ & $A_1 \oplus A_2 \oplus B_1$ \\
+            $T_{2u}$ & $B_1 \oplus E$ & $A_2 \oplus E$ & $A_1 \oplus A_2 \oplus B_2$ \\
+            $G_{1g/u}$ & $G_1$ & $G$ & $G$ \\
+            $G_{2g/u}$ & $G_2$ & $G$ & $G$ \\
+            $H_{g/u}$ & $G_1 \oplus G_2$ & $F_1 \oplus F_2 \oplus G$ & $2G$
+        \end{tabular}
+        \caption{}
+        \label{table:subductions}
+    \end{table}
+
     \subsection{Isospin and Quark Flavor}
     The physical mass of the up quark is $m_u = 2.16^{+0.49}_{-0.26}$ MeV and the physical mass of the down quark is $m_d = 4.67^{+0.48}_{-0.17}$ MeV~\cite{PhysRevD.98.030001}. While these masses differ by more than a factor of 2, their difference is very small compared to the next heaviest quark, which is the strange quark, measuring at $m_s = 93^{+11}_{-5}$ MeV~\cite{PhysRevD.98.030001}. Therefore, we find it justfied to make an approximation and set $m_u = m_d$ in our calculations. Since QCD conserves flavor (we do not include electroweak interactions), our theory now possesses an internal SU(2) symmetry, the conserved quantity of which is referred to as \emph{isospin}. This has the same mathematical structure as normal spin, and we can therefore think of it analogously, but it should be stressed that isospin has no relation to physical space and does not denote any kind of angular momentum. The up quark and down quark states can then be thought of as a doublet of states having total isospin $I=\frac{1}{2}$. Just like with SU(2) spin, isospin can be decomposed onto three axes. By convention, we assign the third isospin axis component of the up quark to be $I_3 = \frac{1}{2}$ and of the down quark to be $I_3 = -\frac{1}{2}$. Their corresponding antiparticles have the same $I$, but $I_3\rightarrow -I_3$. The work presented here is done in a theory of $N_f = 2 + 1$ QCD, meaning our theory contains two \emph{light} quarks, referring to the up and down quarks (the strange quark is sometimes referred to as a light quark in other contexts), and a strange quark.
     
     Under an SU(2) isospin rotation of the form
     \begin{equation}
-        U_{R_{\tau}}=\exp (-i \varphi \cdot \tau),
+        U_{R_{\tau}}=\exp{-i\alpha\tau_3}\exp{-i\beta\tau_2}\exp{-i\gamma\tau_3} = \exp (-i \boldsymbol{\varphi} \cdot \boldsymbol{\tau}),
     \end{equation}
+    where $\tau_1$, $\tau_2$, $\tau_3$ are the three generators of isospin rotations,
     an operator $\overline O_{I_3}^{(I)}$ transforms according to the $I$ irreducible representation as
-    
-    
-
+    \begin{equation}
+        U_{R_{\tau}}\overline O_{I_3}^{(I)}U_{R_{\tau}}^\dagger = \sum_{I_3^\prime} \overline O_{I_3^\prime}^{(I)} D^{(I)}_{I_3^\prime, I_3}(R_\tau),
+    \end{equation}
+    where $D^{(I)}(R_\tau)$ are the Wigner rotation matrices. In order for an operator $\overline O_{I_3}^{(I)}$ to transform irreducibly under isospin, it must satisfy the following properties:
+    \begin{align}
+        \left[\tau_3, \overline O_{I_3}^{(I)}\right] &= I_3 \overline O_{I_3}^{(I)}, \\
+        \left[\tau_+, \overline O_{I_3}^{(I)}\right] &= \sqrt{(I - I_3)(I + I_3 + 1)} \overline O_{I_3 + 1}^{(I)}, \\
+        \left[\tau_-, \overline O_{I_3}^{(I)}\right] &= \sqrt{(I + I_3)(I - I_3 + 1)} \overline O_{I_3 - 1}^{(I)}, \\
+        \left[\tau_3, \left[\tau_3, \overline O_{I_3}^{(I)}\right] \right] + \frac{1}{2} \left[\tau_+, \left[\tau_-, \overline O_{I_3}^{(I)}\right]\right] &+ \frac{1}{2}\left[\tau_-, \left[\tau_+, \overline O_{I_3}^{(I)}\right]\right] = I(I + 1) \overline O_{I_3}^{(I)},
+    \end{align}
+    where $\tau_\pm = \tau_1 \pm i\tau_2$. For annihilation operators, an operator $O_{I_3}^{(I)}$ should transform according to the $I$ irreducible representation as
+    \begin{equation}
+        U_{R_{\tau}}O_{I_3}^{(I)}U_{R_{\tau}}^\dagger = \sum_{I_3^\prime} O_{I_3^\prime}^{(I)} D^{(I)}_{I_3^\prime, I_3}(R_\tau)^*.
+    \end{equation}
+    Annihilation operators that are irreducible under isospin rotations should satisfy:
+    \begin{align}
+        \left[\tau_3, O_{I_3}^{(I)}\right] &= -I_3 O_{I_3}^{(I)}, \\
+        \left[\tau_+, O_{I_3}^{(I)}\right] &= -\sqrt{(I - I_3)(I + I_3 + 1)} O_{I_3 + 1}^{(I)}, \\
+        \left[\tau_-, O_{I_3}^{(I)}\right] &= -\sqrt{(I + I_3)(I - I_3 + 1)} O_{I_3 - 1}^{(I)}, \\
+        \left[\tau_3, \left[\tau_3, O_{I_3}^{(I)}\right] \right] + \frac{1}{2} \left[\tau_+, \left[\tau_-, O_{I_3}^{(I)}\right]\right] &+ \frac{1}{2}\left[\tau_-, \left[\tau_+, O_{I_3}^{(I)}\right]\right] = I(I + 1)  O_{I_3}^{(I)}.
+    \end{align}
     \subsection{Charge Conjugation and $G$-Parity}
-
+    $C$-parity can only be a symmetry for electrically neutral states, but as pure QCD does not see electric charge, we are motivated to generalize $C$-parity in order to account states in a charged isospin multiplet, such as the pion triplet. With $\mathcal C$ denoting the charge conjugation operator, $G$-parity can be explicitly defined as
+    \begin{equation}
+        U_G = \mathcal C e^{-i\pi\tau_2}.
+    \end{equation}
+    Since charge conjugation is a symmetry of the strong interaction, then when isospin is also a symmetry, $G$-parity must be a symmetry as well. The basic building blocks transform under $G$-parity as follows~\cite{ref:spectroscopy}:
+    \begin{align} U_{G}\left(D_{j} \mathcal S \psi(x)\right)_{a \alpha}^{u} U_{G}^{\dagger} &=-\left(\chi \mathcal S D_{j}^{\dagger}(x)\right)_{a \beta}^{d} \Gamma_{\beta \alpha}^{G}, \\ U_{G}\left(D_{j}\mathcal S \psi(x)\right)_{a \alpha}^{d} U_{G}^{\dagger} &=\left(\chi \mathcal S D_{j}^{\dagger}(x)\right)_{a \beta}^{u} \Gamma_{\beta \alpha}^{G}, \\ U_{G}\left(D_{j} \mathcal S \psi(x)\right)_{a \alpha}^{s} U_{G}^{\dagger} &=-\left(\chi \mathcal S D_{j}^{\dagger}(x)\right)_{a \beta}^{s} \Gamma_{\beta \alpha}^{G}, \\ U_{G}\left(\chi \mathcal S D_{j}^{\dagger}(x)\right)_{a \alpha}^{u} U_{G}^{\dagger} &=-\Gamma_{\alpha \beta}^{C}\left(D_{j} \mathcal S \psi(x)\right)_{a \beta}^{u}, \\ U_{G}\left(\chi \mathcal S D_{j}^{\dagger}(x)\right)_{a \alpha}^{a} U_{G}^{\dagger} &=\Gamma_{\alpha \beta}^{G}\left(D_{j} \mathcal S \psi(x)\right)_{a \beta^{\prime}}^{u}, \\ U_{G}\left(\chi \mathcal S D_{j}^{\dagger}(x)\right)_{a \alpha}^{s} U_{G}^{\dagger} &=-\Gamma_{\alpha \beta}^{C}\left(D_{j} \mathcal S \psi(x)\right)_{a \beta}^{s}. \end{align}
     \subsection{Projecting Operators onto Symmetry Sectors}
 
     \section{Single-Hadron Operator Construction}
-    \subsubsection{Meson Operators}
-    \subsubsection{Baryon Operators}
-    \subsubsection{Tetraquark Operators}
+    \subsection{Baryon Operators}
+    Baryon states are classified according to: momentum $\boldsymbol p$, total spin $J$, spin projection $J_z$ (or any other axis), parity $P$ ($\pm 1)$, and quark flavor. The flavor quantum numbers we consider are isospin $I$ and its projection $I_3$, and strangeness $S$. We require that baryon operators are also gauge-invariant. As a reminder, the basic building blocks for the baryon operators are covariantly-displaced smeared quark fields.
+    \subsubsection{Elemental Baryons}
+    An \emph{elemental} operator is simply one that is created with proper color structure, definite flavor structure, definite position or momentum, but has not been projected onto relevant symmetry sectors.
+    \subsection{Meson Operators}
+    \subsection{Tetraquark Operators}
     \section{Multi-Hadron Operator Construction}
