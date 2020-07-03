@@ -1,0 +1,26 @@
+<Staircase>
+    <Title></Title>
+    <YAxisLabel>$\frac{E}{m_K}$</YAxisLabel>
+    <Ordering>category</Ordering>
+    <Category>
+        <Name>$\tau_d = 8$</Name>
+        <Energies>1.4677 1.921 1.947 2.079 2.395 2.554 2.72 2.749 3.006 3.37</Energies>
+        <Uncertainties>0.0060 0.027 0.072 0.091 0.024 0.029 0.22 0.023 0.076 0.11</Uncertainties>
+        <Color>C3</Color>
+        <Index>0</Index>
+    </Category>
+    <Category>
+        <Name>$\tau_d = 12$</Name>
+        <Energies>1.4685 1.914 1.951 2.139 2.397 2.567 2.79 2.797 2.82 3.291</Energies>
+        <Uncertainties>0.0064 0.031 0.069 0.062 0.018 0.033 0.15 0.024 0.16 0.095</Uncertainties>
+        <Color>C0</Color>
+        <Index>1</Index>
+    </Category>
+    <Category>
+        <Name>$\tau_d = 15$</Name>
+        <Energies>1.4740 1.96 1.94 2.11 2.364 2.58 2.502 2.826 2.78 3.135 </Energies>
+        <Uncertainties>0.0083 0.14 0.15 0.11 0.033 0.28 0.086 0.057 0.17 0.090</Uncertainties>
+        <Color>C4</Color>
+        <Index>2</Index>
+    </Category>
+</Staircase>

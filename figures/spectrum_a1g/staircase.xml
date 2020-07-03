@@ -1,0 +1,47 @@
+<Staircase>
+    <Title></Title>
+    <YAxisLabel>$\frac{E}{m_K}$</YAxisLabel>
+    <Ordering>category</Ordering>
+    <Category>
+        <Name>Basis without tetraquark operator</Name>
+        <Energies>1.4684 1.908 2.051 2.353 2.566 2.802 2.924 2.95 3.18</Energies>
+        <Uncertainties>0.0064 0.033 0.074 0.032 0.033 0.025 0.092 0.18 0.13</Uncertainties>
+        <!-- <Colors>C0 C0 C0 C0 C0r C0 C0r C0r C0</Colors> -->
+        <Colors>C3 C3 C0 C3 C0 C3 C3 C0 C0</Colors>
+        <Hatched>false false false false false false false true false</Hatched>
+        <!-- kpi kpi keta kpi keta kpi kpi keta/kpi keta -->
+        <Index>0</Index>
+    </Category>
+    <Category>
+        <Name>Basis including one tetraquark operator</Name>
+        <Energies>1.4685 1.914 1.951 2.139 2.397 2.567 2.79 2.797 2.82 3.291</Energies>
+        <Uncertainties>0.0064 0.031 0.096 0.062 0.018 0.033 0.15 0.024 0.16 0.095</Uncertainties>
+        <Colors>C3 C3 C0 C4 C3 C0 C3 C3 C3 C0</Colors>
+        <Hatched>false false true false false false true false false false</Hatched>
+        <!-- kpi kpi keta/tq tq kpi keta kpi kpi kpi keta -->
+        <Index>1</Index>
+    </Category>
+    <Legend>
+        <Colors>C3 C0 C4</Colors>
+        <Labels>$K\pi$ $K\eta$ Tetraquark</Labels>
+    </Legend>
+    <LegendLoc>upper left</LegendLoc>
+    <NoninteractingLevels>
+        <Color>k</Color>
+        <Energies>1.4735214340547955 2.03589589994437 2.169838887558778 2.4559949505868146 2.5609746280469436 2.810175990584791</Energies>
+        <Uncertainties>0.0019175150712717253 0.002955122958384672 0.03633997823831381 0.004699017411975801 0.03151910818413757 0.006122940191322048</Uncertainties> (optional)
+        <Labels>
+            <Label>$K \left( 0 \right) \pi \left( 0 \right)$</Label>
+            <Label>$K \left( 1 \right) \pi \left( 1 \right)$</Label>
+            <Label>$K \left( 0 \right) \eta \left( 0 \right)$</Label>
+            <Label>$K \left( 2 \right) \pi \left( 2 \right)$</Label>
+            <Label>$K \left( 1 \right) \eta \left( 1 \right)$</Label>
+            <Label>$K \left( 3 \right) \pi \left( 3 \right)$</Label>
+        </Labels>
+        <Fontsize>7</Fontsize>
+    </NoninteractingLevels>
+    <Thresholds>
+        <ThresholdEnergies>2.4205643021643866</ThresholdEnergies>
+        <ThresholdUncertainties>0</ThresholdUncertainties>
+    </Thresholds>
+</Staircase>

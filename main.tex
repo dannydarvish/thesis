@@ -1,67 +1,78 @@
 \documentclass[12pt]{report}
 \usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{bbm}
 \usepackage{color}
 \usepackage{float}
 \usepackage[margin=1in]{geometry}
 \usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
 \usepackage{multicol}
 \usepackage{physics}
 \usepackage{setspace}
 \usepackage{subcaption}
 \usepackage{tikz}
 \usepackage{titlepic}
+\usetikzlibrary{arrows}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{arrows.meta}
 
 \graphicspath{{figures/}}
 \newcommand{\bs}[1]{\boldsymbol{#1}}
-\title{Tetraquarks, $\Sigma$ baryon spectroscopy, and small-interaction scattering from lattice field theory}
-\author{Daniel James Darvish\\\\
-Submitted in partial fulfillments of the requirements for the degree of\\
-Doctor of Philosophy\\
-at\\
-Carnegie Mellon University\\
-Department of Physics\\
-Pittsburgh, Pennsylvania\\
-Advisor: Colin J. Morningstar}
-\titlepic{\vfill\includegraphics[scale=0.6]{figures/cmu.eps}}
-\date{September, 2020}
+\newcommand{\half}{\frac{1}{2}}
+\newcommand{\threehalves}{\frac{3}{2}}
+\renewcommand{\arraystretch}{1.5}
+% \title{Scalar Tetraquarks and $\Sigma$ Baryon Spectroscopy from Lattice QCD}
+% \author{Daniel James Darvish\\\\
+% Submitted in partial fulfillments of the requirements for the degree of\\
+% Doctor of Philosophy\\
+% at\\
+% Carnegie Mellon University\\
+% Department of Physics\\
+% Pittsburgh, Pennsylvania\\
+% Advisor: Colin J. Morningstar}
+% \titlepic{\vfill\includegraphics[scale=0.6]{figures/cmu.eps}}
+% \date{September, 2020}
 
 \begin{document}
 \onehalfspace
-\maketitle
-\begin{abstract}
-``Young man, in mathematics you don't understand things. You just get used to them.'' --- John von Neumann
-\end{abstract}
-\chapter*{Dedication}
-Lorem ipsum.
+% \doublespace
+% \maketitle
+% \begin{abstract}
+% ``Young man, in mathematics you don't understand things. You just get used to them.'' --- John von Neumann
+% \end{abstract}
+% \chapter*{Dedication}
 
-\chapter*{Declaration}
-Lorem ipsum.
+% \chapter*{Declaration}
+% Lorem ipsum.
 
-\chapter*{Acknowledgements}
-Lorem ipsum.
- 
+% \chapter*{Acknowledgements}
+% Lorem ipsum.
+% \input{title}
 \tableofcontents
 
-\chapter{Introduction}
+\chapter{Introduction}\label{ch:introduction}
 \input{chapters/introduction}
 
-\chapter{Lattice QCD}
+\chapter{Lattice QCD}\label{ch:latticeqcd}
 \input{chapters/latticeQCD}
 
-\chapter{Building Operators for Finite-Volume Spectroscopy}
+\chapter{Building Operators for Finite-Volume Spectroscopy}\label{ch:operators}
 \input{chapters/operators}
 
-\chapter{Monte Carlo Calculation of Correlators}
-\input{chapters/monte_carlo}
+\chapter{Calculation of Correlators using the Stochastic LapH Method}\label{ch:montecarlo}
+\input{chapters/slaph}
 
 \chapter{Correlator Analysis: Determining the Finite-Volume Spectrum}\label{ch:analysis}
 \input{chapters/analysis}
 
-\chapter{Scattering Resonances in a Two-Scalar Field Theory}
-\input{chapters/phi_rho}
+% \chapter{Scattering Resonances in a Two-Scalar Field Theory}
+% \input{chapters/phi_rho}
 
-\chapter{Investigating the Tetraquark Content of the Light Scalar Mesons $\kappa$ and $a_0(980)$}
+\chapter{Investigating the Tetraquark Content of the Light Scalar Mesons $\kappa$ and $a_0(980)$}\label{ch:tetraquarks}
 \input{chapters/tetraquarks}
+
+\chapter{$\Sigma$ Baryon Spectroscopy}
 
 \chapter{Conclusions}
 \input{chapters/conclusions}

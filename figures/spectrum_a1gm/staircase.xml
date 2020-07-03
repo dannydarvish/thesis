@@ -1,0 +1,19 @@
+<Staircase>
+    <Title></Title>
+    <YAxisLabel>$\frac{E}{m_K}$</YAxisLabel>
+    <Ordering>category</Ordering>
+    <Category>
+        <Name>Basis without tetraquark operator</Name>
+        <Energies>1.943 2.019 2.020 2.319 2.457 2.759 2.88 3.882 3.905 4.66 6.23 6.69</Energies>
+        <Uncertainties>0.0060 0.0052 0.0056 0.0061 0.0052 0.0041 0.66 0.0075 0.0064 0.42 0.16 0.41</Uncertainties>
+        <Color>r</Color>
+        <Index>0</Index>
+    </Category>
+    <Category>
+        <Name>Basis including one tetraquark operator</Name>
+        <Energies>1.939 2.019 2.038 2.27 2.318 2.455 2.767 2.90 3.837 3.914 4.64 6.23 6.69</Energies>
+        <Uncertainties>0.0059 0.0052 0.0056 0.15 0.060 0.052 0.041 0.63 0.097 0.070 0.42 0.16 0.41</Uncertainties>
+        <Color>b</Color>
+        <Index>1</Index>
+    </Category>
+</Staircase>
