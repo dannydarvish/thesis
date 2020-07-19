@@ -54,7 +54,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Thu Jun 11 12:12:48 2020"
+@timestamp def "Sat Jul 11 13:35:09 2020"
 @with string
 @    string on
 @    string loctype view
@@ -64,7 +64,7 @@
 @    string font 0
 @    string just 9
 @    string char size 1.700000
-@    string def "\f{1}a\st\NE\f{}\sfit\N = 0.387(35)"
+@    string def "\f{1}a\st\NE\f{}\sfit\N = 0.435(19)"
 @with string
 @    string on
 @    string loctype view
@@ -74,7 +74,7 @@
 @    string font 0
 @    string just 4
 @    string char size 1.700000
-@    string def "\f{1}E\f{}\sfit\N\f{1}/E\f{}\sref\N = 4.64(42)"
+@    string def "\f{1}E\f{}\sfit\N\f{1}/E\f{}\sref\N = 5.21(23)"
 @with string
 @    string on
 @    string loctype view
@@ -84,7 +84,7 @@
 @    string font 0
 @    string just 9
 @    string char size 1.400000
-@    string def "\xc\S2\N/\f{0}dof\f{} = 0.27"
+@    string def "\xc\S2\N/\f{0}dof\f{} = 1.40"
 @with string
 @    string on
 @    string loctype view
@@ -94,7 +94,7 @@
 @    string font 0
 @    string just 8
 @    string char size 1.400000
-@    string def "Level 10"
+@    string def "\f{0}Re\f{} \f{1}C\sAA\N(t),   \m{3}A=ROT 10\f{}"
 @r0 off
 @link r0 to g0
 @r0 type above
@@ -141,7 +141,7 @@
 @g0 fixedpoint format general general
 @g0 fixedpoint prec 6, 6
 @with g0
-@    world 4, 0.0, 26, 0.7
+@    world 4.29, 0.386331926948, 15.21, 0.59537862808
 @    stack world 0, 0, 0, 0
 @    znorm 1
 @    view 0.200000, 0.150000, 0.950000, 0.950000
@@ -172,7 +172,7 @@
 @    xaxis  label color 1
 @    xaxis  label place normal
 @    xaxis  tick on
-@    xaxis  tick major 5
+@    xaxis  tick major 2
 @    xaxis  tick minor ticks 1
 @    xaxis  tick default 6
 @    xaxis  tick place rounded true
@@ -215,8 +215,15 @@
 @    yaxis  bar color 1
 @    yaxis  bar linestyle 1
 @    yaxis  bar linewidth 2.0
+@    yaxis  label "a\st\NE\s\f{0}eff\N\f{}(t)"
+@    yaxis  label layout para
+@    yaxis  label place auto
+@    yaxis  label char size 2.000000
+@    yaxis  label font 1
+@    yaxis  label color 1
+@    yaxis  label place normal
 @    yaxis  tick on
-@    yaxis  tick major 0.1
+@    yaxis  tick major 0.05
 @    yaxis  tick minor ticks 1
 @    yaxis  tick default 6
 @    yaxis  tick place rounded true
@@ -231,7 +238,7 @@
 @    yaxis  tick minor linestyle 1
 @    yaxis  tick minor grid off
 @    yaxis  tick minor size 0.750000
-@    yaxis  ticklabel off
+@    yaxis  ticklabel on
 @    yaxis  ticklabel format general
 @    yaxis  ticklabel prec 5
 @    yaxis  ticklabel formula ""
@@ -426,21 +433,20 @@
 @    s2 legend  ""
 @target G0.S0
 @type xydy
-4.5 0.51138551 0.0076259116
-5.5 0.48406782 0.011978667
-6.5 0.46387113 0.019293796
-7.5 0.42169953 0.02430566
-8.5 0.40134863 0.032486269
-9.5 0.38673268 0.051896763
-10.5 0.38075368 0.057051562
+4.5 0.52862497 0.0061852994
+5.5 0.50965944 0.0104009
+6.5 0.50141358 0.015654676
+7.5 0.45626431 0.020454871
+8.5 0.46784575 0.037223518
+9.5 0.49416082 0.071353994
 &
 @target G0.S1
 @type xy
-8 0.42192078
-16 0.42192078
+7 0.45406453
+15 0.45406453
 &
 @target G0.S2
 @type xy
-8 0.35208909
-16 0.35208909
+7 0.41619574
+15 0.41619574
 &

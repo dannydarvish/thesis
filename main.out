@@ -1,0 +1,62 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Lattice QCD}{}% 2
+\BOOKMARK [1][-]{section.2.1}{QCD in the Continuum}{chapter.2}% 3
+\BOOKMARK [2][-]{subsection.2.1.1}{The QCD Lagrangian}{section.2.1}% 4
+\BOOKMARK [2][-]{subsection.2.1.2}{Transformation Properties of the Quark and Gluon Fields}{section.2.1}% 5
+\BOOKMARK [1][-]{section.2.2}{Discretizing QCD on the Lattice}{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.2.1}{Free Fermions}{section.2.2}% 7
+\BOOKMARK [2][-]{subsection.2.2.2}{Gauge Fields and Link Variables}{section.2.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.3}{Fermion Doubling}{section.2.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.4}{The Wilson Gauge Action}{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.5}{Improving the Discretized Action}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.6}{Parameter Tuning}{section.2.2}% 12
+\BOOKMARK [1][-]{section.2.3}{Extracting Energies from Two-Point Correlation Functions}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.4}{Monte Carlo Path Integration}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.4.1}{Hybrid Monte Carlo}{section.2.4}% 15
+\BOOKMARK [2][-]{subsection.2.4.2}{Rational Hybrid Monte Carlo}{section.2.4}% 16
+\BOOKMARK [0][-]{chapter.3}{Building Operators for Finite-Volume Spectroscopy}{}% 17
+\BOOKMARK [1][-]{section.3.1}{Basic Building Blocks}{chapter.3}% 18
+\BOOKMARK [2][-]{subsection.3.1.1}{Stout Smearing}{section.3.1}% 19
+\BOOKMARK [2][-]{subsection.3.1.2}{LapH Smearing}{section.3.1}% 20
+\BOOKMARK [2][-]{subsection.3.1.3}{Displacements}{section.3.1}% 21
+\BOOKMARK [1][-]{section.3.2}{Symmetries on the Lattice}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.2.1}{Rotations}{section.3.2}% 23
+\BOOKMARK [2][-]{subsection.3.2.2}{Isospin and Quark Flavor}{section.3.2}% 24
+\BOOKMARK [2][-]{subsection.3.2.3}{Charge Conjugation and G-Parity}{section.3.2}% 25
+\BOOKMARK [1][-]{section.3.3}{Single-Hadron Operator Construction}{chapter.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.1}{Elemental Single-Hadron Operators}{section.3.3}% 27
+\BOOKMARK [2][-]{subsection.3.3.2}{Projecting onto Symmetry Sectors}{section.3.3}% 28
+\BOOKMARK [1][-]{section.3.4}{Two-Hadron Operator Construction}{chapter.3}% 29
+\BOOKMARK [0][-]{chapter.4}{Calculation of Correlators using the Stochastic LapH Method}{}% 30
+\BOOKMARK [1][-]{section.4.1}{Quark Lines}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.2}{Motivating the Need for Stochastically Estimated All-to-All Propagators}{chapter.4}% 32
+\BOOKMARK [1][-]{section.4.3}{Stochastically Estimating the Quark Propagator}{chapter.4}% 33
+\BOOKMARK [2][-]{subsection.4.3.1}{Application to Quark Lines}{section.4.3}% 34
+\BOOKMARK [2][-]{subsection.4.3.2}{Correlator Factorization}{section.4.3}% 35
+\BOOKMARK [0][-]{chapter.5}{Correlator Analysis: Determining the Finite-Volume Spectrum}{}% 36
+\BOOKMARK [1][-]{section.5.1}{Correlator Matrices}{chapter.5}% 37
+\BOOKMARK [1][-]{section.5.2}{The Generalized Eigenvalue Problem}{chapter.5}% 38
+\BOOKMARK [1][-]{section.5.3}{Pivots and Operator Pruning}{chapter.5}% 39
+\BOOKMARK [2][-]{subsection.5.3.1}{The Zero Temperature Assumption}{section.5.3}% 40
+\BOOKMARK [1][-]{section.5.4}{Fit Forms}{chapter.5}% 41
+\BOOKMARK [2][-]{subsection.5.4.1}{The Effective Energy}{section.5.4}% 42
+\BOOKMARK [1][-]{section.5.5}{Error Analysis and Resampling}{chapter.5}% 43
+\BOOKMARK [1][-]{section.5.6}{Correlated 2 Minimization}{chapter.5}% 44
+\BOOKMARK [0][-]{chapter.6}{Investigating the Tetraquark Content of the Light Scalar Mesons \040and a0\(980\)}{}% 45
+\BOOKMARK [1][-]{section.6.1}{Ensemble}{chapter.6}% 46
+\BOOKMARK [1][-]{section.6.2}{Operator Construction}{chapter.6}% 47
+\BOOKMARK [1][-]{section.6.3}{ Channel}{chapter.6}% 48
+\BOOKMARK [2][-]{subsection.6.3.1}{Operator Bases}{section.6.3}% 49
+\BOOKMARK [2][-]{subsection.6.3.2}{Spectrum Determination}{section.6.3}% 50
+\BOOKMARK [1][-]{section.6.4}{a0\(980\) Channel}{chapter.6}% 51
+\BOOKMARK [2][-]{subsection.6.4.1}{Operator Bases}{section.6.4}% 52
+\BOOKMARK [2][-]{subsection.6.4.2}{Spectrum Determination}{section.6.4}% 53
+\BOOKMARK [0][-]{chapter.7}{ Baryon Spectroscopy}{}% 54
+\BOOKMARK [1][-]{section.7.1}{Computational Details}{chapter.7}% 55
+\BOOKMARK [1][-]{section.7.2}{G1g Spectrum}{chapter.7}% 56
+\BOOKMARK [1][-]{section.7.3}{G1u Spectrum}{chapter.7}% 57
+\BOOKMARK [1][-]{section.7.4}{Hg Spectrum}{chapter.7}% 58
+\BOOKMARK [1][-]{section.7.5}{Hu Spectrum}{chapter.7}% 59
+\BOOKMARK [1][-]{section.7.6}{G2g Spectrum}{chapter.7}% 60
+\BOOKMARK [1][-]{section.7.7}{G2u Spectrum}{chapter.7}% 61
+\BOOKMARK [0][-]{chapter.8}{Conclusions}{}% 62

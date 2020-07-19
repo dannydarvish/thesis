@@ -3,17 +3,45 @@
     <YAxisLabel>$\frac{E}{m_K}$</YAxisLabel>
     <Ordering>category</Ordering>
     <Category>
-        <Name>Basis without tetraquark operator</Name>
-        <Energies>1.943 2.019 2.020 2.319 2.457 2.759 2.88 3.882 3.905 4.66 6.23 6.69</Energies>
-        <Uncertainties>0.0060 0.0052 0.0056 0.0061 0.0052 0.0041 0.66 0.0075 0.0064 0.42 0.16 0.41</Uncertainties>
-        <Color>r</Color>
+        <Name>2 SH, no TQ</Name>
+        <Colors>C0 C1 C0 C0 C2 C1 C0 C1 C3 C1 C3 C2</Colors>
+        <Hatched>true false true false false false false false false false false false</Hatched>
+        <!-- phipi/etapi kkbar phipi/etapi phipi sh kkbar phipi kkbar etapi kkbar etapi sh -->
         <Index>0</Index>
+        <Energies>1.47491347473036982 2.03353510720868424 2.19363046197042744 2.22437820212065729 2.29861217683693519 2.45180780045021773 2.82770866293185863 2.97100340810819041</Energies> <!--5.00016707120882309 5.20599057875176019 5.90987431798140683 6.80565832615671251</Energies>-->
+        <Uncertainties>0.07403663248735481 0.02523680355621660 0.17325278838695465 0.03461328967590647 0.15247610295077463 0.03303263015984594 0.04486512063636050 0.03180570923925522</Uncertainties><!--0.39258922300412030 0.22341369759395791 0.19731482339500431 0.42826504857588465</Uncertainties>-->
     </Category>
     <Category>
-        <Name>Basis including one tetraquark operator</Name>
-        <Energies>1.939 2.019 2.038 2.27 2.318 2.455 2.767 2.90 3.837 3.914 4.64 6.23 6.69</Energies>
-        <Uncertainties>0.0059 0.0052 0.0056 0.15 0.060 0.052 0.041 0.63 0.097 0.070 0.42 0.16 0.41</Uncertainties>
-        <Color>b</Color>
+        <Name>2 SH, with TQ</Name>
+        <Colors>C0 C1 C4 C0 C0 C1 C2 C0 C1 C3 C1 C3 C2</Colors>
+        <Hatched>true false false true false false false false false false false false false</Hatched>
+        <!-- phipi/etapi kkbar tq phipi/tq phipi kkbar sh phipi kkbar etapi kkbar etapi sh  -->
         <Index>1</Index>
+        <Energies>1.40950526079429950 2.01354711714937862 2.02668579304501506 2.41208700032687373 2.53656554080478491 2.58568651744368161 2.83697916242299497 2.94730832723591041 2.96432044440822962</Energies><!--5.01049162435437889 5.21214770685234274 5.49789304662752532 6.78465312318705838</Energies>-->
+        <Uncertainties>0.07889335237944266 0.02939065957915780 0.11069601061831462 0.13103065549482845 0.04232430761952040 0.02560697193646858 0.12122474255581003 0.04010764366341894 0.03500284285957646</Uncertainties><!--0.39291866665556607 0.22713802035963318 0.32300578621021037 0.42995691413505999</Uncertainties>-->
     </Category>
+    <Legend>
+        <Colors>C2 C3 C0 C1 C4</Colors>
+        <Labels>$\pi$ $\eta\pi$ $\phi\pi$ $\overline{K}K$ Tetraquark</Labels>
+    </Legend>
+    <LegendLoc>upper left</LegendLoc>
+    <NoninteractingLevels>
+        <Color>k</Color>
+        <Energies>1.6433603216135735 2.0 2.1799256911366496 2.4169448368546647 2.425699440418491 2.5832921537425437 2.771865581676125</Energies>
+        <Uncertainties>0.035878166766907554 0.0 0.03128602004990611 0.0023787596951707316 0.14339999121824373 0.028271343861238103 0.004148349466565508</Uncertainties>
+        <Labels>
+            <Label>$\pi \left( 0 \right) \eta \left(0 \right)$</Label>
+            <Label>$\overline K \left( 0 \right) K \left(0 \right)$</Label>
+            <Label>$\pi \left( 1 \right) \eta \left(1 \right)$</Label>
+            <Label>$\overline K \left( 1 \right) K \left(1 \right)$</Label>
+            <Label>$\pi \left( 0 \right) \eta^\prime \left(0 \right)$</Label>
+            <Label>$\pi \left( 2 \right) \eta \left(2 \right)$</Label>
+            <Label>$\overline K \left( 2 \right) K \left(2 \right)$</Label>
+        </Labels>
+        <Fontsize>7</Fontsize>
+    </NoninteractingLevels>
+    <Thresholds>
+        <ThresholdEnergies>2.5904031897231645</ThresholdEnergies>
+        <ThresholdUncertainties>0</ThresholdUncertainties>
+    </Thresholds>
 </Staircase>

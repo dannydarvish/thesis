@@ -1,0 +1,21 @@
+$\Sigma_{G_{1g}}^{DDI0}$ & $\pi(0)_{A_{1u}^-}^{SS0}\Lambda(0)_{G_{1u}}^{SS2}$\\
+$\Sigma_{G_{1g}}^{DDI22}$ & $\pi(0)_{A_{1u}^-}^{SS0}\Lambda(0)_{G_{1u}}^{SS3}$\\
+$\Sigma_{G_{1g}}^{DDL55}$ & $\pi(1)_{A_2^-}^{SS1}\Lambda(1)_{G_1}^{SS1}$\\
+$\Sigma_{G_{1g}}^{SS2}$ & $\pi(2)_{A_2^-}^{SS0}\Lambda(2)_{G}^{SS0}$\\
+$\Sigma_{G_{1g}}^{SS3}$ & $\pi(3)_{A_2^-}^{SS0}\Lambda(3)_{G}^{SS0}$\\
+$\Sigma_{G_{1g}}^{TDT65}$ & $\pi(1)_{A_2^-}^{SS0}\Sigma(1)_{G_1}^{SS0}$\\
+$\Sigma_{G_{1g}}^{TDT72}$ & $\pi(1)_{A_2^-}^{SS1}\Sigma(1)_{G_1}^{SS0}$\\
+ & $\pi(1)_{A_2^-}^{SS1}\Sigma(1)_{G_1}^{SS2}$\\
+ & $\pi(2)_{A_2^-}^{SS0}\Sigma(2)_{G}^{SS1}$\\
+ & $\pi(3)_{A_2^-}^{SS0}\Sigma(3)_{G}^{SS4}$\\
+ & $\overline K(1)_{A_1}^{SS2}N(1)_{G_1}^{SS0}$\\
+ & $\overline K(1)_{A_2}^{SS0}N(1)_{G_1}^{SS0}$\\
+ & $\overline K(1)_{A_2}^{SS1}N(1)_{G_1}^{SS0}$\\
+ & $\overline K(1)_{E}^{SS2}N(1)_{G_1}^{SS0}$\\
+ & $\overline K(4)_{A_2}^{SS1}N(4)_{G_1}^{SS0}$\\
+ & $\overline K(2)_{A_2}^{SS0}N(2)_{G}^{SS0}$\\
+ & $\overline K(2)_{A_2}^{SS1}N(2)_{G}^{SS0}$\\
+ & $\overline K(3)_{A_2}^{SS0}N(3)_{G}^{SS0}$\\
+ & $\overline K(1)_{A_2}^{SS1}\Delta(1)_{G_1}^{SS0}$\\
+ & $K(1)_{A_2}^{SS1}\Xi(1)_{G_1}^{SS0}$\\
+ & $\eta(1)_{A_2^+}^{SS1}\Sigma(1)_{G_1}^{SS0}$

@@ -159,7 +159,7 @@ In the continuum limit $a\rightarrow 0$, it can be shown that this reduces to th
     S_{G}[U]=\frac{2}{g^{2}} \sum_{n \in \Lambda} \sum_{\mu<\nu} \operatorname{Re} \operatorname{tr}\left[\mathbbm{1}-U_{\mu \nu}(n)\right]=\frac{a^{4}}{2 g^{2}} \sum_{n \in A} \sum_{\mu, \nu} \operatorname{tr}\left[F_{\mu \nu}(n)^{2}\right]+\mathcal{O}\left(a^{2}\right).
 \end{equation}
 The Wilson action is just one way to formulate a discretized gauge action. We will discuss different discretization strategies in order to reduce the discretization error to higher orders in $a$.
-\subsection{Improving the Discretized Action}
+\subsection{Improving the Discretized Action}\label{sec:improved_action}
 In our naively discretized theory, the fermionic action action contains $\mathcal O(a)$ lattice artifacts and the gauge action contains $\mathcal O(a^2)$ artifacts. By adding terms to the action which cancel these artifacts but which vanish in the continuum limit, we can improve discretization errors to higher orders in $a$. This is called \emph{Symanzik improvement}~\cite{Symanzik:1983dc}. For example, we make use of a \emph{clover improved}~\cite{Sheikholeslami:1985ij} action, which involves adding a term to the Wilson action,
 \begin{equation}
     c_{\mathrm{sw}} a^{5} \sum_{n \in \Lambda} \sum_{\mu<\nu} \bar{\psi}(n) \frac{1}{2} \sigma_{\mu \nu} \widehat{F}_{\mu \nu}(n) \psi(n),
@@ -211,7 +211,7 @@ where
     \hat{\nabla}_{\mu}=a_{\mu} \nabla_{\mu},\; \hat{\Delta}_{\mu}=a_{\mu}^{2} \Delta_{\mu}.
 \end{equation}
 This action has $\mathcal{O}\left(g^{2} a_{s}, g^{2} a_{t}, a_{s}^{2}, a_{t}^{2}\right)$ discretization errors. It is also important to mention that the link variables in the fermionic action are \emph{stout-smeared}~\cite{Morningstar:2003gk}, which we will discuss further in Chapter~\ref{ch:operators}. The use of smeared link variables in the action leads to better chiral behavior.
-\subsection{Parameter Tuning}
+\subsection{Parameter Tuning}\label{sec:tuning}
 \subsubsection{Anisotropy}
 The parameters we put into our action are bare parameters. We obtain these parameters by choosing a set of observables, and tuning the bare parameters in our action such that their desired values are produced. For example, we desire a renormalized anisotropy $\xi\approx 3.5$, and must tune the values $\gamma_g$ and $\gamma_f$ to obtain this. In order to tune $\gamma_g$, we measure the following quantities~\cite{Klassen:1998ua}:
 \begin{equation}

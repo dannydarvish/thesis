@@ -1,0 +1,271 @@
+\begin{thebibliography}{10}
+
+\bibitem{Alexandrou:2017itd}
+Constantia Alexandrou, Joshua Berlin, Mattia Dalla~Brida, Jacob Finkenrath,
+  Theodoros Leontiou, and Marc Wagner.
+\newblock {Lattice QCD investigation of the structure of the $a_0(980)$ meson}.
+\newblock {\em Phys. Rev. D}, 97(3):034506, 2018.
+
+\bibitem{Alexandrou:2012rm}
+Constantia Alexandrou, Jan~Oliver Daldrop, Mattia Dalla~Brida, Mario Gravina,
+  Luigi Scorzato, Carsten Urbach, and Marc Wagner.
+\newblock {Lattice investigation of the scalar mesons $a_0(980)$ and $\kappa$
+  using four-quark operators}.
+\newblock {\em JHEP}, 04:137, 2013.
+
+\bibitem{Amsler:2004ps}
+Claude Amsler and N.A. Tornqvist.
+\newblock {Mesons beyond the naive quark model}.
+\newblock {\em Phys. Rept.}, 389:61--117, 2004.
+
+\bibitem{Basak:2005aq}
+S.~Basak, R.G. Edwards, G.T. Fleming, U.M. Heller, C.~Morningstar, D.~Richards,
+  I.~Sato, and S.~Wallace.
+\newblock {Group-theoretical construction of extended baryon operators in
+  lattice QCD}.
+\newblock {\em Phys. Rev. D}, 72:094506, 2005.
+
+\bibitem{Bernardson:1993he}
+S.~Bernardson, P.~McCarty, and C.~Thron.
+\newblock {Monte Carlo methods for estimating linear combinations of inverse
+  matrix entries in lattice QCD}.
+\newblock {\em Comput. Phys. Commun.}, 78:256--264, 1993.
+
+\bibitem{Blossier:2009kd}
+Benoit Blossier, Michele Della~Morte, Georg von Hippel, Tereza Mendes, and
+  Rainer Sommer.
+\newblock {On the generalized eigenvalue method for energies and matrix
+  elements in lattice field theory}.
+\newblock {\em JHEP}, 04:094, 2009.
+
+\bibitem{Brett:2018jqw}
+Ruairí Brett, John Bulava, Jacob Fallica, Andrew Hanlon, Ben Hörz, and Colin
+  Morningstar.
+\newblock {Determination of $s$- and $p$-wave $I=1/2$ $K\pi$ scattering
+  amplitudes in $N_{\mathrm{f}}=2+1$ lattice QCD}.
+\newblock {\em Nucl. Phys. B}, 932:29--51, 2018.
+
+\bibitem{Bulava:2016mks}
+John Bulava, Brendan Fahy, Ben Hörz, Keisuke~J. Juge, Colin Morningstar, and
+  Chik~Him Wong.
+\newblock {$I=1$ and $I=2$ $\pi-\pi$ scattering phase shifts from
+  $N_{\mathrm{f}} = 2+1$ lattice QCD}.
+\newblock {\em Nucl. Phys. B}, 910:842--867, 2016.
+
+\bibitem{Clark:2006wq}
+M.A. Clark.
+\newblock {The Rational Hybrid Monte Carlo Algorithm}.
+\newblock {\em PoS}, LAT2006:004, 2006.
+
+\bibitem{Close:2002zu}
+Frank~E. Close and Nils~A. Tornqvist.
+\newblock {Scalar mesons above and below 1-GeV}.
+\newblock {\em J. Phys. G}, 28:R249--R267, 2002.
+
+\bibitem{Edwards:2008ja}
+Robert~G. Edwards, Balint Joo, and Huey-Wen Lin.
+\newblock {Tuning for Three-flavors of Anisotropic Clover Fermions with
+  Stout-link Smearing}.
+\newblock {\em Phys. Rev. D}, 78:054501, 2008.
+
+\bibitem{efron1982jackknife}
+Bradley Efron.
+\newblock {\em The jackknife, the bootstrap, and other resampling plans},
+  volume~38.
+\newblock Siam, 1982.
+
+\bibitem{Foley:2005ac}
+Justin Foley, K.~Jimmy~Juge, Alan O'Cais, Mike Peardon, Sinead~M. Ryan, and
+  Jon-Ivar Skullerud.
+\newblock {Practical all-to-all propagators for lattice QCD}.
+\newblock {\em Comput. Phys. Commun.}, 172:145--162, 2005.
+
+\bibitem{Fritzsch:1973pi}
+H.~Fritzsch, Murray Gell-Mann, and H.~Leutwyler.
+\newblock {Advantages of the Color Octet Gluon Picture}.
+\newblock {\em Phys. Lett. B}, 47:365--368, 1973.
+
+\bibitem{Gattringer:2010zz}
+Christof Gattringer and Christian~B. Lang.
+\newblock {\em {Quantum chromodynamics on the lattice}}, volume 788.
+\newblock Springer, Berlin, 2010.
+
+\bibitem{GellMann:1962xb}
+Murray Gell-Mann.
+\newblock {Symmetries of baryons and mesons}.
+\newblock {\em Phys. Rev.}, 125:1067--1084, 1962.
+
+\bibitem{pittir33243}
+Andrew~D. Hanlon.
+\newblock The {\ensuremath{\rho}} meson spectrum and k{\ensuremath{\pi}}
+  scattering with partial wave mixing in lattice {QCD}.
+\newblock January 2018.
+
+\bibitem{Jaffe:2004ph}
+R.~L. Jaffe.
+\newblock {Exotica}.
+\newblock {\em Phys. Rept.}, 409:1--45, 2005.
+\newblock [,191(2004)].
+
+\bibitem{Kennedy:1987vx}
+A.D. Kennedy.
+\newblock {HYBRID MONTE CARLO}.
+\newblock 1987.
+
+\bibitem{Klassen:1998ua}
+Timothy~R. Klassen.
+\newblock {The Anisotropic Wilson gauge action}.
+\newblock {\em Nucl. Phys. B}, 533:557--575, 1998.
+
+\bibitem{Lepage:1989hd}
+G.Peter Lepage.
+\newblock {The Analysis of Algorithms for Lattice Field Theory}.
+\newblock pages 97--120, 6 1989.
+
+\bibitem{Lepage:1992xa}
+G.Peter Lepage and Paul~B. Mackenzie.
+\newblock {On the viability of lattice perturbation theory}.
+\newblock {\em Phys. Rev. D}, 48:2250--2264, 1993.
+
+\bibitem{Lin:2008pr}
+Huey-Wen Lin et~al.
+\newblock {First results from 2+1 dynamical quark flavors on an anisotropic
+  lattice: Light-hadron spectroscopy and setting the strange-quark mass}.
+\newblock {\em Phys. Rev. D}, 79:034502, 2009.
+
+\bibitem{Luscher:1985zq}
+M.~Luscher and P.~Weisz.
+\newblock {Computation of the Action for On-Shell Improved Lattice Gauge
+  Theories at Weak Coupling}.
+\newblock {\em Phys. Lett. B}, 158:250--254, 1985.
+
+\bibitem{Luscher:1984xn}
+M.~Luscher and P.~Weisz.
+\newblock {On-Shell Improved Lattice Gauge Theories}.
+\newblock {\em Commun. Math. Phys.}, 97:59, 1985.
+\newblock [Erratum: Commun.Math.Phys. 98, 433 (1985)].
+
+\bibitem{Luscher:1990ck}
+Martin Luscher and Ulli Wolff.
+\newblock {How to Calculate the Elastic Scattering Matrix in Two-dimensional
+  Quantum Field Theories by Numerical Simulation}.
+\newblock {\em Nucl. Phys. B}, 339:222--252, 1990.
+
+\bibitem{Maiani:2004uc}
+L.~Maiani, F.~Piccinini, A.D. Polosa, and V.~Riquer.
+\newblock {A New look at scalar mesons}.
+\newblock {\em Phys. Rev. Lett.}, 93:212002, 2004.
+
+\bibitem{Metropolis:1953am}
+N.~Metropolis, A.W. Rosenbluth, M.N. Rosenbluth, A.H. Teller, and E.~Teller.
+\newblock {Equation of state calculations by fast computing machines}.
+\newblock {\em J. Chem. Phys.}, 21:1087--1092, 1953.
+
+\bibitem{Morningstar:2013bda}
+C.~Morningstar, J.~Bulava, B.~Fahy, J.~Foley, Y.C. Jhang, K.J. Juge,
+  D.~Lenkner, and C.H. Wong.
+\newblock {Extended hadron and two-hadron operators of definite momentum for
+  spectrum calculations in lattice QCD}.
+\newblock {\em Phys. Rev. D}, 88(1):014511, 2013.
+
+\bibitem{spectroscopy}
+Colin Morningstar.
+\newblock {Hadron Spectroscopy in Lattice QCD (private notes)}.
+
+\bibitem{Morningstar:2007zm}
+Colin Morningstar.
+\newblock {The Monte Carlo method in quantum field theory}.
+\newblock In {\em {21st Annual Hampton University Graduate Studies Program
+  (HUGS 2006)}}, 2 2007.
+
+\bibitem{Morningstar:2011ka}
+Colin Morningstar, John Bulava, Justin Foley, Keisuke~J. Juge, David Lenkner,
+  Mike Peardon, and Chik~Him Wong.
+\newblock {Improved stochastic estimation of quark propagation with Laplacian
+  Heaviside smearing in lattice QCD}.
+\newblock {\em Phys. Rev. D}, 83:114505, 2011.
+
+\bibitem{Morningstar:2017spu}
+Colin Morningstar, John Bulava, Bijit Singha, Ruairí Brett, Jacob Fallica,
+  Andrew Hanlon, and Ben Hörz.
+\newblock {Estimating the two-particle $K$-matrix for multiple partial waves
+  and decay channels from finite-volume energies}.
+\newblock {\em Nucl. Phys. B}, 924:477--507, 2017.
+
+\bibitem{Morningstar:2003gk}
+Colin Morningstar and Mike~J. Peardon.
+\newblock {Analytic smearing of SU(3) link variables in lattice QCD}.
+\newblock {\em Phys. Rev. D}, 69:054501, 2004.
+
+\bibitem{Morningstar:1997ff}
+Colin~J. Morningstar and Mike~J. Peardon.
+\newblock {Efficient glueball simulations on anisotropic lattices}.
+\newblock {\em Phys. Rev. D}, 56:4043--4061, 1997.
+
+\bibitem{Morningstar:1999rf}
+Colin~J. Morningstar and Mike~J. Peardon.
+\newblock {The Glueball spectrum from an anisotropic lattice study}.
+\newblock {\em Phys. Rev. D}, 60:034509, 1999.
+
+\bibitem{Nielsen:1981hk}
+Holger~Bech Nielsen and M.~Ninomiya.
+\newblock {No Go Theorem for Regularizing Chiral Fermions}.
+\newblock {\em Phys. Lett. B}, 105:219--223, 1981.
+
+\bibitem{Peardon:2009gh}
+Michael Peardon, John Bulava, Justin Foley, Colin Morningstar, Jozef Dudek,
+  Robert~G. Edwards, Balint Joo, Huey-Wen Lin, David~G. Richards, and
+  Keisuke~Jimmy Juge.
+\newblock {A Novel quark-field creation operator construction for hadronic
+  physics in lattice QCD}.
+\newblock {\em Phys. Rev. D}, 80:054506, 2009.
+
+\bibitem{Prelovsek:2010kg}
+Sasa Prelovsek, Terrence Draper, Christian~B. Lang, Markus Limmer, Keh-Fei Liu,
+  Nilmani Mathur, and Daniel Mohler.
+\newblock {Lattice study of light scalar tetraquarks with I=0,2,1/2,3/2: Are
+  $\sigma$ and $\kappa$ tetraquarks?}
+\newblock {\em Phys. Rev. D}, 82:094507, 2010.
+
+\bibitem{Sheikholeslami:1985ij}
+B.~Sheikholeslami and R.~Wohlert.
+\newblock {Improved Continuum Limit Lattice Action for QCD with Wilson
+  Fermions}.
+\newblock {\em Nucl. Phys. B}, 259:572, 1985.
+
+\bibitem{Symanzik:1983dc}
+K.~Symanzik.
+\newblock {Continuum Limit and Improved Action in Lattice Theories. 1.
+  Principles and phi**4 Theory}.
+\newblock {\em Nucl. Phys. B}, 226:187--204, 1983.
+
+\bibitem{PhysRevD.98.030001}
+M.~et~al. Tanabashi.
+\newblock Review of particle physics.
+\newblock {\em Phys. Rev. D}, 98:030001, Aug 2018.
+
+\bibitem{Wilcox:1999ab}
+Walter Wilcox.
+\newblock {Noise methods for flavor singlet quantities}.
+\newblock In {\em {Interdisciplinary Workshop on Numerical Challenges in
+  Lattice QCD}}, pages 127--141, 8 1999.
+
+\bibitem{Wilson:2015dqa}
+David~J. Wilson, Raul~A. Briceno, Jozef~J. Dudek, Robert~G. Edwards, and
+  Christopher~E. Thomas.
+\newblock {Coupled $\pi\pi, K\bar{K}$ scattering in $P$-wave and the $\rho$
+  resonance from lattice QCD}.
+\newblock {\em Phys. Rev. D}, 92(9):094502, 2015.
+
+\bibitem{Wilson:1974sk}
+Kenneth~G. Wilson.
+\newblock {Confinement of Quarks}.
+\newblock pages 45--59, 2 1974.
+
+\bibitem{Wilson:1975id}
+Kenneth~G. Wilson.
+\newblock {Quarks and Strings on a Lattice}.
+\newblock In {\em {13th International School of Subnuclear Physics: New
+  Phenomena in Subnuclear Physics}}, page~99, 11 1975.
+
+\end{thebibliography}

@@ -1,4 +1,4 @@
-\section{Correlator Matrices}
+\section{Correlator Matrices}\label{sec:correlator_matrices}
 In order to compute the low-lying finite-volume stationary states of QCD, we compute temporal correlator matrices of the form,
 \begin{equation}
     \mathcal{C}_{i j}(t)=\bra 0 \mathcal O_{i}\left(t+t_{0}\right) \overline{\mathcal O}_{j}\left(t_{0}\right)\ket 0,
@@ -48,7 +48,7 @@ The overlaps are determined by
     Z_{j}^{(n)} \approx C_{j k}\left(\tau_{0}\right)^{1 / 2} V_{k n}(t) Z_{n}^{\prime}\quad \text{(no sum over n)},
 \end{equation}
 where $V$ is the unitary matrix whose columns are the eigenvectors of $G(t)$.
-\section{Pivots and Operator Pruning}
+\section{Pivots and Operator Pruning}\label{sec:pivots}
 Two important assumptions about $C(t)$ are that it is Hermitian as well as positive-definite, which also implies that $G(t)$ is Hermitian and positive-definite. The assumption of positive-definiteness can be violated by operators that produce noisy correlators, or by an operator set that is linearly dependent. Noise can cause diagonal elements of the correlator to become zero or negative, and linearly dependent operators will produce eigenvalues of $C(t)$ that are zero. The odds of this occurring increases as we increase the number of operators in our correlator matrix. We call the process of judiciously choosing operators to ensure our correlator matrices remain well-conditioned \emph{pruning}. Pruning is necessary, but not sufficient for ensuring well-conditioned correlator matrices. It is still necessary to monitor for ill-conditioned matrices and take corrective action.
 
 The condition number $\xi^{\rm{cn}}$ of a matrix is defined as the magnitude of the ratio of its maximum eigenvalue $\lambda_{\rm{max}}$ to its minimum eigenvalue $\lambda_{\rm{min}}$:

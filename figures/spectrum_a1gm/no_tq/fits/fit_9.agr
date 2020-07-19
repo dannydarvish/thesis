@@ -54,7 +54,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Thu Jun 11 17:26:00 2020"
+@timestamp def "Fri Jul 10 15:42:37 2020"
 @with string
 @    string on
 @    string loctype view
@@ -64,7 +64,7 @@
 @    string font 0
 @    string just 9
 @    string char size 1.700000
-@    string def "\f{1}a\st\NE\f{}\sfit\N = 0.389(35)"
+@    string def "\f{1}a\st\NE\f{}\sfit\N = 0.435(19)"
 @with string
 @    string on
 @    string loctype view
@@ -74,7 +74,7 @@
 @    string font 0
 @    string just 4
 @    string char size 1.700000
-@    string def "\f{1}E\f{}\sfit\N\f{1}/E\f{}\sref\N = 4.66(42)"
+@    string def "\f{1}E\f{}\sfit\N\f{1}/E\f{}\sref\N = 5.21(22)"
 @with string
 @    string on
 @    string loctype view
@@ -84,7 +84,7 @@
 @    string font 0
 @    string just 9
 @    string char size 1.400000
-@    string def "\xc\S2\N/\f{0}dof\f{} = 0.27"
+@    string def "\xc\S2\N/\f{0}dof\f{} = 1.41"
 @with string
 @    string on
 @    string loctype view
@@ -94,7 +94,7 @@
 @    string font 0
 @    string just 8
 @    string char size 1.400000
-@    string def "Level 9"
+@    string def "\f{0}Re\f{} \f{1}C\sAA\N(t),   \m{3}A=ROT 9\f{}"
 @r0 off
 @link r0 to g0
 @r0 type above
@@ -141,7 +141,7 @@
 @g0 fixedpoint format general general
 @g0 fixedpoint prec 6, 6
 @with g0
-@    world 4, 0.0, 26, 0.7
+@    world 4.29, 0.386143760735, 15.21, 0.595079488779
 @    stack world 0, 0, 0, 0
 @    znorm 1
 @    view 0.200000, 0.150000, 0.950000, 0.950000
@@ -172,7 +172,7 @@
 @    xaxis  label color 1
 @    xaxis  label place normal
 @    xaxis  tick on
-@    xaxis  tick major 5
+@    xaxis  tick major 2
 @    xaxis  tick minor ticks 1
 @    xaxis  tick default 6
 @    xaxis  tick place rounded true
@@ -223,7 +223,7 @@
 @    yaxis  label color 1
 @    yaxis  label place normal
 @    yaxis  tick on
-@    yaxis  tick major 0.1
+@    yaxis  tick major 0.05
 @    yaxis  tick minor ticks 1
 @    yaxis  tick default 6
 @    yaxis  tick place rounded true
@@ -433,21 +433,20 @@
 @    s2 legend  ""
 @target G0.S0
 @type xydy
-4.5 0.51130204 0.0076770355
-5.5 0.48512515 0.01207421
-6.5 0.46297639 0.019250541
-7.5 0.42056686 0.024363771
-8.5 0.40184956 0.03267328
-9.5 0.39040426 0.052111075
-10.5 0.38481512 0.058593487
+4.5 0.5286686 0.0061383733
+5.5 0.50960281 0.010347443
+6.5 0.50138833 0.015596112
+7.5 0.45614566 0.020317464
+8.5 0.46656463 0.036854539
+9.5 0.4943116 0.070919923
 &
 @target G0.S1
 @type xy
-8 0.42450441
-16 0.42450441
+7 0.45324051
+15 0.45324051
 &
 @target G0.S2
 @type xy
-8 0.35419746
-16 0.35419746
+7 0.41599172
+15 0.41599172
 &

@@ -3,16 +3,20 @@
 \usepackage{amsmath}
 \usepackage{bbm}
 \usepackage{color}
+\usepackage{cprotect}
 \usepackage{float}
 \usepackage[margin=1in]{geometry}
 \usepackage{graphicx}
 \usepackage[hidelinks]{hyperref}
+% \usepackage{microtype}
 \usepackage{multicol}
 \usepackage{physics}
 \usepackage{setspace}
+\usepackage[usestackEOL]{stackengine}
 \usepackage{subcaption}
 \usepackage{tikz}
 \usepackage{titlepic}
+\usepackage{transparent}
 \usetikzlibrary{arrows}
 \usetikzlibrary{shapes.geometric}
 \usetikzlibrary{arrows.meta}
@@ -22,36 +26,31 @@
 \newcommand{\half}{\frac{1}{2}}
 \newcommand{\threehalves}{\frac{3}{2}}
 \renewcommand{\arraystretch}{1.5}
-% \title{Scalar Tetraquarks and $\Sigma$ Baryon Spectroscopy from Lattice QCD}
-% \author{Daniel James Darvish\\\\
-% Submitted in partial fulfillments of the requirements for the degree of\\
-% Doctor of Philosophy\\
-% at\\
-% Carnegie Mellon University\\
-% Department of Physics\\
-% Pittsburgh, Pennsylvania\\
-% Advisor: Colin J. Morningstar}
-% \titlepic{\vfill\includegraphics[scale=0.6]{figures/cmu.eps}}
-% \date{September, 2020}
 
 \begin{document}
+\pagenumbering{roman}
 \onehalfspace
+\input{title}
 % \doublespace
 % \maketitle
 % \begin{abstract}
-% ``Young man, in mathematics you don't understand things. You just get used to them.'' --- John von Neumann
 % \end{abstract}
-% \chapter*{Dedication}
+% % \chapter*{Dedication}
+% % This work is dedicated to all those who have been denied the right to education.
 
-% \chapter*{Declaration}
-% Lorem ipsum.
+% % % \chapter*{Acknowledgements}
+% % % There is no self-made man, and I am no exception. This work would not have been possible without the love and support of my dear wife, Dana Martin. To all of my family and friends who have supported me, I owe everything to you, and you have my deepest gratitude. To my academic colleagues and mentors, especially Ruair\'i Brett, Andrew Hanlon, Jacob Fallica, and Colin Morningstar, you have been invaluable resources and have greatly contributed to my success in research and my understanding of physics. It is difficult to imagine finishing this degree without all of the enlightening conversation, insightful perspective, and education you have provided me.
+% % % \vfill
+% \begin{flushright}
+%     \textit{``There are decades where nothing happens, and\\
+%     there are weeks where decades happen.''}\\
+%     -- Vladamir Lenin (apocryphal)
+% \end{flushright}
 
-% \chapter*{Acknowledgements}
-% Lorem ipsum.
-% \input{title}
 \tableofcontents
 
 \chapter{Introduction}\label{ch:introduction}
+\pagenumbering{arabic}
 \input{chapters/introduction}
 
 \chapter{Lattice QCD}\label{ch:latticeqcd}
@@ -72,9 +71,10 @@
 \chapter{Investigating the Tetraquark Content of the Light Scalar Mesons $\kappa$ and $a_0(980)$}\label{ch:tetraquarks}
 \input{chapters/tetraquarks}
 
-\chapter{$\Sigma$ Baryon Spectroscopy}
+\chapter{$\Sigma$ Baryon Spectroscopy}\label{ch:sigmas}
+\input{chapters/sigmas}
 
-\chapter{Conclusions}
+\chapter{Conclusions}\label{ch:conclusions}
 \input{chapters/conclusions}
 
 \bibliographystyle{plain}
