@@ -94,7 +94,7 @@
 @    string font 0
 @    string just 8
 @    string char size 1.400000
-@    string def "\f{0}Re\f{} \f{1}C\sAA\N(t),   \m{3}A=ROT 2\f{}"
+@    string def "Level 22"
 @r0 off
 @link r0 to g0
 @r0 type above
@@ -141,7 +141,7 @@
 @g0 fixedpoint format general general
 @g0 fixedpoint prec 6, 6
 @with g0
-@    world 4.25, 0.0908512046568, 17.25, 0.529177473275
+@    world 4.0, -0.05, 24.0, 0.65
 @    stack world 0, 0, 0, 0
 @    znorm 1
 @    view 0.200000, 0.150000, 0.950000, 0.950000
@@ -172,7 +172,7 @@
 @    xaxis  label color 1
 @    xaxis  label place normal
 @    xaxis  tick on
-@    xaxis  tick major 2
+@    xaxis  tick major 5
 @    xaxis  tick minor ticks 1
 @    xaxis  tick default 6
 @    xaxis  tick place rounded true
@@ -215,13 +215,6 @@
 @    yaxis  bar color 1
 @    yaxis  bar linestyle 1
 @    yaxis  bar linewidth 2.0
-@    yaxis  label "a\st\NE\s\f{0}eff\N\f{}(t)"
-@    yaxis  label layout para
-@    yaxis  label place auto
-@    yaxis  label char size 2.000000
-@    yaxis  label font 1
-@    yaxis  label color 1
-@    yaxis  label place normal
 @    yaxis  tick on
 @    yaxis  tick major 0.1
 @    yaxis  tick minor ticks 1
@@ -238,7 +231,7 @@
 @    yaxis  tick minor linestyle 1
 @    yaxis  tick minor grid off
 @    yaxis  tick minor size 0.750000
-@    yaxis  ticklabel on
+@    yaxis  ticklabel off
 @    yaxis  ticklabel format general
 @    yaxis  ticklabel prec 5
 @    yaxis  ticklabel formula ""
