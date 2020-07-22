@@ -1,0 +1,25 @@
+$\Sigma_{H_u}^{DDI10}$ & $\pi(0)_{T_{1u}^+}^{SS0}\Lambda(0)_{G_{1g}}^{SS0}$\\
+$\Sigma_{H_u}^{DDI15}$ & $\pi(1)_{A_2^-}^{SS0}\Lambda(1)_{G_1}^{SS1}$\\
+$\Sigma_{H_u}^{SD44}$ & $\pi(1)_{A_2^-}^{SS1}\Lambda(1)_{G_1}^{SS1}$\\
+$\Sigma_{H_u}^{SS0}$ & $\pi(1)_{A_2^-}^{SS1}\Lambda(1)_{G_1}^{SS2}$\\
+$\Sigma_{H_u}^{TDT190}$ & $\pi(2)_{A_2^-}^{SS0}\Lambda(2)_{G}^{SS0}$\\
+$\Sigma_{H_u}^{TDT41}$ & $\pi(3)_{A_2^-}^{SS0}\Lambda(3)_{G}^{SS0}$\\
+$\Sigma_{H_u}^{TDT5}$ & $\pi(2)_{A_2^-}^{SS0}\Lambda(2)_{G}^{SS0}$\\
+ & $\pi(0)_{A_{1u}^-}^{SS0}\Sigma(0)_{H_g}^{SS0}$\\
+ & $\pi(0)_{A_{1u}^-}^{TDO1}\Sigma(0)_{H_g}^{SS0}$\\
+ & $\pi(1)_{A_2^-}^{SS1}\Sigma(1)_{G_2}^{SS0}$\\
+ & $\pi(1)_{A_2^-}^{SS0}\Sigma(1)_{G_1}^{SS0}$\\
+ & $\pi(1)_{A_2^-}^{SS1}\Sigma(1)_{G_1}^{SS0}$\\
+ & $\pi(1)_{A_2^-}^{SS1}\Sigma(1)_{G_1}^{SS2}$\\
+ & $\pi(2)_{A_2^-}^{SS0}\Sigma(2)_{G}^{SS1}$\\
+ & $\overline K(0)_{T_{1u}}^{SS1}N(0)_{G_{1g}}^{SS0}$\\
+ & $\overline K(1)_{A_2}^{SS0}N(1)_{G_1}^{SS0}$\\
+ & $\overline K(1)_{A_2}^{SS1}N(1)_{G_1}^{SS0}$\\
+ & $\overline K(2)_{A_2}^{SS0}N(2)_{G}^{SS0}$\\
+ & $\overline K(2)_{A_2}^{SS1}N(2)_{G}^{SS0}$\\
+ & $\overline K(3)_{A_2}^{SS0}N(3)_{G}^{SS0}$\\
+ & $\overline K(2)_{A_2}^{SS0}N(2)_{G}^{SS0}$\\
+ & $\overline K(0)_{A_{1u}}^{SS0}\Delta(0)_{H_g}^{SS0}$\\
+ & $\overline K(1)_{A_2}^{SS1}\Delta(1)_{G_2}^{SS0}$\\
+ & $\overline K(1)_{A_2}^{SS1}\Delta(1)_{G_1}^{SS0}$\\
+ & $\eta(1)_{A_2^+}^{SS1}\Sigma(1)_{G_1}^{SS0}$

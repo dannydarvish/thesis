@@ -1,0 +1,18 @@
+<ExpVsLat>
+    <Title>$G_{1g}$</Title>
+    <YAxisLabel>$\frac{E}{m_N}$</YAxisLabel>
+    <Experiment>
+        <Color>C0</Color>
+        <Energies>1.2707741432 1.7679911119 2.1647240572</Energies>
+        <Uncertainties>0.00002834816088 0.0319516466 0.0159758233</Uncertainties>
+        <DecayWidths>0 0.1065054887 0.1917098796</DecayWidths>
+        <Names>$\Sigma$ $\Sigma(1660)$ $\Sigma(2030)$</Names>
+        <FontSize>10</FontSize>
+    </Experiment>
+   <Lattice>
+        <!-- <Energies>1.224 2.12 2.18 2.18 2.22 2.30 2.55</Energies>
+        <Uncertainties>0.0076 0.14 0.25 0.16 0.15 0.19 0.23</Uncertainties> -->
+        <Energies>1.224 2.12 2.18 2.18 2.22</Energies>
+        <Uncertainties>0.0076 0.14 0.25 0.16 0.15</Uncertainties>
+   </Lattice>
+</ExpVsLat>

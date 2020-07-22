@@ -1,0 +1,26 @@
+sigma P=(0,0,0) G1u_1 DDI_13
+sigma P=(0,0,0) G1u_1 DDL_34
+sigma P=(0,0,0) G1u_1 SD_5
+sigma P=(0,0,0) G1u_1 SS_0
+sigma P=(0,0,0) G1u_1 SS_2
+sigma P=(0,0,0) G1u_1 TDT_91
+isotriplet_pion_lambda G1u_1 [P=(0,0,0) A1um SS_0] [P=(0,0,0) G1g SS_0]
+isotriplet_pion_lambda G1u_1 [P=(0,0,0) A1um SS_0] [P=(0,0,0) G1g SS_3]
+isotriplet_pion_lambda G1u_1 [P=(0,0,1) A2m SS_0] [P=(0,0,-1) G1 SS_1]
+isotriplet_pion_lambda G1u_1 [P=(0,0,1) A2m SS_1] [P=(0,0,-1) G1 SS_1]
+isotriplet_pion_lambda G1u_1 [P=(0,0,1) A2m SS_1] [P=(0,0,-1) G1 SS_2]
+isotriplet_pion_lambda G1u_1 [P=(0,1,1) A2m SS_0] [P=(0,-1,-1) G SS_0]
+isotriplet_pion_lambda G1u_1 [P=(1,1,1) A2m SS_0] [P=(-1,-1,-1) G SS_0]
+isotriplet_pion_sigma G1u_1 [P=(0,0,0) A1um SS_0] [P=(0,0,0) G1g SS_3]
+isotriplet_pion_sigma G1u_1 [P=(0,0,1) A2m SS_0] [P=(0,0,-1) G1 SS_0]
+isotriplet_pion_sigma G1u_1 [P=(0,0,1) A2m SS_1] [P=(0,0,-1) G1 SS_0]
+isotriplet_pion_sigma G1u_1 [P=(0,0,1) A2m SS_1] [P=(0,0,-1) G1 SS_2]
+isotriplet_pion_sigma G1u_1 [P=(0,1,1) A2m SS_0] [P=(0,-1,-1) G SS_1]
+isotriplet_kbar_nucleon G1u_1 [P=(0,0,0) A1u SS_0] [P=(0,0,0) G1g SS_0]
+isotriplet_kbar_nucleon G1u_1 [P=(0,0,0) T1u SS_1] [P=(0,0,0) G1g SS_0]
+isotriplet_kbar_nucleon G1u_1 [P=(0,0,1) A2 SS_0] [P=(0,0,-1) G1 SS_0]
+isotriplet_kbar_nucleon G1u_1 [P=(0,0,1) A2 SS_1] [P=(0,0,-1) G1 SS_0]
+isotriplet_kbar_nucleon G1u_1 [P=(0,1,1) A2 SS_0] [P=(0,-1,-1) G SS_0]
+isotriplet_kbar_nucleon G1u_1 [P=(1,1,1) A2 SS_0] [P=(-1,-1,-1) G SS_0]
+isotriplet_kbar_delta G1u_1 [P=(0,0,1) A2 SS_1] [P=(0,0,-1) G1 SS_0]
+isotriplet_kaon_xi G1u_1 [P=(0,0,0) A1u SS_0] [P=(0,0,0) G1g SS_0]

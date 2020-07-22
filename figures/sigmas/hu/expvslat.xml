@@ -1,0 +1,16 @@
+<ExpVsLat>
+    <Title>$H_u$</Title>
+    <YAxisLabel>$\frac{E}{m_N}$</YAxisLabel>
+    <Experiment>
+        <Color>C0</Color>
+        <Energies>1.7839669352 1.8904724238 2.0502306568</Energies>
+        <Uncertainties>0.01065054887 0.005325274433 0.02662637217</Uncertainties>
+        <DecayWidths>0.1065054887 0.1278065864 0.2343120751</DecayWidths>
+        <Names>$\Sigma(1670)$ $\Sigma(1775)$ $\Sigma(1940)$</Names>
+        <FontSize>10</FontSize>
+    </Experiment>
+   <Lattice>
+        <Energies>1.92 2.03 2.05 2.10</Energies>
+        <Uncertainties>0.12 0.13 0.18 0.13</Uncertainties>
+   </Lattice>
+</ExpVsLat>

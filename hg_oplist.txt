@@ -1,0 +1,43 @@
+sigma P=(0,0,0) Hg_1 DDI_29
+sigma P=(0,0,0) Hg_1 DDI_31
+sigma P=(0,0,0) Hg_1 DDI_42
+sigma P=(0,0,0) Hg_1 DDL_94
+sigma P=(0,0,0) Hg_1 SD_35
+sigma P=(0,0,0) Hg_1 SD_47
+sigma P=(0,0,0) Hg_1 SS_1
+sigma P=(0,0,0) Hg_1 TDT_135
+sigma P=(0,0,0) Hg_1 TDT_156
+sigma P=(0,0,0) Hg_1 TDT_3
+isotriplet_pion_lambda Hg_1 [P=(0,0,0) A1um SS_0] [P=(0,0,0) Hu SD_37]
+isotriplet_pion_lambda Hg_1 [P=(0,0,0) A1um SS_0] [P=(0,0,0) Hu SS_0]
+isotriplet_pion_lambda Hg_1 [P=(0,0,1) A2m SS_1] [P=(0,0,-1) G2 LSD_1]
+isotriplet_pion_lambda Hg_1 [P=(0,1,0) A2m SS_0] [P=(0,-1,0) G1 SS_1]
+isotriplet_pion_lambda Hg_1 [P=(0,1,0) A2m SS_1] [P=(0,-1,0) G1 SS_1]
+isotriplet_pion_lambda Hg_1 [P=(0,1,0) A2m SS_1] [P=(0,-1,0) G1 SS_2]
+isotriplet_pion_lambda Hg_1 [P=(0,1,0) A2m SS_1] [P=(0,-1,0) G1 SS_6]
+isotriplet_pion_lambda Hg_1 [P=(0,1,1) A2m SS_0] [P=(0,-1,-1) G SS_0]
+isotriplet_pion_lambda Hg_1 [P=(0,1,1) A2m SS_1] [P=(0,-1,-1) G SS_0]
+isotriplet_pion_lambda Hg_1 [P=(1,1,1) A2m SS_0] [P=(-1,-1,-1) G SS_0]
+isotriplet_pion_sigma Hg_1 [P=(0,0,0) A1um SS_0] [P=(0,0,0) Hu SS_2]
+isotriplet_pion_sigma Hg_1 [P=(0,0,1) A2m SS_1] [P=(0,0,-1) G2 SS_0]
+isotriplet_pion_sigma Hg_1 [P=(0,1,0) A2m SS_0] [P=(0,-1,0) G1 SS_0]
+isotriplet_pion_sigma Hg_1 [P=(0,1,0) A2m SS_1] [P=(0,-1,0) G1 SS_0]
+isotriplet_pion_sigma Hg_1 [P=(0,1,0) A2m SS_1] [P=(0,-1,0) G1 SS_2]
+isotriplet_pion_sigma Hg_1 [P=(0,1,1) A2m SS_0] [P=(0,-1,-1) G SS_1]
+isotriplet_pion_sigma Hg_1 [P=(0,1,1) A2m SS_1] [P=(0,-1,-1) G SS_1]
+isotriplet_pion_sigma Hg_1 [P=(1,1,1) A2m SS_0] [P=(-1,-1,-1) G SS_4]
+isotriplet_kbar_nucleon Hg_1 [P=(0,0,1) E SS_2] [P=(0,0,-1) G1 SS_0]
+isotriplet_kbar_nucleon Hg_1 [P=(0,1,0) A1 SS_2] [P=(0,-1,0) G1 SS_0]
+isotriplet_kbar_nucleon Hg_1 [P=(0,1,0) A2 SS_0] [P=(0,-1,0) G1 SS_0]
+isotriplet_kbar_nucleon Hg_1 [P=(0,1,0) A2 SS_1] [P=(0,-1,0) G1 SS_0]
+isotriplet_kbar_nucleon Hg_1 [P=(0,1,1) A2 SS_0] [P=(0,-1,-1) G SS_0]
+isotriplet_kbar_nucleon Hg_1 [P=(0,1,1) A2 SS_1] [P=(0,-1,-1) G SS_0]
+isotriplet_kbar_nucleon Hg_1 [P=(0,2,0) A2 SS_1] [P=(0,-2,0) G1 SS_0]
+isotriplet_kbar_nucleon Hg_1 [P=(1,1,1) A2 SS_0] [P=(-1,-1,-1) G SS_0]
+isotriplet_kbar_nucleon Hg_1 CG_1 [P=(0,0,1) E SS_2] [P=(0,0,-1) G1 SS_0]
+isotriplet_kbar_nucleon Hg_1 CG_1 [P=(0,1,1) A2 SS_0] [P=(0,-1,-1) G SS_0]
+isotriplet_kbar_nucleon Hg_1 CG_1 [P=(0,1,1) A2 SS_1] [P=(0,-1,-1) G SS_0]
+isotriplet_kbar_delta Hg_1 [P=(0,0,1) A2 SS_1] [P=(0,0,-1) G2 SS_0]
+isotriplet_kbar_delta Hg_1 [P=(0,1,0) A2 SS_1] [P=(0,-1,0) G1 SS_0]
+isotriplet_kaon_xi Hg_1 [P=(0,1,0) A2 SS_1] [P=(0,-1,0) G1 SS_0]
+isotriplet_eta_sigma Hg_1 [P=(0,1,0) A2p SS_1] [P=(0,-1,0) G1 SS_0]
