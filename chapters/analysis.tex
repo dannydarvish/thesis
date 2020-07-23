@@ -127,7 +127,14 @@ which can be discretized and estimated as
 \begin{equation}
     -\frac{1}{\Delta t}\left(\ln C(t+\Delta t)-\ln C(t)\right).
 \end{equation}
-The effective energy is designed such that it tends to the fit energy $E$ as $t\rightarrow \infty$. When performing our fits, we are usually visually guided by effective energy plots rather than the correlators themselves, but it is crucial to emphasize that we do not fit the effective energy itself. An example of an effective energy plot is given in Fig.~(\ref{fig:eff_en_ex}). (will include plot when results are finalized.)
+The effective energy is designed such that it tends to the fit energy $E$ as $t\rightarrow \infty$. When performing our fits, we are usually visually guided by effective energy plots rather than the correlators themselves, but it is crucial to emphasize that we do not fit the effective energy itself. An example of an effective energy plot is given in Fig.~(\ref{fig:eff_en_ex}).
+
+\begin{figure}
+    \centering
+    \hspace*{-0.75in}\includegraphics[width=0.6\textwidth]{figures/effmass.pdf}
+    \caption{Example of an effective energy plot. A curve obtained from a two-exponential correlator fit is overlaid, along with horizontal bars above and below the plateau, which depict the confidence interval of the energy of the leading exponential.}\label{fig:eff_en_ex}
+\end{figure}
+
 \section{Error Analysis and Resampling}
 The observables we estimate through direct Monte Carlo measurements on gauge configurations are called \emph{simple} observables. Estimating the variance of simple observables is straightforward via calculating the population variance using the Monte Carlo method. All other observables are called \emph{non-simple} observables. An example of a non-simple observable is a model parameter obtained when we fit a correlator to data points which are themselves averages over many gauge configurations. The way to approach error analysis for non-simple observables is through \emph{resampling} techniques. Resampling involves forming new datasets from an initial dataset in order to estimate properties of how that dataset is distributed. For example, if we wanted to estimate the variance of the mean of some variable $x$, we would need several sets of measurements $\{x\}_i$ from which we can estimate the variance of the mean as
 \begin{equation}
