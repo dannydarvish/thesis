@@ -1,4 +1,5 @@
 \documentclass[12pt]{report}
+% \documentclass[12pt,openright, twoside]{report}
 \usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{array}
@@ -31,9 +32,23 @@
 \newcommand{\threehalves}{\frac{3}{2}}
 \renewcommand{\arraystretch}{1.5}
 
+% \newcommand*{\blankpage}{%
+% \vspace*{\fill}
+% {\centering \textit{(This page intentionally left blank.)}\par}
+% \vspace{\fill}}
+% \makeatletter
+% \renewcommand*{\cleardoublepage}{\clearpage\if@twoside \ifodd\c@page\else
+% \blankpage
+% \thispagestyle{empty}
+% \newpage
+% \if@twocolumn\hbox{}\newpage\fi\fi\fi}  
+% \makeatother
+
+% \linespread{1.213}
 \begin{document}
 \pagenumbering{roman}
 \onehalfspace
+
 \input{title}
 % \doublespace
 % \maketitle

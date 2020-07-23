@@ -9,45 +9,45 @@ Warning--empty booktitle in Lepage:1989hd
 Warning--empty journal in spectroscopy
 Warning--empty year in spectroscopy
 Warning--empty journal in Wilson:1974sk
-You've used 46 entries,
+You've used 47 entries,
             2118 wiz_defined-function locations,
-            808 strings with 12123 characters,
-and the built_in function-call counts, 16086 in all, are:
-= -- 1547
-> -- 858
+            814 strings with 12304 characters,
+and the built_in function-call counts, 16459 in all, are:
+= -- 1581
+> -- 881
 < -- 6
-+ -- 342
-- -- 294
-* -- 1207
-:= -- 2766
-add.period$ -- 139
-call.type$ -- 46
-change.case$ -- 282
++ -- 351
+- -- 302
+* -- 1240
+:= -- 2831
+add.period$ -- 142
+call.type$ -- 47
+change.case$ -- 289
 chr.to.int$ -- 0
-cite$ -- 52
-duplicate$ -- 543
-empty$ -- 1174
-format.name$ -- 294
-if$ -- 3243
+cite$ -- 53
+duplicate$ -- 554
+empty$ -- 1200
+format.name$ -- 302
+if$ -- 3317
 int.to.chr$ -- 0
-int.to.str$ -- 46
-missing$ -- 47
-newline$ -- 234
-num.names$ -- 92
-pop$ -- 239
+int.to.str$ -- 47
+missing$ -- 48
+newline$ -- 239
+num.names$ -- 94
+pop$ -- 244
 preamble$ -- 1
-purify$ -- 238
+purify$ -- 244
 quote$ -- 0
-skip$ -- 370
+skip$ -- 377
 stack$ -- 0
-substring$ -- 1053
-swap$ -- 76
+substring$ -- 1076
+swap$ -- 77
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 180
+type$ -- 184
 warning$ -- 6
-while$ -- 155
-width$ -- 48
-write$ -- 502
+while$ -- 158
+width$ -- 49
+write$ -- 513
 (There were 6 warnings)
