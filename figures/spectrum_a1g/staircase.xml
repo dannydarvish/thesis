@@ -7,8 +7,9 @@
         <Energies>1.4684 1.908 2.051 2.353 2.566 2.802 2.924 2.95 3.18</Energies>
         <Uncertainties>0.0064 0.033 0.074 0.032 0.033 0.025 0.092 0.18 0.13</Uncertainties>
         <!-- <Colors>C0 C0 C0 C0 C0r C0 C0r C0r C0</Colors> -->
-        <Colors>C3 C3 C0 C3 C0 C3 C3 C0 C0</Colors>
-        <Hatched>false false false false false false false true false</Hatched>
+        <!-- <Colors>C3 C3 C0 C3 C0 C3 C3 C0 C0</Colors> -->
+        <Colors>C3 C3 C0/C1 C3 C0/C1 C3 C3 C0 C0</Colors>
+        <Hatched>false false false false false false false false false</Hatched>
         <!-- kpi kpi keta kpi keta kpi kpi keta/kpi keta -->
         <Index>0</Index>
     </Category>
@@ -16,14 +17,15 @@
         <Name>Basis including one tetraquark operator</Name>
         <Energies>1.4685 1.914 1.951 2.139 2.397 2.567 2.79 2.797 2.82 3.291</Energies>
         <Uncertainties>0.0064 0.031 0.096 0.062 0.018 0.033 0.15 0.024 0.16 0.095</Uncertainties>
-        <Colors>C3 C3 C0 C4 C3 C0 C3 C3 C3 C0</Colors>
-        <Hatched>false false true false false false true false false false</Hatched>
+        <!-- <Colors>C3 C3 C0 C4 C3 C0 C3 C3 C3 C0</Colors> -->
+        <Colors>C3 C3 C0/C1 C4 C3 C0/C1 C3 C3 C3 C0</Colors>
+        <Hatched>false false false true false false true false false false</Hatched>
         <!-- kpi kpi keta/tq tq kpi keta kpi kpi kpi keta -->
         <Index>1</Index>
     </Category>
     <Legend>
-        <Colors>C3 C0 C4</Colors>
-        <Labels>$K\pi$ $K\eta$ Tetraquark</Labels>
+        <Colors>C3 C0 C1 C4</Colors>
+        <Labels>$K\pi$ $K\eta$ $K\phi$ Tetraquark</Labels>
     </Legend>
     <LegendLoc>upper left</LegendLoc>
     <NoninteractingLevels>

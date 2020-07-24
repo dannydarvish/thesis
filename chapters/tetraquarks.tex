@@ -32,7 +32,24 @@ There are 81 basis vectors formed by the quark fields, $p_{a}^{*}(x) q_{b}^{*}(x
 \end{equation}
 and so they form a basis with which to construct our elemental tetraquark operators, fulfilling the need for \emph{two} linearly independent color singlet operators from Eq.~(\ref{eq:cg}).
 
-While we chose only a handful of tetraquark operators for our final analysis, we designed hundreds of operators with differing flavor structures, color structures (i.e. the symmetric and antisymmetric combinations of Eq.~(\ref{eq:tsta})), and displacements. We tested these operators by individually adding them to a basis of single- and multi-meson operators to see if an additional level was found in an initial low-statistics analysis on 25 gauge configurations. Most of the operators did not yield an additional level, but we found particular operators that did. In the $\kappa$ channel, we tested the following flavor structures: $\overline s u \overline s s$, $\overline s u \overline u u$, and $\overline s u \overline d u$. We found that only operators with the $\overline s u \overline s s$ flavor structure yielded an additional finite-volume state, and that the additional state was present with both color structures. In our initial low-statistics analysis, we tested both single-site and quadruple displacements, and found operators of both types that seemed to yield additional finite-volume states; however, the quadruply-displaced operators came at a significantly higher computational cost and introduced either additional noise or no improvement, and so were excluded from the final operator sets. In the $a_0(980)$ channel, we tested the following flavor structures: $\overline u u \overline d u$, $\overline s s \overline d u$, and $\overline d u \overline d u$. We found that only operators with the $\overline u u \overline d u$ flavor structure yielded an additional finite-volume state. As in the $\kappa$ channel, we found that both color structures were able to produce an additional level. After finding no improvement with other displacement types in the $\kappa$ channel, we chose to only test single-site operators in the $a_0(980)$ channel. In both channels, we also constructed operator bases that included several tetraquark operators, and found that the number of additional levels in the energy range we examined was unchanged.
+While we chose only a handful of tetraquark operators for our final analysis, we designed hundreds of operators with differing flavor structures, color structures (i.e. the symmetric and antisymmetric combinations of Eq.~(\ref{eq:tsta})), and displacements. We tested these operators by individually adding them to a basis of single- and multi-meson operators to see if an additional level was found in an initial low-statistics analysis on 25 gauge configurations. Most of the operators did not yield an additional level, but we found particular operators that did. In the $\kappa$ channel, we tested several flavor structures, the shorthand representative names of which are: $\overline s u \overline s s$, $\overline s u \overline u u$, and $\overline s u \overline d u$. Table~\ref{table:flavor_structs} gives the relation between these representative flavor structures and the actual flavor content they represent. Moving forward, when we refer to flavor structures, we will use their shorthand names. We found that only operators with the $\overline s u \overline s s$ flavor structure yielded an additional finite-volume state, and that the additional state was present with both color structures. In our initial low-statistics analysis, we tested both single-site and quadruple displacements, and found operators of both types that seemed to yield additional finite-volume states; however, the quadruply-displaced operators came at a significantly higher computational cost and introduced either additional noise or no improvement, and so were excluded from the final operator sets. In the $a_0(980)$ channel, we tested several flavor structures, the shorthand representative names of which are: $\overline u u \overline d u$, $\overline s s \overline d u$, and $\overline d u \overline d u$. We found that only operators with the $\overline u u \overline d u$ flavor structure yielded an additional finite-volume state. As in the $\kappa$ channel, we found that both color structures were able to produce an additional level. After finding no improvement with other displacement types in the $\kappa$ channel, we chose to only test single-site operators in the $a_0(980)$ channel. In both channels, we also constructed operator bases that included several tetraquark operators, and found that the number of additional levels in the energy range we examined was unchanged.
+
+\begin{table}
+  \centering
+  \begin{tabular}{|l|l|}
+    \hline
+    Representative flavor & Flavor content\\
+    \hline
+    $\overline u u \overline d u$ & $(\overline{u} u+\overline{d} d) \overline{d} u$\\
+    $\overline s s \overline d u$ & $\overline s s \overline d u$\\
+    $\overline d u \overline d u$ & $\overline{d} u(\overline{u} u-\overline{d} d)-(\overline{u} u-\overline{d} d) \overline{d} u$\\
+    $\overline s u \overline s s$ & $\overline s u \overline s s$\\
+    $\overline s u \overline u u$ & $\overline{s} u(\overline{u} u+\overline{d} d)$\\
+    $\overline s u \overline d u$ & $\overline{s} u(\overline{u} u-\overline{d} d)-\sqrt{2} \overline{s} d \overline{d} u$\\
+    \hline
+  \end{tabular}
+  \caption{}\label{table:flavor_structs}
+\end{table}
 
 \section{$\kappa$ Channel}
 \subsection{Operator Bases}
@@ -61,7 +78,7 @@ For all results in this chapter, we use the kaon mass as a reference. The fit us
 
 Fits to the diagonalized correlator set for the operator basis containing no tetraquark operators are shown in Fig.~\ref{fig:kappa_no_tq_grid}, and the operator overlap factors are shown in Fig.~\ref{fig:kappa_no_tq_zfactors}. Fit details are given in Table~\ref{table:kappa_no_tq_spectrum}. Recall from Sec.~\ref{sec:correlator_matrices} that we must use more operators in our basis than energies we wish to reliably extract, so there are fewer fits shown than operators used. (This will often be the case throughout this work.) Fits using the same operator basis, but with the addition of the $\overline s u \overline s s$ tetraquark operator, are shown in Fig.~\ref{fig:kappa_with_tq_grid}, and the operator overlap factors are shown in Fig.~\ref{fig:kappa_with_tq_zfactors}. Fit details are given in Tables~\ref{table:kappa_with_tq_spectrum}. We prefer to use two-exponential fits wherever possible, though it is sometimes necessary to use single-exponential fits to achieve precise energy determinations. We choose the beginning of the fit range $t_{\rm{min}}$ by fitting to several values and choosing the earliest value at which the fit value becomes stable, in order to determine when excited state contamination stops altering our result. The end of the fit range $t_{\rm{max}}$ is chosen to be approximately the time at which the principle correlator becomes statistically consistent with zero, since fitting to points with a low signal-to-noise ratio is undesirable.
 
-A plot comparing our determinations of the low-lying spectrum for each basis is shown in Fig~\ref{fig:kappa_spectrum}. The result is clear: including the tetraquark operator yields an additional level at $E/m_K = 2.139(62)$. Without including such a tetraquark operator, we miss an energy level in the spectrum determination. Additionally, we see that the energy determinations for the other levels shift slightly, which is to be expected when one attempts to extract a spectrum with an operator basis that is not sufficiently saturated with operators.~\cite{Dudek:2012xn} Taking a look at the overlap factors, we see that there is significant overlap between this additional level and the state created by the tetraquark operator. This significant result suggests that there is a state in the finite-volume lattice spectrum that shares quantum numbers with the $\kappa$ resonance, and that has tetraquark content.
+A plot comparing our determinations of the low-lying spectrum for each basis is shown in Fig~\ref{fig:kappa_spectrum}. The result is clear: including the tetraquark operator yields an additional level at $E/m_K = 2.139(62)$. Without including such a tetraquark operator, we miss an energy level in the spectrum determination. Additionally, we see that the energy determinations for the other levels shift slightly, which is to be expected when one attempts to extract a spectrum with an operator basis that is not sufficiently saturated with operators.~\cite{Dudek:2012xn} Taking a look at the overlap factors, we see that there is significant overlap between this additional level (level 3) and the state created by the tetraquark operator, as well as significant overlap between this additional level and the state created by the $K(0)\phi(0)$ operator. No other operators create states that significantly overlap onto this tetraquark state. We also see that both of these operators overlap onto the state just below it (level 2), which is very near in energy. Therefore, without the tetraquark operator, the $K(0)\phi(0)$ operator on its own is unable to resolve both levels, and produces a level between the two, as we see in the left spectrum determination of Fig.~\ref{fig:kappa_spectrum}. This significant result suggests that there is a state in the finite-volume lattice spectrum that shares quantum numbers with the $\kappa$ resonance, and that has tetraquark content.
 
 Firm evidence of the $\kappa$ resonance having tetraquark content will have to wait for future scattering studies employing L\"uscher's method~\cite{Luscher:1990ck}, which is a formalism that relates discrete finite-volume spectra to infinite-volume scattering amplitudes. It is worth noting that one such study of the $\kappa$ resonance by Brett et al.~\cite{Brett:2018jqw}, using the same ensemble used here, gave a qualitative determination of the $\kappa$ mass to be $4.66(11)m_\pi$ from an effective range parameterization and $4.59(11)m_\pi$ from  a Breit-Wigner parameterization. Both of these masses are within error of the mass of our additional finite-volume state, which is $4.52(13)m_\pi$ (the pion mass fit used to determine this ratio is shown in Fig.~\ref{fig:pion}). Additionally, the consequences of missing a finite-volume energy such as the one found in this work may be severe for variants of L\"uscher's method that fit scattering parameters by comparing the finite-volume spectrum predicted by a particular scattering amplitude to that obtained on the lattice, such as the method used by the Hadron Spectrum Collaboration in Ref.~\cite{Wilson:2015dqa}. However, for variants of L\"uscher's method that rely on computing scattering parameters from finite-volume energies, such as the determinant residual method~\cite{Morningstar:2017spu} used by Brett et al.\, the consequences should not be as severe.
 
@@ -80,19 +97,6 @@ Firm evidence of the $\kappa$ resonance having tetraquark content will have to w
   \caption{Fits to the reference masses, used in this chapter.}
 \end{figure}
 
-\begin{figure}
-  \centering
-  \hspace*{-0.5in}\includegraphics[width=\textwidth]{figures/spectrum_a1g/staircase.pdf}
-  \caption{On the left: a spectrum obtained in the $\kappa$ channel using the operator basis given in Table~\ref{table:kappa_ops_no_tq}, which contains no tetraquark operators. In the middle: a spectrum obtained in the $\kappa$ channel using the same basis but with the addition of one tetraquark operator. On the right: two-particle non-interacting energies calculated from the rest-frame masses of the constituent particles, up to the point at which we have confidently saturated the basis with two-particle operators. The horizontal dashed line indicates the four-particle $K\pi\pi\pi$ threshold. The color of a level indicates flavor content, determined by finding which operator has the largest overlap factor with that level. If the level has significant overlap with more than one operator (with the smaller overlap being $\geq 70\%$ of the larger overlap), then a hatched box is used to denote significant mixing.}
-  \label{fig:kappa_spectrum}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \hspace*{-0.5in}\includegraphics[width=\textwidth]{figures/spectrum_a1g/staircase_tau_d.pdf}
-  \caption{The spectrum obtained using three different diagonalization times, using the operator basis given in Table~\ref{table:kappa_ops_no_tq} with the addition of the $\overline s u \overline s s$ tetraquark operator.}
-  \label{fig:spectrum_td}
-\end{figure}
 
 \begin{figure}
   \raisebox{-.08cm}{\includegraphics[width=0.336\textwidth]{figures/spectrum_a1g/no_tq/fits/fit_0.pdf}}
@@ -104,7 +108,7 @@ Firm evidence of the $\kappa$ resonance having tetraquark content will have to w
   \raisebox{0.2in}{\includegraphics[width=0.336\textwidth]{figures/spectrum_a1g/no_tq/fits/fit_7.pdf}}
   \raisebox{0.2in}{\includegraphics[width=0.28\textwidth]{figures/spectrum_a1g/no_tq/fits/fit_6.pdf}}
   \raisebox{0.2in}{\includegraphics[width=0.28\textwidth]{figures/spectrum_a1g/no_tq/fits/fit_8.pdf}}
-  \caption{Effective energies for the rotated $11\times 11$ correlator matrix in the $\kappa$ channel, using an operator basis containing no tetraquark operators. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown.}
+  \caption{Effective energies for the rotated $11\times 11$ correlator matrix in the $\kappa$ channel, using the operator basis given in Table~\ref{table:kappa_ops_no_tq}, which contains no tetraquark operators. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown.}
   \label{fig:kappa_no_tq_grid}
 \end{figure}
 
@@ -120,7 +124,7 @@ Firm evidence of the $\kappa$ resonance having tetraquark content will have to w
   \includegraphics[width=0.28\textwidth]{figures/spectrum_a1g/no_tq/zfactors/zfactor_kaon-P000-A1g_1-DDL_2.pdf}\\
   \includegraphics[width=0.304\textwidth]{figures/spectrum_a1g/no_tq/zfactors/zfactor_kaon-P000-A1g_1-TDO_3.pdf}
   \includegraphics[width=0.28\textwidth]{figures/spectrum_a1g/no_tq/zfactors/zfactor_kaon-P000-A1g_1-TDU_5.pdf}
-  \caption{Overlap factors for the rotated $11\times 11$ correlator matrix in the $\kappa$ channel, using an operator basis containing no tetraquark operators.}
+  \caption{Overlap factors for the rotated $11\times 11$ correlator matrix in the $\kappa$ channel, using the operator basis given in Table~\ref{table:kappa_ops_no_tq}, which contains no tetraquark operators.}
   \label{fig:kappa_no_tq_zfactors}
 \end{figure}
 
@@ -139,7 +143,7 @@ Firm evidence of the $\kappa$ resonance having tetraquark content will have to w
 2.95(18)&0.246(15)&1{-}exp&$(9, 19)$&0.97\\
 3.289(96)&0.2746(81)&2{-}exp&$(3, 26)$&1.49
   \end{tabular}
-  \caption{Fit details for the spectrum obtained in the $\kappa$ channel using the operator basis given in Table~\ref{table:kappa_ops_no_tq}, which contains no tetraquark operators.}
+  \caption{Fit details for the estimate of the spectrum obtained in the $\kappa$ channel using the operator basis given in Table~\ref{table:kappa_ops_no_tq}, which contains no tetraquark operators.}
   \label{table:kappa_no_tq_spectrum}
 \end{table}
 
@@ -154,7 +158,7 @@ Firm evidence of the $\kappa$ resonance having tetraquark content will have to w
   \includegraphics[width=0.28\textwidth]{figures/spectrum_a1g/with_tq/fits/fit_6.pdf}
   \includegraphics[width=0.28\textwidth]{figures/spectrum_a1g/with_tq/fits/fit_7.pdf}\\[-0.4cm]
   \includegraphics[width=0.336\textwidth]{figures/spectrum_a1g/with_tq/fits/fit_9.pdf}
-  \caption{Effective energies for the rotated $12\times 12$ correlator matrix in the $\kappa$ channel, using the same operator basis but with the addition of one tetraquark operator. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown.}
+  \caption{Effective energies for the rotated $12\times 12$ correlator matrix in the $\kappa$ channel, using the operator basis given in Table~\ref{table:kappa_ops_no_tq}, but with the addition of one tetraquark operator. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown.}
   \label{fig:kappa_with_tq_grid}
 \end{figure}
 
@@ -171,7 +175,7 @@ Firm evidence of the $\kappa$ resonance having tetraquark content will have to w
   \includegraphics[width=0.304\textwidth]{figures/spectrum_a1g/with_tq/zfactors/zfactor_kaon-P000-A1g_1-DDL_2.pdf}
   \includegraphics[width=0.28\textwidth]{figures/spectrum_a1g/with_tq/zfactors/zfactor_kaon-P000-A1g_1-TDO_3.pdf}
   \includegraphics[width=0.28\textwidth]{figures/spectrum_a1g/with_tq/zfactors/zfactor_kaon-P000-A1g_1-TDU_5.pdf}
-  \caption{Overlap factors for the rotated $12\times 12$ correlator matrix in the $\kappa$ channel, using the same operator basis but with the addition of one tetraquark operator.}
+  \caption{Overlap factors for the rotated $12\times 12$ correlator matrix in the $\kappa$ channel, using the operator basis given in Table~\ref{table:kappa_ops_no_tq}, but with the addition of one tetraquark operator.}
   \label{fig:kappa_with_tq_zfactors}
 \end{figure}
 
@@ -191,13 +195,27 @@ Firm evidence of the $\kappa$ resonance having tetraquark content will have to w
     2.82(16)&0.235(13)&1{-}exp&$(11, 26)$&1.04\\
     3.291(95)&0.2748(80)&2{-}exp&$(3, 26)$&1.5
   \end{tabular}
-  \caption{Fit details for the spectrum obtained in the $\kappa$ channel using the same operator basis but with the addition of one tetraquark operator.}
+  \caption{Fit details for the spectrum obtained in the $\kappa$ channel using the operator basis given in Table~\ref{table:kappa_ops_no_tq}, but with the addition of one tetraquark operator.}
   \label{table:kappa_with_tq_spectrum}
 \end{table}
 
+\begin{figure}
+  \centering
+  \hspace*{-0.5in}\includegraphics[width=\textwidth]{figures/spectrum_a1g/staircase.pdf}
+  \caption{On the left: an estimate of the spectrum obtained in the $\kappa$ channel using the operator basis given in Table~\ref{table:kappa_ops_no_tq}, which contains no tetraquark operators. In the middle: another estimate of the spectrum obtained in the $\kappa$ channel using the same basis but with the addition of one tetraquark operator. On the right: two-particle non-interacting energies calculated from the rest-frame masses of the constituent particles, up to the point at which we have confidently saturated the basis with two-particle operators. The horizontal dashed line indicates the four-particle $K\pi\pi\pi$ threshold. The color of a level indicates flavor content and is qualitatively determined by the overlap factors. If a level's overlap factor is dominant for operators of more than one flavor, then it is multi-colored. If the level also has significant (but not leading) overlap an operator of a different flavor, then a hatched box is used to denote significant mixing.}
+  \label{fig:kappa_spectrum}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \hspace*{-0.5in}\includegraphics[width=\textwidth]{figures/spectrum_a1g/staircase_tau_d.pdf}
+  \caption{Determinations of the spectrum obtained using three different diagonalization times, using the operator basis given in Table~\ref{table:kappa_ops_no_tq}, but with the addition of one tetraquark operator.}
+  \label{fig:spectrum_td}
+\end{figure}
+
 \section{$a_0(980)$ Channel}\label{sec:a0}
 \subsection{Operator Bases}
-The quantum numbers associated with the $a_0(980)$ are $I^G(J^{PC}) = 1^-(0^{++})$ and $S = 0$, which means that on the lattice we work in the isotriplet, nonstrange, $A_{1g}^-$ symmetry sector (see Table~\ref{table:O_occurrence_nums}). Below a cutoff of approximately 1.5 times the mass of the nucleon, near where the $a_0(1450)$ appears, we expect to see two single-hadron states (the $a_0(980)$ and the $a_0(1450)$) and several multi-hadron states. The operator basis we use, not including any tetraquark operators, is shown in Table~\ref{table:a0_ops_no_tq}. We include two single-hadron operators (one triply-displaced and one singly-displaced) in hopes of capturing states corresponding to the $a_0(980)$ and the $a_0(1450)$. We attempted to include a single-site single-hadron operator, but doing so did not produce an operator set that was sufficiently linearly-independent and produced an effective mass that was indicative of a spurious state that was leaking to the ground state. This dramatically affected the spectrum and caused it to be unstable under changes in the diagonalization time. Therefore, the single-site operator was discarded. As will be the case in Ch.~\ref{ch:sigmas}, we make use of so-called \emph{variationally improved} single-hadron operators. We obtain these operators by first diagonalizing in the subspace of single-hadron operators to form linear combinations which overlap more independently onto the single-hadron states of interest, in order to aid in level identification.
+The quantum numbers associated with the $a_0(980)$ are $I^G(J^{PC}) = 1^-(0^{++})$ and $S = 0$, which means that on the lattice we work in the isotriplet, nonstrange, $A_{1g}^-$ symmetry sector (see Table~\ref{table:O_occurrence_nums}). Below a cutoff of approximately 1.5 times the mass of the nucleon, near where the $a_0(1450)$ appears, we expect to see two single-hadron states (the $a_0(980)$ and the $a_0(1450)$) and several multi-hadron states. The operator basis we use, not including any tetraquark operators, is shown in Table~\ref{table:a0_ops_no_tq}. We include two single-hadron operators (one triply-displaced and one singly-displaced) in hopes of capturing states corresponding to the $a_0(980)$ and the $a_0(1450)$. We attempted to include a single-site single-hadron operator, but doing so did not produce an operator set that was sufficiently linearly-independent and produced an effective mass that was indicative of a spurious state that was leaking to the ground state. This dramatically affected our ability to reliably extract the spectrum and caused it to be unstable under changes in the diagonalization time. Therefore, the single-site operator was discarded. As will be the case in Ch.~\ref{ch:sigmas}, we make use of so-called \emph{variationally improved} single-hadron operators. We obtain these operators by first diagonalizing in the subspace of single-hadron operators to form linear combinations with improved overlaps onto the single-hadron states of interest, in order to aid in level identification.
 
 Our final class of tetraquark operators used in this channel were single-site $\overline u u \overline d u$, with both the symmetric and antisymmetric color structures included. The final tetraquark operator chosen was a $\overline u u \overline d u$, symmetric, single-site operator, which we denote as \verb+tquudu3p SS2+. Of the tetraquark operators that produced an additional level, we chose this one due to its high signal quality.
 \begin{table}
@@ -220,13 +238,12 @@ Our final class of tetraquark operators used in this channel were single-site $\
   \label{table:a0_ops_no_tq}
 \end{table}
 \subsection{Spectrum Determination}
-In this channel, we used a normalization time, metric time, and diagonalization time of $\tau_N=3$, $\tau_0=4$, and $\tau_d=7$, respectively. We found these parameters yielded a sufficiently diagonal correlator matrix. Fits to the diagonalized correlator set for the operator basis containing no tetraquark operators are shown in Fig.~\ref{fig:a0_no_tq_grid}, and the operator overlap factors are shown in Fig.~\ref{fig:a0_no_tq_zfactors}. Fit details are given in Table~\ref{table:a0_no_tq_spectrum}. Fits to the same operator basis, but with the addition of the $\overline u u \overline d u$ tetraquark operator, are shown in Fig.~\ref{fig:a0_with_tq_grid}, and the operator overlap factors are shown in Fig.~\ref{fig:a0_with_tq_zfactors}. Fit details are given in Table~\ref{table:a0_with_tq_spectrum}. As in the $\kappa$ channel, Fig.~\ref{fig:a0_spectrum} shows a plot of the spectrum calculated from the basis containing no tetraquark operators and the basis containing and the spectrum calculated from the basis that includes the $\overline u u \overline d u$ tetraquark operator. As in the $\kappa$ channel, we see an additional finite-volume state appear, however we see much more significant shifting of the other levels. We can attempt to explain this as follows. In the spectrum obtained in the basis with the tetraquark operator, there are two $a_0$ states onto which our \verb+ROT 0+ single-hadron operator has overlap, but our second variationally improved operator does not have overlap onto either of these states. The tetraquark operator has \emph{significant} overlap onto the lower of the two $a_0$ states, while the single-hadron operator only has minimal overlap onto it. Therefore, without the tetraquark operator present, the single-hadron operator does its best to produce both $a_0$ states, and we end up measuring a value for one mass between the two actual masses. Once we add in the tetraquark operator, we have sufficiently saturated our basis to reliably resolve both $a_0$ states. This is highly suggestive that the $a_0(980)$ does indeed have significant tetraquark content. As with the $\kappa$ channel, firm evidence for tetraquark content of the $a_0(980)$ resonance in infinite-volume will have to wait for future scattering studies.
-\begin{figure}
-  \centering
-  \hspace*{-0.5in}\includegraphics[width=\textwidth]{figures/spectrum_a1gm/staircase.pdf}
-  \caption{On the left: a spectrum obtained in the $a_0(980)$ channel using the operator basis given in Table~\ref{table:a0_ops_no_tq}, which contains no tetraquark operators. In the middle: a spectrum obtained in the $a_0(980)$ channel using the same basis but with the addition of one tetraquark operator. On the right: two-particle non-interacting energies calculated from the rest-frame masses of the constituent particles, up to the point at which we have confidently saturated the basis with two-particle operators. The horizontal dash line indicates the four-particle $\pi\pi\pi\eta$ threshold. The color of a level indicates flavor content, determined by finding which operator has the largest overlap factor with that level. If the level has significant overlap with more than one operator (with the smaller overlap being $\geq 70\%$ of the larger overlap), then a hatched box is used to denote significant mixing.}
-  \label{fig:a0_spectrum}
-\end{figure}
+In this channel, we used a normalization time, metric time, and diagonalization time of $\tau_N=3$, $\tau_0=4$, and $\tau_d=7$, respectively. We found these parameters yielded a sufficiently diagonal correlator matrix. Fits to the diagonalized correlator set for the operator basis containing no tetraquark operators are shown in Fig.~\ref{fig:a0_no_tq_grid}, and the operator overlap factors are shown in Fig.~\ref{fig:a0_no_tq_zfactors}. Fit details are given in Table~\ref{table:a0_no_tq_spectrum}. Fits to the same operator basis, but with the addition of the $\overline u u \overline d u$ tetraquark operator, are shown in Fig.~\ref{fig:a0_with_tq_grid}, and the operator overlap factors are shown in Fig.~\ref{fig:a0_with_tq_zfactors}. Fit details are given in Table~\ref{table:a0_with_tq_spectrum}.
+
+As in the $\kappa$ channel, Fig.~\ref{fig:a0_spectrum} shows a comparison of our two estimates of the spectrum, one (left) obtained using only the operators in Table~\ref{table:a0_ops_no_tq}, the other (middle) obtained using the operator basis given in Table~\ref{table:a0_ops_no_tq} and the tetraquark operator. As in the $\kappa$ channel, we see an additional finite-volume state appear, however we see much more significant shifting of the other levels. We can attempt to explain this through level identification using the overlap factors in Figs.~\ref{fig:a0_no_tq_zfactors} and \ref{fig:a0_with_tq_zfactors}. In the spectrum obtained using the basis including the tetraquark operator, the ground state (level 0) most overlaps onto $\eta(0)\pi(0)$ and $\phi(0)\pi(0)$ operators, so we identify it as a physical $\pi(0)\eta(0)$ state. (Recall again that a physical $\eta$ meson is an admixture of the $\phi$ and $\eta$ flavor structures we use to define our operators.) Level 1 can clearly be identified as a $\overline K(0) K(0)$ state based on its overlap factor with the $\overline K(0) K(0)$ operator. Level 2 has the most significant overlap with the tetraquark operator, but also has significant mixing with the state created by the $\phi(0)\pi(0)$ operator. Levels 3, 4, 5, and 6 can be clearly identified as having $\phi\pi$, $\phi\pi$, $\overline K K$, and $\pi$ flavor structures, respectively, by inspecting the overlap factors. Importantly, our first variationally improved single-hadron operator \verb+ROT 0+ has a small but nonzero overlap with the tetraquark-dominated state, level 2, but has a leading overlap with level 6. (We will provisionally identify level 2 as the $a_0(980)$ and level 6 as the $a_0(1450)$.) When the tetraquark operator is not included, (see the left in Fig.~\ref{fig:a0_spectrum}), the \verb+ROT 0+ single-hadron operator does its best to produce both $a_0$ states, and we end up measuring a value for one mass between the two actual masses, such as explained in Ref.~\cite{Dudek:2012xn}. Similar shifting occurs in the $\phi\pi$-dominated levels 3 and 4. Once we add in the tetraquark operator, we have sufficiently saturated our basis to reliably resolve both $a_0$ states and accurately determine the spectrum. This significant result suggests that the $a_0(980)$ does indeed have significant tetraquark content. As with the $\kappa$ channel, firm evidence for tetraquark content of the $a_0(980)$ resonance in infinite-volume will have to wait for future scattering studies.
+
+
+% most significantly overlaps onto level 4 (see Fig.~\ref{fig:a0_no_tq_zfactors}), but our second variationally improved operator does not have overlap onto either of these states. The tetraquark operator has \emph{significant} overlap onto the lower of the two $a_0$ states, while the single-hadron operator only has minimal overlap onto it. Therefore, without the tetraquark operator present, the single-hadron operator does its best to produce both $a_0$ states, and we end up measuring a value for one mass between the two actual masses, such as explained in Ref.~\cite{Dudek:2012xn}. Once we add in the tetraquark operator, we have sufficiently saturated our basis to reliably resolve both $a_0$ states. This is highly suggestive that the $a_0(980)$ does indeed have significant tetraquark content. As with the $\kappa$ channel, firm evidence for tetraquark content of the $a_0(980)$ resonance in infinite-volume will have to wait for future scattering studies.
 
 \begin{figure}
   \raisebox{0cm}{\includegraphics[width=0.329\textwidth]{figures/spectrum_a1gm/no_tq/fits/fit_0.pdf}}
@@ -238,7 +255,7 @@ In this channel, we used a normalization time, metric time, and diagonalization 
   \raisebox{-0.00in}{\includegraphics[width=0.329\textwidth]{figures/spectrum_a1gm/no_tq/fits/fit_6.pdf}}
   \includegraphics[width=0.28\textwidth]{figures/spectrum_a1gm/no_tq/fits/fit_7.pdf}
   \includegraphics[width=0.28\textwidth]{figures/spectrum_a1gm/no_tq/fits/fit_8.pdf}\\
-  \caption{Effective energies for the rotated $12\times 12$ correlator matrix in the $a_0(980)$ channel, using an operator basis containing no tetraquark operators. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown. For all effective mass plots in this work, a time step of $\Delta t = 3$ is used for the discretized derivative.}
+  \caption{Effective energies for the rotated $12\times 12$ correlator matrix in the $a_0(980)$ channel, using the operator basis given in Table~\ref{table:a0_ops_no_tq}, which contains no tetraquark operators. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown. For all effective mass plots in this work, a time step of $\Delta t = 3$ is used for the discretized derivative.}
   \label{fig:a0_no_tq_grid}
 \end{figure}
 
@@ -255,7 +272,7 @@ In this channel, we used a normalization time, metric time, and diagonalization 
   \includegraphics[width=0.304\textwidth]{figures/spectrum_a1gm/no_tq/zfactors/zfactor_isotriplet_eta_pion-A1gm_1-P011-A2p-SS_1-P0-1-1-A2m-SS_1.pdf}
   \includegraphics[width=0.28\textwidth]{figures/spectrum_a1gm/no_tq/zfactors/zfactor_isotriplet_kaon_kbar-A1gm_1-P011-A2-SS_0-P0-1-1-A2-SS_0.pdf}
   \includegraphics[width=0.28\textwidth]{figures/spectrum_a1gm/no_tq/zfactors/zfactor_isotriplet_kaon_kbar-A1gm_1-P011-A2-SS_1-P0-1-1-A2-SS_1.pdf}
-  \cprotect\caption{Overlap factors for the rotated $12\times 12$ correlator matrix in the $a_0(980)$ channel, using an operator basis containing no tetraquark operators. Operators labeled by \verb+ROT N+ denote our variationally improved single-hadron operators.}
+  \cprotect\caption{Overlap factors for the rotated $12\times 12$ correlator matrix in the $a_0(980)$ channel, using the operators in Table~\ref{table:a0_ops_no_tq}, which contains no tetraquark operators. Operators labeled by \verb+ROT N+ denote our variationally improved single-hadron operators.}
   \label{fig:a0_no_tq_zfactors}
 \end{figure}
 
@@ -274,7 +291,7 @@ In this channel, we used a normalization time, metric time, and diagonalization 
     2.971(32)&0.2480(26)&2{-}exp&$(4, 26)$&1.66\\
     5.00(39)&0.417(33)&1{-}exp&$(8, 18)$&1.23
   \end{tabular}
-  \caption{Fit details for the spectrum obtained in the $a_0(980)$ channel using the operator basis given in Table~\ref{table:a0_ops_no_tq}, which contains no tetraquark operators.}
+  \caption{Fit details for the determination of the spectrum obtained in the $a_0(980)$ channel, using the operator basis given in Table~\ref{table:a0_ops_no_tq}, which contains no tetraquark operators.}
   \label{table:a0_no_tq_spectrum}
 \end{table}
 
@@ -289,7 +306,7 @@ In this channel, we used a normalization time, metric time, and diagonalization 
   \includegraphics[width=0.28\textwidth]{figures/spectrum_a1gm/with_tq/fits/fit_7.pdf}
   \includegraphics[width=0.28\textwidth]{figures/spectrum_a1gm/with_tq/fits/fit_8.pdf}\\[-0.4cm]
   \includegraphics[width=0.329\textwidth]{figures/spectrum_a1gm/with_tq/fits/fit_9.pdf}
-  \caption{Effective energies for the rotated $13\times 13$ correlator matrix in the $a_0(980)$ channel, using the same operator basis but with the addition of one tetraquark operator. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown.}
+  \caption{Effective energies for the rotated $13\times 13$ correlator matrix in the $a_0(980)$ channel, using the operator basis given in Table~\ref{table:a0_ops_no_tq}, but with the addition of one tetraquark operator. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown.}
   \label{fig:a0_with_tq_grid}
 \end{figure}
 
@@ -307,7 +324,7 @@ In this channel, we used a normalization time, metric time, and diagonalization 
   \includegraphics[width=0.22\textwidth]{figures/spectrum_a1gm/with_tq/zfactors/zfactor_isotriplet_eta_pion-A1gm_1-P011-A2p-SS_1-P0-1-1-A2m-SS_1.pdf}
   \includegraphics[width=0.22\textwidth]{figures/spectrum_a1gm/with_tq/zfactors/zfactor_isotriplet_kaon_kbar-A1gm_1-P011-A2-SS_0-P0-1-1-A2-SS_0.pdf}\\[-0.2cm]
   \includegraphics[width=0.24\textwidth]{figures/spectrum_a1gm/with_tq/zfactors/zfactor_isotriplet_kaon_kbar-A1gm_1-P011-A2-SS_1-P0-1-1-A2-SS_1.pdf}
-  \cprotect\caption{Overlap factors for the rotated $13\times 13$ correlator matrix in the $a_0(980)$ channel, using the same operator basis given in Table~\ref{table:a0_ops_no_tq}, with the addition of one tetraquark operator. Operators labeled by \verb+ROT N+ denote our variationally improved single-hadron operators.}
+  \cprotect\caption{Overlap factors for the rotated $13\times 13$ correlator matrix in the $a_0(980)$ channel, using the operator basis given in Table~\ref{table:a0_ops_no_tq}, but with the addition of one tetraquark operator. Operators labeled by \verb+ROT N+ denote our variationally improved single-hadron operators.}
   \label{fig:a0_with_tq_zfactors}
 \end{figure}
 
@@ -327,6 +344,13 @@ In this channel, we used a normalization time, metric time, and diagonalization 
     2.964(35)&0.2475(29)&2{-}exp&$(4, 26)$&1.64\\
     5.01(39)&0.418(33)&1{-}exp&$(8, 18)$&1.25
   \end{tabular}
-  \caption{Fit details for the spectrum obtained in the $a_0(980)$ channel using the operator basis given in Table~\ref{table:a0_ops_no_tq}, with the addition of one tetraquark operator.}
+  \caption{Fit details for the spectrum obtained in the $a_0(980)$ channel using the operator basis given in Table~\ref{table:a0_ops_no_tq}, but with the addition of one tetraquark operator.}
   \label{table:a0_with_tq_spectrum}
 \end{table}
+
+\begin{figure}
+  \centering
+  \hspace*{-0.5in}\includegraphics[width=\textwidth]{figures/spectrum_a1gm/staircase.pdf}
+  \caption{On the left: an estimate of the spectrum obtained in the $a_0(980)$ channel using the operator basis given in Table~\ref{table:a0_ops_no_tq}, which contains no tetraquark operators. In the middle: another estimate of the spectrum obtained in the $a_0(980)$ channel using the same basis but with the addition of one tetraquark operator. On the right: two-particle non-interacting energies calculated from the rest-frame masses of the constituent particles, up to the point at which we have confidently saturated the basis with two-particle operators. The horizontal dash line indicates the four-particle $\pi\pi\pi\eta$ threshold. The color of a level indicates flavor content and is qualitatively determined by the overlap factors. If a level's overlap factor is dominant for operators of more than one flavor, then it is multi-colored. If the level also has significant (but not leading) overlap an operator of a different flavor, then a hatched box is used to denote significant mixing.}
+  \label{fig:a0_spectrum}
+\end{figure}
