@@ -1,4 +1,8 @@
 In this chapter, we present results on the finite-volume spectrum of $\Sigma$ baryons in several $I=1$, $S=-1$ symmetry sectors, namely $G_{1g}$, $G_{1u}$, $H_u$, $H_g$, $G_{2g}$, and $G_{2u}$. We have constructed correlator matrices from large bases of single- and two-hadron operators, which allows us to more accurately determine the spectrum than in previous works. We compare our results to experimentally observed $\Sigma$ resonances, and compare to a previous work using a smaller lattice, heavier pion, and no two-hadron operators.
+
+The $\Sigma$ baryons are unstable resonances. However, lattice QCD Monte Carlo results are obtained in finite volume.  In finite volume, only the energies of the finite-volume stationary states can be determined.  To deduce the spectrum of resonances from the finite-volume energies would require a technique similar to that employed by L\"uscher~\cite{Luscher:1990ck} but extended beyond two-particle thresholds.  Such a technique does not yet exist and would be prohibitively difficult to carry out.  Our goal here is much more humble.  We wish mainly to identify the finite-volume states produced primarily by three-quark single baryon operators.  The energies of such states are expected to fall near the resonance energies of the $\Sigma$ baryons which are predominantly three-quark excitations.  The narrower the resonance, the closer our estimates should be.  In other words, our results should be viewed as a qualitative study of the resonance spectrum.  Note that resonances which are primarily ``molecular'' in nature cannot be determined in this way.  Futhermore, our use of an unphysical light quark mass to make the calculations practical will cause further deviations from experiment.
+
+All past studies~\cite{Edwards:2012fx, Bulava:2009jb, Bulava:2010yg, Edwards:2011jj} suffer from these same flaws.  However, all past studies have only used single baryon operators.  This study is the first to also use meson-baryon operators, significantly improving the spectrum determination.
 \section{Ensemble}
 Ensemble details are identical to those described in Sec.~\ref{sec:ensemble}.
 \section{$G_{1g}$ Spectrum}
@@ -6,7 +10,7 @@ The isotriplet, $S=-1$, $G_{1g}$ symmetry channel is parity-positive and contain
 
 In general, we start with a large basis of operators, and \emph{prune} out those which are either too noisy or not sufficiently linearly independent. For the single-hadron operators, we started with a large basis 16 operators, and pruned our set down to just 7. For the two-hadron operators, we started with a basis of 25 operators, and pruned our set down to just 21. The final basis of single- and two-hadron operators used to extract the spectrum in this channel is given in Table~\ref{table:g1g_ops}. Just as in Sec.~\ref{sec:a0}, we make use of variationally improved single-hadron operators. That is, we first diagonalize in the subspace of single-hadron operators to form linear combinations which overlap more independently onto the single-hadron states of interest, in order to aid in level identification. We found that a normalization time, metric time, and diagonalization time of $\tau_N=3$, $\tau_0=4$, and $\tau_d=7$ ensured that the rotated correlator matrix remained sufficiently diagonal. It is important to note that while $\eta\Sigma$ two-hadron operators are included, there is no corresponding $\phi\Sigma$ operator, so we expect to miss a two-hadron state. This will be the case in every channel in this chapter.
 
-\begin{table}
+\begin{table}[H]
     \centering
     \begin{tabular}{l|l}
         \textbf{Single-Hadron Operators} & \textbf{Two-Hadron Operators} \\
@@ -35,26 +39,26 @@ In general, we start with a large basis of operators, and \emph{prune} out those
     \end{tabular}
     \caption{Operators used in the isotriplet $S=-1$ $G_{1g}$ symmetry sector.}\label{table:g1g_ops}
 \end{table}
-The spectrum obtained in terms of the kaon mass (obtained from the fit given in Ch.~\ref{ch:tetraquarks}) is shown in Fig.~\ref{fig:g1g_spectrum}. Correlator fits are shown in Fig.~\ref{fig:g1g_fits}, and fit details are given in Table~\ref{table:g1g_fits}. A comparison of the experimentally observed resonances in this channel to the low-lying single-hadron-dominated states we obtain from the lattice is shown in Fig.~\ref{fig:g1g_exp}. Because we do not expect to reliably extract the masses of the highest few levels, we do not include the highest two single-hadron-dominated states in our comparison to experiment, and their energy determinations should not taken too seriously. When comparing results to experiment, we use the nucleon mass (obtained from the fit shown in Fig.~\ref{fig:nucleon_fit}) as a reference, since it is more sensitive than the kaon mass to the unphysically heavy pion. However, we are able to determine the kaon mass with better precision, so we use it as a reference in our full spectrum plots, e.g. Fig~\ref{fig:g1g_spectrum}. Our findings seem to agree well with previous lattice results by Edwards et al.~\cite{Edwards:2012fx}, shown in Fig.~\ref{fig:edwards}, produced using a $16^3$ lattice with a pion mass of $m_\pi \approx 391$ MeV and no two-hadron operators. In the Edwards paper, they see one low-lying state, corresponding to the physical $\Sigma$, and four slightly higher closely spaced states. Above that grouping of four states, there are additional states, some of which we see, though we do not go high enough in energy to compare to their full spectrum.
+The spectrum obtained in terms of the kaon mass (obtained from the fit given in Ch.~\ref{ch:tetraquarks}) is shown in Fig.~\ref{fig:g1g_spectrum}. Correlator fits are shown in Fig.~\ref{fig:g1g_fits}, and fit details are given in Table~\ref{table:g1g_fits}. A qualitative attempt at level identification is made by determining, for each operator, which level overlaps maximally with the state created by that operator. Additionally, we are interested in operators which have significant but non-maximal overlaps onto a given state, which can inform us about mixing. Mixing is important since we expect a resonance to have overlap onto not only states created by single-hadron operators, but also states corresponding to potential decay products. A comparison of the experimentally observed resonances in this channel to the low-lying single-hadron-dominated states we obtain from the lattice is shown in Fig.~\ref{fig:g1g_exp}. Because we do not expect to reliably extract the masses of the highest few levels, we do not include the highest two single-hadron-dominated states in our comparison to experiment, and their energy determinations should be viewed as being much less reliable. When comparing results to experiment, we use the nucleon mass (obtained from the fit shown in Fig.~\ref{fig:nucleon_fit}) as a reference, since it is more sensitive than the kaon mass to the unphysically heavy pion. However, we are able to determine the kaon mass with better precision, so we use it as a reference in our full spectrum plots, e.g. Fig~\ref{fig:g1g_spectrum}. Our findings seem to agree qualitatively with previous lattice results by Edwards et al.\ in Ref.~\cite{Edwards:2012fx}, shown in Fig.~\ref{fig:edwards}, produced using a $16^3$ lattice with a pion mass of $m_\pi \approx 391$ MeV and no two-hadron operators. In Ref.~\cite{Edwards:2012fx}, they found one low-lying state, corresponding to the physical $\Sigma$, and four higher nearly-degenerate states with two less well determined levels just above the four levels. We find the same pattern: one low-lying level, with four higher well-determined nearly-degenerate levels, and two more states nearby but not well determined.
 
-In comparing our results to experiment, we see qualitative agreement in energy: A well-determined ground state corresponding to the physical $\Sigma$ and several states above it near in energy to the $\Sigma(1660)$ and the $\Sigma(2030)$. Our results are certainly affected by our unphysically heavy pion and the fact that we are comparing infinite-volume resonances to their finite-volume stationary-state counterpart, however, so we should not expect rigorous agreement. Additionally, as will be the case in many of the other channels in this chapter, we do not find agreement between the number of single-hadron-dominated states on the lattice and the number of resonances seen in experiment in the same energy range. This should not come as a surprise, for three reasons. Firstly, we are comparing rather broad resonances, which are states whose $S$-matrix poles appear off the real energy axis, to finite-volume stationary states whose energies lie on the real axis. Therefore, we do not have a reason to expect perfect one-to-one agreement between the number of infinite-volume resonances seen and the number of finite-volume stationary states observed, except perhaps for very narrow resonances. Secondly, the problem of ``missing resonances''~\cite{Koniuk:1979vw} has long been an issue; the number of baryon resonances predicted by quark models has long disagreed with the number seen in experiment. In Ref.~\cite{Koniuk:1979vw}, Koniuk and Isgur attempt to explain this by claiming that over half of all predicted resonances are too inelastic to be easily seen. Thirdly, our identification scheme is such that every linearly-dependent operator will identify one state in the spectrum onto which it most overlaps. Therefore, as long as we can find more and more linearly dependent single-hadron operators, we will find more and more single-hadron-dominated states. However, since we have not exhausted all possible multi-hadron operators in our spectrum (we do not, for example, include any three-or-more-hadron operators), our takeaway should be that we are not able to draw a direct correspondence between the number of linearly independent single-hadron operators we find and the actual number of single-hadron-dominated states that exist in finite-volume.
+In comparing our results to experiment, we see qualitative agreement in energy: A well-determined ground state corresponding to the physical $\Sigma$ and several states above it near in energy to the $\Sigma(1660)$ and the $\Sigma(2030)$. Our results are certainly affected by our unphysically heavy pion and the fact that we are comparing infinite-volume resonances to their finite-volume stationary-state counterpart, however, so we should not expect rigorous agreement. Additionally, as will be the case in many of the other channels in this chapter, we do not find agreement between the number of single-hadron-dominated states on the lattice and the number of resonances seen in experiment in the same energy range. This should not come as a surprise, however. The problem of ``missing resonances''~\cite{Koniuk:1979vw} has long been an issue; the number of baryon resonances predicted by quark models has long disagreed with the number seen in experiment. In Ref.~\cite{Koniuk:1979vw}, Koniuk and Isgur attempt to explain this by claiming that over half of all predicted resonances are too inelastic to be easily seen.
 
 \begin{figure}[H]
     \centering
     \hspace*{-0.5in}\includegraphics[width=\textwidth]{figures/sigmas/g1g/staircase_mk.pdf}
-    \caption{The full spectrum for the isotriplet $S=-1$ $G_{1g}$ channel, obtained by fitting the energies and overlap factors of the diagonalized correlator matrix. A qualitative attempt at level identification is made by determining, for each operator, which level overlaps maximally with the state created by that operator. If a level does not overlap maximally with the any operator's state, we denote its flavor content as ``N/A''. Because we expect a single-hadron resonance to have significant overlap with potential decay products, we also use hatching to denote any level which has an overlap of $\geq 70\%$ of the maximum overlap with a single-hadron operator. The vertical dashed line indicates the point beyond which our energy extractions are too high to be reliable.}\label{fig:g1g_spectrum}
+    \caption[The spectrum for the isotriplet $S=-1$ $G_{1g}$ channel, obtained by fitting the energies and overlap factors of the diagonalized correlator matrix.]{The spectrum for the isotriplet $S=-1$ $G_{1g}$ channel, obtained by fitting the energies and overlap factors of the diagonalized correlator matrix. A qualitative attempt at level identification is made by determining, for each operator, which level overlaps maximally with the state created by that operator. If a level does not overlap maximally with any operator's state, we denote its flavor content as ``N/A''. Because we expect a single-hadron resonance to have significant overlap with potential decay products, we also use hatching to denote any level which has an overlap of $\geq 70\%$ of the maximum overlap with a single-hadron operator. The vertical dashed line indicates the point beyond which our energy extractions are too high to be reliable.}\label{fig:g1g_spectrum}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \hspace*{-1cm}\includegraphics[width=0.8\textwidth]{figures/edwards.pdf}
-    \caption{Observed single-hadron states on a $16^3$ lattice with a pion mass of $m_\pi \approx 391$, sorted by $J^P$ quantum numbers, from Ref.~\cite{Edwards:2012fx}. Colors indicate SU(3)-flavor irrep, which we do not identify.}\label{fig:edwards}
+    \caption[Observed single-hadron states on a $16^3$ lattice with a pion mass of $m_\pi \approx 391$, sorted by $J^P$ quantum numbers, from Ref.~\cite{Edwards:2012fx}.]{Observed single-hadron states on a $16^3$ lattice with a pion mass of $m_\pi \approx 391$, sorted by $J^P$ quantum numbers, from Ref.~\cite{Edwards:2012fx}. Colors indicate SU(3)-flavor irrep, which we do not identify.}\label{fig:edwards}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{figures/sigmas/g1g/expvslat.pdf}
-    \caption{Experimentally observed resonances compared with the finite-volume single-hadron-dominated stationary states we obtain from the lattice, in terms of the nucleon mass. For the experimental states, dark bands indicate experimental uncertainty and light bands indicate decay widths.}\label{fig:g1g_exp}
+    \caption[Experimentally observed resonances compared with the finite-volume single-hadron-dominated stationary states we obtain from the lattice in $G_{1g}$, in terms of the nucleon mass.]{Experimentally observed resonances compared with the finite-volume single-hadron-dominated stationary states we obtain from the lattice, in terms of the nucleon mass. For the experimental states, dark bands indicate experimental uncertainty and light bands indicate decay widths.}\label{fig:g1g_exp}
 \end{figure}
 
 \begin{figure}[H]
@@ -84,7 +88,7 @@ In comparing our results to experiment, we see qualitative agreement in energy: 
     \includegraphics[width=0.18\textwidth]{figures/sigmas/g1g/fits/fit_18.pdf}
     \includegraphics[width=0.18\textwidth]{figures/sigmas/g1g/fits/fit_25.pdf}\\[-0.35cm]
     \includegraphics[width=0.215\textwidth]{figures/sigmas/g1g/fits/fit_24.pdf}
-    \caption{Effective energies for the rotated $28\times 28$ correlator matrix in the isotriplet $S=-1$ $G_{1g}$ symmetry channel. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown. The nucleon mass is used as a reference.}\label{fig:g1g_fits}
+    \caption[Effective energies for the rotated $28\times 28$ correlator matrix in the isotriplet $S=-1$ $G_{1g}$ symmetry channel.]{Effective energies for the rotated $28\times 28$ correlator matrix in the isotriplet $S=-1$ $G_{1g}$ symmetry channel. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown. The nucleon mass is used as a reference.}\label{fig:g1g_fits}
 \end{figure}
 
 \begin{figure}[H]
@@ -116,10 +120,10 @@ In comparing our results to experiment, we see qualitative agreement in energy: 
     \includegraphics[width=.1975\textwidth]{figures/sigmas/g1g/zfactors/zfactor_isotriplet_pion_sigma-G1g_1-P001-A2m-SS_1-P00-1-G1-SS_2.pdf}
     \hspace*{-0.06cm}\includegraphics[width=.185\textwidth]{figures/sigmas/g1g/zfactors/zfactor_isotriplet_pion_sigma-G1g_1-P011-A2m-SS_0-P0-1-1-G-SS_1.pdf}
     \hspace*{-0.06cm}\includegraphics[width=.185\textwidth]{figures/sigmas/g1g/zfactors/zfactor_isotriplet_pion_sigma-G1g_1-P111-A2m-SS_0-P-1-1-1-G-SS_4.pdf}
-    \caption{Overlap factors for the rotated $28\times 28$ correlator matrix in the isotriplet $S=-1$ $G_{1g}$ symmetry channel.}\label{fig:g1g_zfactors}
+    \caption{Overlap factors for the operators used in the rotated $28\times 28$ correlator matrix in the isotriplet $S=-1$ $G_{1g}$ symmetry channel.}\label{fig:g1g_zfactors}
 \end{figure}
 \renewcommand{\arraystretch}{1.2}
-\begin{table}
+\begin{table}[H]
     \centering
     \begin{tabu}{c|c|c|c|c}
         $E / E_N$ & $a_t E$ & Fit model & $(t_{\mathrm{min}}, {t_\mathrm{max}})$ & $\chi^2 / \rm{d.o.f.}$\\
@@ -160,7 +164,7 @@ In comparing our results to experiment, we see qualitative agreement in energy: 
         2.63(22)&0.471(25)&1{-}exp&$(6, 15)$&0.51 \\
         3.02(18)&0.5411(75)&1{-}exp&$(3, 15)$&3.5 \\
     \end{tabu}
-    \caption{Fit details for the spectrum obtained in the isotriplet $S=-1$ $G_{1g}$ symmetry channel using the operator basis given in Table~\ref{table:g1g_ops}. Single-hadron-dominated energies are shown in red.}\label{table:g1g_fits}
+    \caption[Fit details for the spectrum obtained in the isotriplet $S=-1$ $G_{1g}$ symmetry channel using the operator basis given in Table~\ref{table:g1g_ops}.]{Fit details for the spectrum obtained in the isotriplet $S=-1$ $G_{1g}$ symmetry channel using the operator basis given in Table~\ref{table:g1g_ops}. Single-hadron-dominated energies are shown in red.}\label{table:g1g_fits}
 \end{table}
 \renewcommand{\arraystretch}{1.5}
 
@@ -173,8 +177,8 @@ In comparing our results to experiment, we see qualitative agreement in energy: 
 \section{$G_{1u}$ Spectrum}
 The isotriplet, $S=-1$, $G_{1u}$ symmetry channel is parity-negative and contains spins $\frac{1}{2}$, $\frac{7}{2}$, $\frac{9}{2}$, and beyond. In this channel, the only experimental resonance we expect to see is the spin-$\frac{1}{2}$ $\Sigma(1750)$. We also expect to see many multi-hadron states. We started with a basis of 10 single-hadron operators and pruned down to just 6. For the two-hadron operators, we started with a basis of 24 operators and pruned down to 20. The final basis of single- and two-hadron operators used to extract the spectrum in this channel is given in Table~\ref{table:g1u_ops}. We found that a normalization time, metric time, and diagonalization time of $\tau_N=3$, $\tau_0=4$, and $\tau_d=8$ ensured that the correlator matrix remained sufficiently diagonal.
 
-The spectrum obtained in terms of the kaon mass is shown in Fig.~\ref{fig:g1u_spectrum}. Correlator fits are shown in Fig.~\ref{fig:g1u_fits}, and fit details are given in Table~\ref{table:g1u_fits}. A comparison of the experimentally observed $\Sigma(1750)$ resonance to the low-lying single-hadron-dominated states we obtain from the lattice is shown in Fig.~\ref{fig:g1u_exp}. As in the $G_{1g}$ channel, we do not include every single-hadron state that we extract, since we do not expect to reliably extract the masses of the higher lying states in a given channel. Our findings again seem to agree well with the results from Ref.~\cite{Edwards:2012fx}, shown in Fig.~\ref{fig:edwards}. In the Edwards paper, they see three low-lying single-hadron states close together, followed by several higher lying states. In our comparison to experiment, we see decent agreement between the experimentally observed $\Sigma(1750)$ and our three lower lying single-hadron-dominated states.
-\begin{table}
+The spectrum obtained in terms of the kaon mass is shown in Fig.~\ref{fig:g1u_spectrum}. Correlator fits are shown in Fig.~\ref{fig:g1u_fits}, and fit details are given in Table~\ref{table:g1u_fits}. A comparison of the experimentally observed $\Sigma(1750)$ resonance to the low-lying single-hadron-dominated states we obtain from the lattice is shown in Fig.~\ref{fig:g1u_exp}. As in the $G_{1g}$ channel, we do not include every single-hadron state that we extract, since we do not expect to reliably extract the masses of the higher lying states in a given channel. Our findings again seem to agree well with the results from Ref.~\cite{Edwards:2012fx}, shown in Fig.~\ref{fig:edwards}. In the Ref.~\cite{Edwards:2012fx}, they see three low-lying single-hadron states close together, followed by several higher lying states. In our comparison to experiment, we see decent agreement between the experimentally observed $\Sigma(1750)$ and our three lower lying single-hadron-dominated states.
+\begin{table}[H]
     \centering
     \begin{tabular}{l|l}
         \textbf{Single-Hadron Operators} & \textbf{Two-Hadron Operators} \\
@@ -206,13 +210,13 @@ The spectrum obtained in terms of the kaon mass is shown in Fig.~\ref{fig:g1u_sp
 \begin{figure}[H]
     \centering
     \hspace*{-0.5in}\includegraphics[width=\textwidth]{figures/sigmas/g1u/staircase_mk.pdf}
-    \caption{The full spectrum for the isotriplet $S=-1$ $G_{1u}$ channel, obtained by fitting the energies and overlap factors of the diagonalized correlator matrix. An explanation of the plot features is given in the caption of Fig.~\ref{fig:g1g_spectrum}.}\label{fig:g1u_spectrum}
+    \caption[The spectrum for the isotriplet $S=-1$ $G_{1u}$ channel, obtained by fitting the energies and overlap factors of the diagonalized correlator matrix.]{The spectrum for the isotriplet $S=-1$ $G_{1u}$ channel, obtained by fitting the energies and overlap factors of the diagonalized correlator matrix. An explanation of the plot features is given in the caption of Fig.~\ref{fig:g1g_spectrum}.}\label{fig:g1u_spectrum}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{figures/sigmas/g1u/expvslat.pdf}
-    \caption{The only experimentally observed resonance we expect to see in this channel compared to the finite-volume single-hadron-dominated stationary states we obtain from the lattice, in terms of the nucleon mass. For the experimental states, dark bands indicate experimental uncertainty and light bands indicate decay widths.}\label{fig:g1u_exp}
+    \caption[The only experimentally observed resonance we expect to see in $G_{1u}$ compared to the finite-volume single-hadron-dominated stationary states we obtain from the lattice, in terms of the nucleon mass.]{The only experimentally observed resonance we expect to see in this channel compared to the finite-volume single-hadron-dominated stationary states we obtain from the lattice, in terms of the nucleon mass. For the experimental states, dark bands indicate experimental uncertainty and light bands indicate decay widths.}\label{fig:g1u_exp}
 \end{figure}
 
 \begin{figure}[H]
@@ -240,7 +244,7 @@ The spectrum obtained in terms of the kaon mass is shown in Fig.~\ref{fig:g1u_sp
     \includegraphics[width=0.18\textwidth]{figures/sigmas/g1u/fits/fit_19.pdf}
     \includegraphics[width=0.18\textwidth]{figures/sigmas/g1u/fits/fit_21.pdf}
     \includegraphics[width=0.18\textwidth]{figures/sigmas/g1u/fits/fit_23.pdf}
-    \caption{Effective energies for the rotated $26\times 26$ correlator matrix in the isotriplet $S=-1$ $G_{1u}$ symmetry channel. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown. The nucleon mass is used as a reference.}\label{fig:g1u_fits}
+    \caption[Effective energies for the rotated $26\times 26$ correlator matrix in the isotriplet $S=-1$ $G_{1u}$ symmetry channel.]{Effective energies for the rotated $26\times 26$ correlator matrix in the isotriplet $S=-1$ $G_{1u}$ symmetry channel. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown. The nucleon mass is used as a reference.}\label{fig:g1u_fits}
 \end{figure}
 
 \begin{figure}[H]
@@ -270,7 +274,7 @@ The spectrum obtained in terms of the kaon mass is shown in Fig.~\ref{fig:g1u_sp
     \hspace{-0.1cm}\includegraphics[width=0.185\textwidth]{figures/sigmas/g1u/zfactors/zfactor_isotriplet_pion_sigma-G1u_1-P001-A2m-SS_1-P00-1-G1-SS_0.pdf}
     \includegraphics[width=0.18\textwidth]{figures/sigmas/g1u/zfactors/zfactor_isotriplet_pion_sigma-G1u_1-P001-A2m-SS_1-P00-1-G1-SS_2.pdf}\\[-0.3cm]
     \hspace*{-0.1cm}\includegraphics[width=0.205\textwidth]{figures/sigmas/g1u/zfactors/zfactor_isotriplet_pion_sigma-G1u_1-P011-A2m-SS_0-P0-1-1-G-SS_1.pdf}
-    \caption{Overlap factors for the rotated $26\times 26$ correlator matrix in the isotriplet $S=-1$ $G_{1u}$ symmetry channel.}\label{fig:g1u_zfactors}
+    \caption{Overlap factors for the operators used in the rotated $26\times 26$ correlator matrix in the isotriplet $S=-1$ $G_{1u}$ symmetry channel.}\label{fig:g1u_zfactors}
 \end{figure}
 
 \renewcommand{\arraystretch}{1.2}
@@ -312,62 +316,58 @@ The spectrum obtained in terms of the kaon mass is shown in Fig.~\ref{fig:g1u_sp
         3.25(24)&0.582(25)&1{-}exp&$(4, 10)$&2.02\\
         3.60(22)&0.644(14)&1{-}exp&$(3, 10)$&2.42\\
     \end{tabu}
-    \caption{Fit details for the spectrum obtained in the isotriplet $S=-1$ $G_{1u}$ symmetry channel using the operator basis given in Table~\ref{table:g1u_ops}. Single-hadron-dominated energies are shown in red.}\label{table:g1u_fits}
+    \caption[Fit details for the spectrum obtained in the isotriplet $S=-1$ $G_{1u}$ symmetry channel using the operator basis given in Table~\ref{table:g1u_ops}.]{Fit details for the spectrum obtained in the isotriplet $S=-1$ $G_{1u}$ symmetry channel using the operator basis given in Table~\ref{table:g1u_ops}. Single-hadron-dominated energies are shown in red.}\label{table:g1u_fits}
 \end{table}
 \renewcommand{\arraystretch}{1.5}
 \newpage
 \section{$H_g$ Spectrum}
 The isotriplet, $S=-1$, $H_g$ symmetry channel is parity-positive and contains spins $\frac{3}{2}$, $\frac{5}{2}$, $\frac{7}{2}$, and beyond. In addition to many multi-hadron states, we expect to see the experimentally observed $\Sigma(1385)$, $\Sigma(1915)$, and $\Sigma(2030)$ resonances, which have spins $\frac{3}{2}$, $\frac{5}{2}$, and $\frac{7}{2}$, respectively. Our initial basis contained 15 single-hadron operators, from which we pruned down to 10. We started with 33 two-hadron operators, all of which survived the pruning process and made it into the final set. The final basis of single- and two-hadron operators used to extract the spectrum in this channel is given in Table~\ref{table:hg_ops}. The normalization time, metric time, and diagonalization time used were $\tau_N=3$, $\tau_0=4$, and $\tau_d=7$. 
 
-The spectrum obtained in terms of the kaon mass is shown in Fig.~\ref{fig:hg_spectrum}. Correlator fits are shown in Figs.~\ref{fig:hg_fits1} and~\ref{fig:hg_fits2}, and fit details are given in Table~\ref{table:hg_fits}. A comparison of the experimentally observed states in this channel to the low-lying single-hadron-dominated states we obtain from the lattice is shown in Fig.~\ref{fig:hg_exp}. As before, we do not include all of the single-hadron states in this comparison, since we cannot reliably extract the higher lying states in the spectrum. The first three single-hadron-dominated states lattice states agree within error to the experimentally observed resonances in this channel. Such a comparison cannot be taken too seriously without an extrapolation to the physical pion mass, however, which we do not do here. Our findings differ slightly from those of Edwards et al. Comparing Fig.~\ref{fig:edwards} to Fig.~\ref{fig:hg_spectrum}, we find agreement in observing an isolated low-lying state corresponding to the $\Sigma(1385)$. Above that, Edwards et al.\ see two closely grouped states, followed by a host of other states above those. In contrast to seeing two closely grouped states above the ground state, we see only see one isolated single-hadron-dominated state in that region. (Above this region, we also see several other states.) We, however, see a very nearby two-hadron state with significant single-hadron mixing. This illustrates the necessity of using multi-hadron operators when performing an analysis such as this.
-\begin{longtable}{l|l}
-        \textbf{Single-Hadron Operators} & \textbf{Two-Hadron Operators} \\
+The spectrum obtained in terms of the kaon mass is shown in Fig.~\ref{fig:hg_spectrum}. Correlator fits are shown in Figs.~\ref{fig:hg_fits1} and~\ref{fig:hg_fits2}, and fit details are given in Tables~\ref{table:hg_fits1} and \ref{table:hg_fits2}. A comparison of the experimentally observed states in this channel to the low-lying single-hadron-dominated states we obtain from the lattice is shown in Fig.~\ref{fig:hg_exp}. As before, we do not include all of the single-hadron states in this comparison, since we cannot reliably extract the higher lying states in the spectrum. The first three single-hadron-dominated states lattice states agree within error to the experimentally observed resonances in this channel. Such a comparison cannot be taken too seriously without an extrapolation to the physical pion mass, however, which we do not do here. Our findings differ slightly from those of Ref.~\cite{Edwards:2012fx}. Comparing Fig.~\ref{fig:edwards} to Fig.~\ref{fig:hg_spectrum}, we find agreement in observing an isolated low-lying state corresponding to the $\Sigma(1385)$. Above that, Ref.~\cite{Edwards:2012fx} sees two closely grouped states, followed by a host of other states above those. In contrast to seeing two closely grouped states above the ground state, we see only one isolated single-hadron-dominated state in that region. (Above this region, we also see several other states.) We, however, see a very nearby two-hadron state with significant single-hadron mixing. This illustrates the necessity of using multi-hadron operators when performing an analysis such as this.
+\begin{table}[H]
+    \centering
+    \begin{tabular}{l|l|l}
+        \textbf{Single-Hadron Operators} & \textbf{Two-Hadron Operators} & \textbf{Two-Hadron Operators cont.}\\
         \hline
-        $\Sigma_{H_g}^{DDI29}$ & $\pi(0)_{A_{1u}^-}^{SS0}\Lambda(0)_{H_u}^{SD37}$\\
-        $\Sigma_{H_g}^{DDI31}$ & $\pi(0)_{A_{1u}^-}^{SS0}\Lambda(0)_{H_u}^{SS0}$\\
-        $\Sigma_{H_g}^{DDI42}$ & $\pi(1)_{A_2^-}^{SS1}\Lambda(1)_{G_2}^{LSD1}$\\
-        $\Sigma_{H_g}^{DDL94}$ & $\pi(1)_{A_2^-}^{SS0}\Lambda(1)_{G_1}^{SS1}$\\
-        $\Sigma_{H_g}^{SD35}$ & $\pi(1)_{A_2^-}^{SS1}\Lambda(1)_{G_1}^{SS1}$\\
-        $\Sigma_{H_g}^{SD47}$ & $\pi(1)_{A_2^-}^{SS1}\Lambda(1)_{G_1}^{SS2}$\\
-        $\Sigma_{H_g}^{SS1}$ & $\pi(1)_{A_2^-}^{SS1}\Lambda(1)_{G_1}^{SS6}$\\
-        $\Sigma_{H_g}^{TDT135}$ & $\pi(2)_{A_2^-}^{SS0}\Lambda(2)_{G}^{SS0}$\\
-        $\Sigma_{H_g}^{TDT156}$ & $\pi(2)_{A_2^-}^{SS1}\Lambda(2)_{G}^{SS0}$\\
-        $\Sigma_{H_g}^{TDT3}$ & $\pi(3)_{A_2^-}^{SS0}\Lambda(3)_{G}^{SS0}$\\
-         & $\pi(0)_{A_{1u}^-}^{SS0}\Sigma(0)_{H_u}^{SS2}$\\
-         & $\pi(1)_{A_2^-}^{SS1}\Sigma(1)_{G_2}^{SS0}$\\
-         & $\pi(1)_{A_2^-}^{SS0}\Sigma(1)_{G_1}^{SS0}$\\
-         & $\pi(1)_{A_2^-}^{SS1}\Sigma(1)_{G_1}^{SS0}$\\
-         & $\pi(1)_{A_2^-}^{SS1}\Sigma(1)_{G_1}^{SS2}$\\
-         & $\pi(2)_{A_2^-}^{SS0}\Sigma(2)_{G}^{SS1}$\\
-         & $\pi(2)_{A_2^-}^{SS1}\Sigma(2)_{G}^{SS1}$\\
-         & $\pi(3)_{A_2^-}^{SS0}\Sigma(3)_{G}^{SS4}$\\
-         & $\overline K(1)_{E}^{SS2}N(1)_{G_1}^{SS0}$\\
-         & $\overline K(1)_{A_1}^{SS2}N(1)_{G_1}^{SS0}$\\
-         & $\overline K(1)_{A_2}^{SS0}N(1)_{G_1}^{SS0}$\\
-         & $\overline K(1)_{A_2}^{SS1}N(1)_{G_1}^{SS0}$\\
-         & $\overline K(2)_{A_2}^{SS0}N(2)_{G}^{SS0}$\\
-         & $\overline K(2)_{A_2}^{SS1}N(2)_{G}^{SS0}$\\
-         & $\overline K(4)_{A_2}^{SS1}N(4)_{G_1}^{SS0}$\\
-         & $\overline K(3)_{A_2}^{SS0}N(3)_{G}^{SS0}$\\
-         & $\overline K(1)_{E}^{SS2}N(1)_{G_1}^{SS0}$\\
-         & $\overline K(2)_{A_2}^{SS0}N(2)_{G}^{SS0}$\\
-         & $\overline K(2)_{A_2}^{SS1}N(2)_{G}^{SS0}$\\
-         & $\overline K(1)_{A_2}^{SS1}\Delta(1)_{G_2}^{SS0}$\\
-         & $\overline K(1)_{A_2}^{SS1}\Delta(1)_{G_1}^{SS0}$\\
-         & $K(1)_{A_2}^{SS1}\Xi(1)_{G_1}^{SS0}$\\
-         & $\eta(1)_{A_2^+}^{SS1}\Sigma(1)_{G_1}^{SS0}$\\
-         \caption{Operators used in the isotriplet $S=-1$ $H_g$ symmetry sector.}\label{table:hg_ops}
-\end{longtable}
+        $\Sigma_{H_g}^{DDI29}$ & $\pi(0)_{A_{1u}^-}^{SS0}\Lambda(0)_{H_u}^{SD37}$ & $\overline K(1)_{E}^{SS2}N(1)_{G_1}^{SS0}$\\
+        $\Sigma_{H_g}^{DDI31}$ & $\pi(0)_{A_{1u}^-}^{SS0}\Lambda(0)_{H_u}^{SS0}$ & $\overline K(2)_{A_2}^{SS0}N(2)_{G}^{SS0}$\\
+        $\Sigma_{H_g}^{DDI42}$ & $\pi(1)_{A_2^-}^{SS1}\Lambda(1)_{G_2}^{LSD1}$ & $\overline K(2)_{A_2}^{SS1}N(2)_{G}^{SS0}$\\
+        $\Sigma_{H_g}^{DDL94}$ & $\pi(1)_{A_2^-}^{SS0}\Lambda(1)_{G_1}^{SS1}$ & $\overline K(1)_{A_2}^{SS1}\Delta(1)_{G_2}^{SS0}$\\
+        $\Sigma_{H_g}^{SD35}$ & $\pi(1)_{A_2^-}^{SS1}\Lambda(1)_{G_1}^{SS1}$ & $\overline K(1)_{A_2}^{SS1}\Delta(1)_{G_1}^{SS0}$\\
+        $\Sigma_{H_g}^{SD47}$ & $\pi(1)_{A_2^-}^{SS1}\Lambda(1)_{G_1}^{SS2}$ & $K(1)_{A_2}^{SS1}\Xi(1)_{G_1}^{SS0}$\\
+        $\Sigma_{H_g}^{SS1}$ & $\pi(1)_{A_2^-}^{SS1}\Lambda(1)_{G_1}^{SS6}$ & $\eta(1)_{A_2^+}^{SS1}\Sigma(1)_{G_1}^{SS0}$\\
+        $\Sigma_{H_g}^{TDT135}$ & $\pi(2)_{A_2^-}^{SS0}\Lambda(2)_{G}^{SS0}$ & \\
+        $\Sigma_{H_g}^{TDT156}$ & $\pi(2)_{A_2^-}^{SS1}\Lambda(2)_{G}^{SS0}$ &\\
+        $\Sigma_{H_g}^{TDT3}$ & $\pi(3)_{A_2^-}^{SS0}\Lambda(3)_{G}^{SS0}$ &\\
+        & $\pi(0)_{A_{1u}^-}^{SS0}\Sigma(0)_{H_u}^{SS2}$ &\\
+        & $\pi(1)_{A_2^-}^{SS1}\Sigma(1)_{G_2}^{SS0}$ &\\
+        & $\pi(1)_{A_2^-}^{SS0}\Sigma(1)_{G_1}^{SS0}$ &\\
+        & $\pi(1)_{A_2^-}^{SS1}\Sigma(1)_{G_1}^{SS0}$ &\\
+        & $\pi(1)_{A_2^-}^{SS1}\Sigma(1)_{G_1}^{SS2}$ &\\
+        & $\pi(2)_{A_2^-}^{SS0}\Sigma(2)_{G}^{SS1}$ &\\
+        & $\pi(2)_{A_2^-}^{SS1}\Sigma(2)_{G}^{SS1}$ &\\
+        & $\pi(3)_{A_2^-}^{SS0}\Sigma(3)_{G}^{SS4}$ &\\
+        & $\overline K(1)_{E}^{SS2}N(1)_{G_1}^{SS0}$ &\\
+        & $\overline K(1)_{A_1}^{SS2}N(1)_{G_1}^{SS0}$ &\\
+        & $\overline K(1)_{A_2}^{SS0}N(1)_{G_1}^{SS0}$ &\\
+        & $\overline K(1)_{A_2}^{SS1}N(1)_{G_1}^{SS0}$ &\\
+         & $\overline K(2)_{A_2}^{SS0}N(2)_{G}^{SS0}$ &\\
+         & $\overline K(2)_{A_2}^{SS1}N(2)_{G}^{SS0}$ &\\
+         & $\overline K(4)_{A_2}^{SS1}N(4)_{G_1}^{SS0}$ &\\
+         & $\overline K(3)_{A_2}^{SS0}N(3)_{G}^{SS0}$ &\\
+    \end{tabular}
+    \caption{Operators used in the isotriplet $S=-1$ $H_g$ symmetry sector.}\label{table:hg_ops}
+\end{table}
 \begin{figure}[H]
     \centering
     \hspace*{-0.5in}\includegraphics[width=\textwidth]{figures/sigmas/hg/staircase_mk.pdf}
-    \caption{The full spectrum for the isotriplet $S=-1$ $H_g$ channel, obtained by fitting the energies and overlap factors of the diagonalized correlator matrix. An explanation of the plot features is given in the caption of Fig.~\ref{fig:g1g_spectrum}.}\label{fig:hg_spectrum}
+    \caption[The spectrum for the isotriplet $S=-1$ $H_g$ channel, obtained by fitting the energies and overlap factors of the diagonalized correlator matrix.]{The spectrum for the isotriplet $S=-1$ $H_g$ channel, obtained by fitting the energies and overlap factors of the diagonalized correlator matrix. An explanation of the plot features is given in the caption of Fig.~\ref{fig:g1g_spectrum}.}\label{fig:hg_spectrum}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{figures/sigmas/hg/expvslat.pdf}
-    \caption{Experimentally observed resonances compared with the finite-volume single-hadron-dominated stationary states we obtain from the lattice, in terms of the nucleon mass. For the experimental states, dark bands indicate experimental uncertainty and light bands indicate decay widths.}\label{fig:hg_exp}
+    \caption[Experimentally observed resonances compared with the finite-volume single-hadron-dominated stationary states we obtain from the lattice in $H_g$, in terms of the nucleon mass.]{Experimentally observed resonances compared with the finite-volume single-hadron-dominated stationary states we obtain from the lattice, in terms of the nucleon mass. For the experimental states, dark bands indicate experimental uncertainty and light bands indicate decay widths.}\label{fig:hg_exp}
 \end{figure}
 
 \begin{figure}[H]
@@ -401,7 +401,7 @@ The spectrum obtained in terms of the kaon mass is shown in Fig.~\ref{fig:hg_spe
     \includegraphics[width=0.18\textwidth]{figures/sigmas/hg/fits/fit_39.pdf}
     \includegraphics[width=0.18\textwidth]{figures/sigmas/hg/fits/fit_27.pdf}
     \includegraphics[width=0.18\textwidth]{figures/sigmas/hg/fits/fit_29.pdf}
-    \caption{The first 30 effective energies for the rotated $43\times 43$ correlator matrix in the isotriplet $S=-1$ $H_g$ symmetry channel. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown. The nucleon mass is used as a reference.}\label{fig:hg_fits1}
+    \caption[The first 30 effective energies for the rotated $43\times 43$ correlator matrix in the isotriplet $S=-1$ $H_g$ symmetry channel.]{The first 30 effective energies for the rotated $43\times 43$ correlator matrix in the isotriplet $S=-1$ $H_g$ symmetry channel. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown. The nucleon mass is used as a reference.}\label{fig:hg_fits1}
 \end{figure}
 
 \begin{figure}[H]
@@ -418,7 +418,7 @@ The spectrum obtained in terms of the kaon mass is shown in Fig.~\ref{fig:hg_spe
     \includegraphics[width=0.215\textwidth]{figures/sigmas/hg/fits/fit_36.pdf}
     \includegraphics[width=0.18\textwidth]{figures/sigmas/hg/fits/fit_37.pdf}
     \includegraphics[width=0.18\textwidth]{figures/sigmas/hg/fits/fit_41.pdf}
-    \caption{The rest of the effective energies for the rotated $43\times 43$ correlator matrix in the isotriplet $S=-1$ $H_g$ symmetry channel. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown. The nucleon mass is used as a reference.}\label{fig:hg_fits2}
+    \caption[The rest of the effective energies for the rotated $43\times 43$ correlator matrix in the isotriplet $S=-1$ $H_g$ symmetry channel.]{The rest of the effective energies for the rotated $43\times 43$ correlator matrix in the isotriplet $S=-1$ $H_g$ symmetry channel. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown. The nucleon mass is used as a reference.}\label{fig:hg_fits2}
 \end{figure}
 
 \begin{figure}[H]
@@ -474,7 +474,9 @@ The spectrum obtained in terms of the kaon mass is shown in Fig.~\ref{fig:hg_spe
 
 \newpage
 \renewcommand{\arraystretch}{1.2}
-\begin{longtabu}{c|c|c|c|c}
+\begin{table}[H]
+    \centering
+    \begin{tabu}{c|c|c|c|c}
         $E / E_N$ & $a_t E$ & Fit model & $(t_{\mathrm{min}}, {t_\mathrm{max}})$ & $\chi^2 / \rm{d.o.f.}$\\
         \hline
         \rowfont{\color{red}}
@@ -508,7 +510,16 @@ The spectrum obtained in terms of the kaon mass is shown in Fig.~\ref{fig:hg_spe
         \rowfont{\color{red}}
         2.35(19)&0.421(26)&2{-}exp&$(3, 16)$&0.32 \\
         \rowfont{\color{red}}
-        2.37(16)&0.425(14)&1{-}exp&$(7, 19)$&1.37 \\
+        2.37(16)&0.425(14)&1{-}exp&$(7, 19)$&1.37
+    \end{tabu}
+    \caption[Fit details for the first 27 fits in the spectrum obtained in the isotriplet $S=-1$ $H_g$ symmetry channel using the operator basis given in Table~\ref{table:hg_ops}.]{Fit details for the first 27 fits in the spectrum obtained in the isotriplet $S=-1$ $H_g$ symmetry channel using the operator basis given in Table~\ref{table:hg_ops}. Single-hadron-dominated energies are shown in red.}\label{table:hg_fits1}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabu}{c|c|c|c|c}
+        $E / E_N$ & $a_t E$ & Fit model & $(t_{\mathrm{min}}, {t_\mathrm{max}})$ & $\chi^2 / \rm{d.o.f.}$\\
+        \hline
         2.38(21)&0.426(29)&1{-}exp&$(7, 15)$&1.06 \\
         2.39(14)&0.428(12)&1{-}exp&$(7, 15)$&0.28 \\
         2.43(15)&0.435(13)&1{-}exp&$(7, 16)$&0.85 \\
@@ -530,15 +541,16 @@ The spectrum obtained in terms of the kaon mass is shown in Fig.~\ref{fig:hg_spe
         \rowfont{\color{red}}
         3.03(20)&0.542(15)&1{-}exp&$(5, 15)$&1.35 \\
         3.48(31)&0.622(42)&1{-}exp&$(6, 14)$&2.16 \\
-    \caption{Fit details for the spectrum obtained in the isotriplet $S=-1$ $H_g$ symmetry channel using the operator basis given in Table~\ref{table:hg_ops}. Single-hadron-dominated energies are shown in red.}\label{table:hg_fits}
-\end{longtabu}
+    \end{tabu}
+    \caption[Fit details for the rest of the fits in the spectrum obtained in the isotriplet $S=-1$ $H_g$ symmetry channel using the operator basis given in Table~\ref{table:hg_ops}.]{Fit details for the rest of the fits in the spectrum obtained in the isotriplet $S=-1$ $H_g$ symmetry channel using the operator basis given in Table~\ref{table:hg_ops}. Single-hadron-dominated energies are shown in red.}\label{table:hg_fits2}
+\end{table}
 \renewcommand{\arraystretch}{1.5}
 
 \newpage
 \section{$H_u$ Spectrum}
 The isotriplet, $S=-1$, $H_u$ symmetry channel is parity-negative and consists of spins $\frac{3}{2}$, $\frac{5}{2}$, $\frac{7}{2}$, and beyond. In addition to many multi-hadron states, we expect to see the experimentally observed $\Sigma(1670)$, $\Sigma(1775)$, and $\Sigma(1940)$, which have spins $\frac{3}{2}$, $\frac{5}{2}$, and $\frac{3}{2}$, respectively. Our initial basis contained 14 single-hadron operators, and we pruned down to a set of just 7. We started with 27 two-hadron operators, and pruned down to 25. The final basis of single- and two-hadron operators used to extract the spectrum in this channel is given in Table~\ref{table:hu_ops}. The normalization time, metric time, and diagonalization time used were $\tau_N=3$, $\tau_0=4$, and $\tau_d=8$.
 
-The spectrum obtained in terms of the kaon mass is shown in Fig.~\ref{fig:hu_spectrum}. A comparison to the experimentally observed states in this channel to the low-lying single-hadron-dominated states we obtain from the lattice is shown in Fig.~\ref{fig:hu_exp}. As in previous channels, higher lying states which we cannot reliably extract are excluded from this plot. We observe statistical agreement between the first three experimental resonances and the first three single-hadron-dominated finite-volume states in our spectrum. Again, we cannot take such a comparison too seriously without a physical-point extrapolation of the pion mass. The pattern of single-hadron-dominated states we observe also seems to qualitatively agree with that obtained by Edwards et al.: We see four low-lying states, followed by higher-lying states in a region where we cannot confidently extract the spectrum.
+The spectrum obtained in terms of the kaon mass is shown in Fig.~\ref{fig:hu_spectrum}. A comparison to the experimentally observed states in this channel to the low-lying single-hadron-dominated states we obtain from the lattice is shown in Fig.~\ref{fig:hu_exp}. As in previous channels, higher lying states which we cannot reliably extract are excluded from this plot. We observe statistical agreement between the first three experimental resonances and the first three single-hadron-dominated finite-volume states in our spectrum. Again, we cannot take such a comparison too seriously without a physical-point extrapolation of the pion mass. The pattern of single-hadron-dominated states we observe also seems to qualitatively agree with that obtained by Ref.~\cite{Edwards:2012fx}: We see four low-lying states, followed by higher-lying states in a region where we cannot confidently extract the spectrum.
 
 \begin{table}[H]
     \centering
@@ -577,13 +589,13 @@ The spectrum obtained in terms of the kaon mass is shown in Fig.~\ref{fig:hu_spe
 \begin{figure}[H]
     \centering
     \hspace*{-0.5in}\includegraphics[width=\textwidth]{figures/sigmas/hu/staircase_mk.pdf}
-    \caption{The full spectrum for the isotriplet $S=-1$ $H_u$ channel, obtained by fitting the energies and overlap factors of the diagonalized correlator matrix. An explanation of the plot features is given in the caption of Fig.~\ref{fig:g1g_spectrum}.}\label{fig:hu_spectrum}
+    \caption[The spectrum for the isotriplet $S=-1$ $H_u$ channel, obtained by fitting the energies and overlap factors of the diagonalized correlator matrix.]{The spectrum for the isotriplet $S=-1$ $H_u$ channel, obtained by fitting the energies and overlap factors of the diagonalized correlator matrix. An explanation of the plot features is given in the caption of Fig.~\ref{fig:g1g_spectrum}.}\label{fig:hu_spectrum}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{figures/sigmas/hu/expvslat.pdf}
-    \caption{Experimentally observed resonances compared with the finite-volume single-hadron-dominated stationary states we obtain from the lattice, in terms of the nucleon mass. For the experimental states, dark bands indicate experimental uncertainty and light bands indicate decay widths.}\label{fig:hu_exp}
+    \caption[Experimentally observed resonances compared with the finite-volume single-hadron-dominated stationary states we obtain from the lattice in $H_u$, in terms of the nucleon mass.]{Experimentally observed resonances compared with the finite-volume single-hadron-dominated stationary states we obtain from the lattice, in terms of the nucleon mass. For the experimental states, dark bands indicate experimental uncertainty and light bands indicate decay widths.}\label{fig:hu_exp}
 \end{figure}
 
 \begin{figure}[H]
@@ -617,14 +629,14 @@ The spectrum obtained in terms of the kaon mass is shown in Fig.~\ref{fig:hu_spe
     \includegraphics[width=0.18\textwidth]{figures/sigmas/hu/fits/fit_27.pdf}
     \includegraphics[width=0.18\textwidth]{figures/sigmas/hu/fits/fit_26.pdf}
     \includegraphics[width=0.18\textwidth]{figures/sigmas/hu/fits/fit_24.pdf}
-    \caption{The first 30 effective energies for the rotated $32\times 32$ correlator matrix in the isotriplet $S=-1$ $H_u$ symmetry channel. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown. The nucleon mass is used as a reference.}\label{fig:hu_fits1}
+    \caption[The first 30 effective energies for the rotated $32\times 32$ correlator matrix in the isotriplet $S=-1$ $H_u$ symmetry channel. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown.]{The first 30 effective energies for the rotated $32\times 32$ correlator matrix in the isotriplet $S=-1$ $H_u$ symmetry channel. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown. The nucleon mass is used as a reference.}\label{fig:hu_fits1}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.215\textwidth]{figures/sigmas/hu/fits/fit_28.pdf}
     \includegraphics[width=0.18\textwidth]{figures/sigmas/hu/fits/fit_31.pdf}
-    \caption{The last two effective energies for the rotated $32\times 32$ correlator matrix in the isotriplet $S=-1$ $H_u$ symmetry channel. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown. The nucleon mass is used as a reference.}\label{fig:hu_fits2}
+    \caption[The last two effective energies for the rotated $32\times 32$ correlator matrix in the isotriplet $S=-1$ $H_u$ symmetry channel.]{The last two effective energies for the rotated $32\times 32$ correlator matrix in the isotriplet $S=-1$ $H_u$ symmetry channel. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown. The nucleon mass is used as a reference.}\label{fig:hu_fits2}
 \end{figure}
 
 \begin{figure}[H]
@@ -669,7 +681,9 @@ The spectrum obtained in terms of the kaon mass is shown in Fig.~\ref{fig:hu_spe
 \end{figure}
 
 \renewcommand{\arraystretch}{1.2}
-\begin{longtabu}{c|c|c|c|c}
+\begin{table}[H]
+    \centering
+    \begin{tabu}{c|c|c|c|c}
         $E / E_N$ & $a_t E$ & Fit model & $(t_{\mathrm{min}}, {t_\mathrm{max}})$ & $\chi^2 / \rm{d.o.f.}$\\
         \hline
         1.82(11)&0.3255(84)&1{-}exp&$(11, 25)$&1.19 \\
@@ -709,58 +723,62 @@ The spectrum obtained in terms of the kaon mass is shown in Fig.~\ref{fig:hu_spe
         2.93(17)&0.524(13)&1{-}exp&$(5, 20)$&1.37 \\ 
         \rowfont{\color{red}}
         3.20(20)&0.573(17)&1{-}exp&$(5, 15)$&0.7 \\
-        4.52(31)&0.809(30)&1{-}exp&$(3, 12)$&1.49 \\
-    \caption{Fit details for the spectrum obtained in the isotriplet $S=-1$ $H_u$ symmetry channel using the operator basis given in Table~\ref{table:hg_ops}. Single-hadron-dominated energies are shown in red.}\label{table:hu_fits}
-\end{longtabu}
+        4.52(31)&0.809(30)&1{-}exp&$(3, 12)$&1.49
+    \end{tabu}
+    \caption[Fit details for the spectrum obtained in the isotriplet $S=-1$ $H_u$ symmetry channel using the operator basis given in Table~\ref{table:hg_ops}.]{Fit details for the spectrum obtained in the isotriplet $S=-1$ $H_u$ symmetry channel using the operator basis given in Table~\ref{table:hg_ops}. Single-hadron-dominated energies are shown in red.}\label{table:hu_fits}
+\end{table}
 \renewcommand{\arraystretch}{1.5}
 
 \section{$G_{2g}$ Spectrum}
 The isotriplet, $S=-1$, $G_{2g}$ symmetry channel is parity-positive and contains spins $\frac{5}{2}$, $\frac{7}{2}$, and beyond. Aside from the usual group of multi-hadron states, we expect to see the experimentally-observed $\Sigma(1915)$ and $\Sigma(2030)$, which have spins $\frac{5}{2}$ and $\frac{7}{2}$, respectively. Our initial basis contained 12 single-hadron operators, from which we formed a set of 7 pruned operators. We began with 27 two-hadron operators, all of which survived the pruning process. The final basis of operators used extract the spectrum in this channel is given in Table~\ref{table:g2g_ops}. The normalization time, metric time, and diagonalization time used were $\tau_N=3$, $\tau_0=4$, and $\tau_d=7$.
 
-The spectrum obtained in terms of the kaon mass is shown in Fig~\ref{fig:g2g_spectrum}. Correlator fits are shown in Figs.~\ref{fig:g2g_fits1} and \ref{fig:g2g_fits2}, and fit details are given in Table~\ref{table:g2g_fits}. A comparison of the experimentally observed states in this channel to the low-lying single-hadron-dominated states we obtain from the lattice is shown in Fig.~\ref{fig:g2g_exp}. We do not include the highest single-hadron-dominated state, since it is too high to be reliably determined. We find agreement within error between the experimental states and the lowest two single-hadron-dominated states. As before, there are many other single-hadron-dominated states we see. Comparing to Edwards et al., we do not find good agreement between our single-hadron spectrum and theirs, though as previously mentioned, they use a heavier pion than we do, and do not make use of two-hadron operators.
-\begin{longtable}{l|l}
-    \textbf{Single-Hadron Operators} & \textbf{Two-Hadron Operators} \\
-    \hline
-    $\Sigma_{G_{2g}}^{DDI11}$ & $\pi(1)_{A_2^-}^{SS1}\Lambda(1)_{G_2}^{LSD1}$\\
-    $\Sigma_{G_{2g}}^{DDI2}$ & $\pi(1)_{E^+}^{SS1}\Lambda(1)_{G_1}^{SS1}$\\
-    $\Sigma_{G_{2g}}^{DDI8}$ & $\pi(2)_{A_2^-}^{SS0}\Lambda(2)_{G}^{SS0}$\\
-    $\Sigma_{G_{2g}}^{DDL24}$ & $\pi(2)_{A_2^-}^{SS0}\Lambda(2)_{G}^{SS1}$\\
-    $\Sigma_{G_{2g}}^{DDL36}$ & $\pi(2)_{A_2^-}^{SS1}\Lambda(2)_{G}^{SS0}$\\
-    $\Sigma_{G_{2g}}^{SD12}$ & $\pi(3)_{A_2^-}^{SS0}\Lambda(3)_{G}^{SS0}$\\
-    $\Sigma_{G_{2g}}^{TDT29}$ & $\pi(0)_{A_{1u}^-}^{SS0}\Sigma(0)_{G_{2u}}^{SD8}$\\
-    & $\pi(1)_{A_2^-}^{SS1}\Sigma(1)_{G_2}^{SS0}$\\
-    & $\pi(1)_{A_2^-}^{SS1}\Sigma(1)_{G_2}^{SS1}$\\
-    & $\pi(2)_{A_2^-}^{SS0}\Sigma(2)_{G}^{SS17}$\\
-    & $\pi(2)_{A_2^-}^{SS0}\Sigma(2)_{G}^{SS18}$\\
-    & $\pi(2)_{A_2^-}^{SS0}\Sigma(2)_{G}^{SS1}$\\
-    & $\pi(2)_{A_2^-}^{SS1}\Sigma(2)_{G}^{SS1}$\\
-    & $\pi(3)_{A_2^-}^{SS0}\Sigma(3)_{G}^{SS4}$\\
-    & $\overline K(1)_{E}^{SS2}N(1)_{G_1}^{SS0}$\\
-    & $\overline K(2)_{A_1}^{SS3}N(2)_{G}^{SS0}$\\
-    & $\overline K(2)_{A_2}^{SS0}N(2)_{G}^{SS0}$\\
-    & $\overline K(2)_{A_2}^{SS1}N(2)_{G}^{SS0}$\\
-    & $\overline K(2)_{B_1}^{SS1}N(2)_{G}^{SS0}$\\
-    & $\overline K(2)_{B_2}^{SS3}N(2)_{G}^{SS0}$\\
-    & $\overline K(3)_{A_2}^{SS0}N(3)_{G}^{SS0}$\\
-    & $\overline K(1)_{A_2}^{SS0}\Delta(1)_{G_2}^{SS0}$\\
-    & $\overline K(1)_{A_2}^{SS1}\Delta(1)_{G_2}^{SS0}$\\
-    & $\overline K(2)_{A_2}^{SS0}\Delta(2)_{G}^{SS0}$\\
-    & $\overline K(2)_{A_2}^{SS1}\Delta(2)_{G}^{SS0}$\\
-    & $\eta(1)_{A_2^+}^{SS1}\Sigma(1)_{G_2}^{SS0}$\\
-    & $\eta(2)_{A_2^+}^{SS0}\Sigma(2)_{G}^{SS1}$\\
-    \caption{Operators used in the isotriplet $S=-1$ $G_{2g}$ symmetry sector.}\label{table:g2g_ops}
-\end{longtable}
+The spectrum obtained in terms of the kaon mass is shown in Fig~\ref{fig:g2g_spectrum}. Correlator fits are shown in Figs.~\ref{fig:g2g_fits1} and \ref{fig:g2g_fits2}, and fit details are given in Table~\ref{table:g2g_fits}. A comparison of the experimentally observed states in this channel to the low-lying single-hadron-dominated states we obtain from the lattice is shown in Fig.~\ref{fig:g2g_exp}. We do not include the highest single-hadron-dominated state, since it is too high to be reliably determined. We find agreement within error between the experimental states and the lowest two single-hadron-dominated states. As before, there are many other single-hadron-dominated states we see. Comparing to Ref.~\cite{Edwards:2012fx}, we do not find good agreement between our single-hadron spectrum and theirs, though as previously mentioned, they use a heavier pion than we do, and do not make use of two-hadron operators.
 
+\begin{table}[H]
+    \centering
+    \begin{tabular}{l|l}
+        \textbf{Single-Hadron Operators} & \textbf{Two-Hadron Operators} \\
+        \hline
+        $\Sigma_{G_{2g}}^{DDI11}$ & $\pi(1)_{A_2^-}^{SS1}\Lambda(1)_{G_2}^{LSD1}$\\
+        $\Sigma_{G_{2g}}^{DDI2}$ & $\pi(1)_{E^+}^{SS1}\Lambda(1)_{G_1}^{SS1}$\\
+        $\Sigma_{G_{2g}}^{DDI8}$ & $\pi(2)_{A_2^-}^{SS0}\Lambda(2)_{G}^{SS0}$\\
+        $\Sigma_{G_{2g}}^{DDL24}$ & $\pi(2)_{A_2^-}^{SS0}\Lambda(2)_{G}^{SS1}$\\
+        $\Sigma_{G_{2g}}^{DDL36}$ & $\pi(2)_{A_2^-}^{SS1}\Lambda(2)_{G}^{SS0}$\\
+        $\Sigma_{G_{2g}}^{SD12}$ & $\pi(3)_{A_2^-}^{SS0}\Lambda(3)_{G}^{SS0}$\\
+        $\Sigma_{G_{2g}}^{TDT29}$ & $\pi(0)_{A_{1u}^-}^{SS0}\Sigma(0)_{G_{2u}}^{SD8}$\\
+        & $\pi(1)_{A_2^-}^{SS1}\Sigma(1)_{G_2}^{SS0}$\\
+        & $\pi(1)_{A_2^-}^{SS1}\Sigma(1)_{G_2}^{SS1}$\\
+        & $\pi(2)_{A_2^-}^{SS0}\Sigma(2)_{G}^{SS17}$\\
+        & $\pi(2)_{A_2^-}^{SS0}\Sigma(2)_{G}^{SS18}$\\
+        & $\pi(2)_{A_2^-}^{SS0}\Sigma(2)_{G}^{SS1}$\\
+        & $\pi(2)_{A_2^-}^{SS1}\Sigma(2)_{G}^{SS1}$\\
+        & $\pi(3)_{A_2^-}^{SS0}\Sigma(3)_{G}^{SS4}$\\
+        & $\overline K(1)_{E}^{SS2}N(1)_{G_1}^{SS0}$\\
+        & $\overline K(2)_{A_1}^{SS3}N(2)_{G}^{SS0}$\\
+        & $\overline K(2)_{A_2}^{SS0}N(2)_{G}^{SS0}$\\
+        & $\overline K(2)_{A_2}^{SS1}N(2)_{G}^{SS0}$\\
+        & $\overline K(2)_{B_1}^{SS1}N(2)_{G}^{SS0}$\\
+        & $\overline K(2)_{B_2}^{SS3}N(2)_{G}^{SS0}$\\
+        & $\overline K(3)_{A_2}^{SS0}N(3)_{G}^{SS0}$\\
+        & $\overline K(1)_{A_2}^{SS0}\Delta(1)_{G_2}^{SS0}$\\
+        & $\overline K(1)_{A_2}^{SS1}\Delta(1)_{G_2}^{SS0}$\\
+        & $\overline K(2)_{A_2}^{SS0}\Delta(2)_{G}^{SS0}$\\
+        & $\overline K(2)_{A_2}^{SS1}\Delta(2)_{G}^{SS0}$\\
+        & $\eta(1)_{A_2^+}^{SS1}\Sigma(1)_{G_2}^{SS0}$\\
+        & $\eta(2)_{A_2^+}^{SS0}\Sigma(2)_{G}^{SS1}$
+    \end{tabular}
+    \caption{Operators used in the isotriplet $S=-1$ $G_{2g}$ symmetry sector.}\label{table:g2g_ops}
+\end{table}
 \begin{figure}[H]
     \centering
     \hspace*{-0.5in}\includegraphics[width=\textwidth]{figures/sigmas/g2g/staircase_mk.pdf}
-    \caption{The full spectrum for the isotriplet $S=-1$ $G_{2g}$ channel, obtained by fitting the energies and overlap factors of the diagonalized correlator matrix. An explanation of the plot features is given in the caption of Fig.~\ref{fig:g1g_spectrum}.}\label{fig:g2g_spectrum}
+    \caption[The spectrum for the isotriplet $S=-1$ $G_{2g}$ channel, obtained by fitting the energies and overlap factors of the diagonalized correlator matrix.]{The spectrum for the isotriplet $S=-1$ $G_{2g}$ channel, obtained by fitting the energies and overlap factors of the diagonalized correlator matrix. An explanation of the plot features is given in the caption of Fig.~\ref{fig:g1g_spectrum}.}\label{fig:g2g_spectrum}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{figures/sigmas/g2g/expvslat.pdf}
-    \caption{Experimentally observed resonances compared with the finite-volume single-hadron-dominated stationary states we obtain from the lattice, in terms of the nucleon mass. For the experimental states, dark bands indicate experimental uncertainty and light bands indicate decay widths.}\label{fig:g2g_exp}
+    \caption[Experimentally observed resonances compared with the finite-volume single-hadron-dominated stationary states we obtain from the lattice in $G_{2g}$, in terms of the nucleon mass.]{Experimentally observed resonances compared with the finite-volume single-hadron-dominated stationary states we obtain from the lattice, in terms of the nucleon mass. For the experimental states, dark bands indicate experimental uncertainty and light bands indicate decay widths.}\label{fig:g2g_exp}
 \end{figure}
 
 \begin{figure}[H]
@@ -794,7 +812,7 @@ The spectrum obtained in terms of the kaon mass is shown in Fig~\ref{fig:g2g_spe
     \includegraphics[width=0.18\textwidth]{figures/sigmas/g2g/fits/fit_27.pdf}
     \includegraphics[width=0.18\textwidth]{figures/sigmas/g2g/fits/fit_10.pdf}
     \includegraphics[width=0.18\textwidth]{figures/sigmas/g2g/fits/fit_16.pdf}
-    \caption{The first 30 effective energies for the rotated $34\times 34$ correlator matrix in the isotriplet $S=-1$ $G_{2g}$ symmetry channel. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown. The nucleon mass is used as a reference.}\label{fig:g2g_fits1}
+    \caption[The first 30 effective energies for the rotated $34\times 34$ correlator matrix in the isotriplet $S=-1$ $G_{2g}$ symmetry channel. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown.]{The first 30 effective energies for the rotated $34\times 34$ correlator matrix in the isotriplet $S=-1$ $G_{2g}$ symmetry channel. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown. The nucleon mass is used as a reference.}\label{fig:g2g_fits1}
 \end{figure}
 
 \begin{figure}[H]
@@ -803,7 +821,7 @@ The spectrum obtained in terms of the kaon mass is shown in Fig~\ref{fig:g2g_spe
     \includegraphics[width=0.18\textwidth]{figures/sigmas/g2g/fits/fit_29.pdf}
     \includegraphics[width=0.18\textwidth]{figures/sigmas/g2g/fits/fit_33.pdf}
     \includegraphics[width=0.18\textwidth]{figures/sigmas/g2g/fits/fit_32.pdf}
-    \caption{The rest of the effective energies for the rotated $34\times 34$ correlator matrix in the isotriplet $S=-1$ $G_{2g}$ symmetry channel. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown. The nucleon mass is used as a reference.}\label{fig:g2g_fits2}
+    \caption[The rest of the effective energies for the rotated $34\times 34$ correlator matrix in the isotriplet $S=-1$ $G_{2g}$ symmetry channel.]{The rest of the effective energies for the rotated $34\times 34$ correlator matrix in the isotriplet $S=-1$ $G_{2g}$ symmetry channel. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown. The nucleon mass is used as a reference.}\label{fig:g2g_fits2}
 \end{figure}
 
 \begin{figure}[H]
@@ -850,58 +868,61 @@ The spectrum obtained in terms of the kaon mass is shown in Fig~\ref{fig:g2g_spe
 \end{figure}
 
 \renewcommand{\arraystretch}{1.2}
-\begin{longtabu}{c|c|c|c|c}
-    $E / E_N$ & $a_t E$ & Fit model & $(t_{\mathrm{min}}, {t_\mathrm{max}})$ & $\chi^2 / \rm{d.o.f.}$\\
-    \hline
-    1.78(29)&0.318(47)&2{-}exp&$(4, 21)$&1.79\\
-    1.84(19)&0.329(30)&1{-}exp&$(12, 25)$&0.96\\
-    1.87(12)&0.334(15)&1{-}exp&$(11, 25)$&0.68\\
-    2.02(14)&0.362(17)&1{-}exp&$(8, 23)$&1.4\\
-    2.07(15)&0.371(16)&1{-}exp&$(9, 21)$&0.58\\
-    2.08(12)&0.3715(86)&2{-}exp&$(3, 23)$&1.35\\
-    2.08(27)&0.373(40)&2{-}exp&$(3, 21)$&1.36\\
-    2.16(15)&0.387(15)&1{-}exp&$(8, 19)$&1.15\\
-    2.16(15)&0.387(17)&1{-}exp&$(10, 20)$&0.54\\
-    2.17(17)&0.388(20)&2{-}exp&$(3, 23)$&1.34\\
-    2.17(22)&0.389(33)&2{-}exp&$(3, 20)$&0.96\\
-    2.18(29)&0.389(48)&1{-}exp&$(7, 15)$&0.68\\
-    2.25(16)&0.402(20)&1{-}exp&$(8, 19)$&1.03\\
-    2.29(16)&0.410(18)&2{-}exp&$(3, 22)$&0.99\\
-    2.30(19)&0.411(24)&2{-}exp&$(3, 18)$&1.84\\
-    \rowfont{\color{red}}
-    2.30(19)&0.411(24)&1{-}exp&$(8, 18)$&0.72\\
-    \rowfont{\color{red}}
-    2.30(16)&0.413(19)&2{-}exp&$(3, 20)$&1.24\\
-    2.32(19)&0.415(26)&2{-}exp&$(3, 22)$&1.08\\
-    \rowfont{\color{red}}
-    2.32(15)&0.416(15)&2{-}exp&$(3, 20)$&0.39\\
-    2.34(20)&0.419(25)&2{-}exp&$(3, 21)$&1.38\\
-    2.38(17)&0.425(19)&2{-}exp&$(3, 19)$&1.39\\
-    \rowfont{\color{red}}
-    2.38(20)&0.426(28)&2{-}exp&$(3, 19)$&1.05\\
-    \rowfont{\color{red}}
-    2.39(22)&0.427(28)&2{-}exp&$(3, 19)$&1.1\\
-    2.40(15)&0.429(10)&2{-}exp&$(3, 20)$&0.93\\
-    2.40(23)&0.430(34)&1{-}exp&$(8, 20)$&1.24\\
-    \rowfont{\color{red}}
-    2.41(16)&0.431(14)&2{-}exp&$(3, 20)$&0.96\\
-    2.44(26)&0.436(38)&1{-}exp&$(7, 15)$&0.98\\
-    2.46(19)&0.440(22)&1{-}exp&$(7, 19)$&1.05\\
-    2.46(15)&0.441(14)&2{-}exp&$(3, 20)$&0.68\\
-    2.48(17)&0.444(18)&2{-}exp&$(3, 18)$&1.64\\
-    2.92(18)&0.523(12)&1{-}exp&$(5, 15)$&1.18\\
-    3.01(23)&0.539(27)&1{-}exp&$(6, 14)$&0.89\\
-    3.61(23)&0.646(19)&1{-}exp&$(4, 15)$&2.0\\
-    \rowfont{\color{red}}
-    3.99(41)&0.715(59)&1{-}exp&$(5, 15)$&2.41\\
-    \caption{Fit details for the spectrum obtained in the isotriplet $S=-1$ $G_{2g}$ symmetry channel using the operator basis given in Table~\ref{table:g2g_ops}. Single-hadron-dominated energies are shown in red.}\label{table:g2g_fits}
-\end{longtabu}
+\begin{table}[H]
+    \centering
+    \begin{tabu}{c|c|c|c|c}
+        $E / E_N$ & $a_t E$ & Fit model & $(t_{\mathrm{min}}, {t_\mathrm{max}})$ & $\chi^2 / \rm{d.o.f.}$\\
+        \hline
+        1.78(29)&0.318(47)&2{-}exp&$(4, 21)$&1.79\\
+        1.84(19)&0.329(30)&1{-}exp&$(12, 25)$&0.96\\
+        1.87(12)&0.334(15)&1{-}exp&$(11, 25)$&0.68\\
+        2.02(14)&0.362(17)&1{-}exp&$(8, 23)$&1.4\\
+        2.07(15)&0.371(16)&1{-}exp&$(9, 21)$&0.58\\
+        2.08(12)&0.3715(86)&2{-}exp&$(3, 23)$&1.35\\
+        2.08(27)&0.373(40)&2{-}exp&$(3, 21)$&1.36\\
+        2.16(15)&0.387(15)&1{-}exp&$(8, 19)$&1.15\\
+        2.16(15)&0.387(17)&1{-}exp&$(10, 20)$&0.54\\
+        2.17(17)&0.388(20)&2{-}exp&$(3, 23)$&1.34\\
+        2.17(22)&0.389(33)&2{-}exp&$(3, 20)$&0.96\\
+        2.18(29)&0.389(48)&1{-}exp&$(7, 15)$&0.68\\
+        2.25(16)&0.402(20)&1{-}exp&$(8, 19)$&1.03\\
+        2.29(16)&0.410(18)&2{-}exp&$(3, 22)$&0.99\\
+        2.30(19)&0.411(24)&2{-}exp&$(3, 18)$&1.84\\
+        \rowfont{\color{red}}
+        2.30(19)&0.411(24)&1{-}exp&$(8, 18)$&0.72\\
+        \rowfont{\color{red}}
+        2.30(16)&0.413(19)&2{-}exp&$(3, 20)$&1.24\\
+        2.32(19)&0.415(26)&2{-}exp&$(3, 22)$&1.08\\
+        \rowfont{\color{red}}
+        2.32(15)&0.416(15)&2{-}exp&$(3, 20)$&0.39\\
+        2.34(20)&0.419(25)&2{-}exp&$(3, 21)$&1.38\\
+        2.38(17)&0.425(19)&2{-}exp&$(3, 19)$&1.39\\
+        \rowfont{\color{red}}
+        2.38(20)&0.426(28)&2{-}exp&$(3, 19)$&1.05\\
+        \rowfont{\color{red}}
+        2.39(22)&0.427(28)&2{-}exp&$(3, 19)$&1.1\\
+        2.40(15)&0.429(10)&2{-}exp&$(3, 20)$&0.93\\
+        2.40(23)&0.430(34)&1{-}exp&$(8, 20)$&1.24\\
+        \rowfont{\color{red}}
+        2.41(16)&0.431(14)&2{-}exp&$(3, 20)$&0.96\\
+        2.44(26)&0.436(38)&1{-}exp&$(7, 15)$&0.98\\
+        2.46(19)&0.440(22)&1{-}exp&$(7, 19)$&1.05\\
+        2.46(15)&0.441(14)&2{-}exp&$(3, 20)$&0.68\\
+        2.48(17)&0.444(18)&2{-}exp&$(3, 18)$&1.64\\
+        2.92(18)&0.523(12)&1{-}exp&$(5, 15)$&1.18\\
+        3.01(23)&0.539(27)&1{-}exp&$(6, 14)$&0.89\\
+        3.61(23)&0.646(19)&1{-}exp&$(4, 15)$&2.0\\
+        \rowfont{\color{red}}
+        3.99(41)&0.715(59)&1{-}exp&$(5, 15)$&2.41
+    \end{tabu}
+    \caption[Fit details for the spectrum obtained in the isotriplet $S=-1$ $G_{2g}$ symmetry channel using the operator basis given in Table~\ref{table:g2g_ops}.]{Fit details for the spectrum obtained in the isotriplet $S=-1$ $G_{2g}$ symmetry channel using the operator basis given in Table~\ref{table:g2g_ops}. Single-hadron-dominated energies are shown in red.}\label{table:g2g_fits}
+\end{table}
 \renewcommand{\arraystretch}{1.5}
 
 \section{$G_{2u}$ Spectrum}
 The isotriplet, $S=-1$, $G_{2u}$ symmetry channel is parity-negative and contains spins $\frac{5}{2}$, $\frac{7}{2}$, and beyond. The only single-hadron resonances we expect to see is the spin-$\frac{5}{2}$ $\Sigma(1775)$. Our initial basis contained just 6 single-hadron operators, and we pruned down to just 2. We began with 26 two-hadron operators, all of which survived the pruning process. The final basis of operators used extract the spectrum in this channel is given in Table~\ref{table:g2u_ops}. The normalization time, metric time, and diagonalization time used were $\tau_N=3$, $\tau_0=4$, and $\tau_d=7$.
 
-The spectrum obtained in terms of the kaon mass is shown in Fig~\ref{fig:g2u_spectrum}. Correlator fits are shown in Fig.~\ref{fig:g2u_fits}, and fit details are given in Table~\ref{table:g2u_fits}. A comparison of the experimentally observed $\Sigma(1775)$ to the lowest of the two single-hadron-dominated states we obtain from the lattice is shown in Fig.~\ref{fig:g2u_exp}. We do not include the highest single-hadron-dominated state, since it is too high to be reliably determined. We find agreement within error between the experimental $\Sigma(1775)$ state and the lowest single-hadron-dominated state. As before, there are many other single-hadron-dominated states we see. Our results compare well with Edwards et al.: we find one isolated low-lying single-hadron state corresponding to the $\Sigma(1775)$, and one isolated state much higher. We do not go high enough in energy to compare beyond that.
+The spectrum obtained in terms of the kaon mass is shown in Fig~\ref{fig:g2u_spectrum}. Correlator fits are shown in Fig.~\ref{fig:g2u_fits}, and fit details are given in Table~\ref{table:g2u_fits}. A comparison of the experimentally observed $\Sigma(1775)$ to the lowest of the two single-hadron-dominated states we obtain from the lattice is shown in Fig.~\ref{fig:g2u_exp}. We do not include the highest single-hadron-dominated state, since it is too high to be reliably determined. We find agreement within error between the experimental $\Sigma(1775)$ state and the lowest single-hadron-dominated state. As before, there are many other single-hadron-dominated states we see. Our results compare well with Ref.~\cite{Edwards:2012fx}: we find one isolated low-lying single-hadron state corresponding to the $\Sigma(1775)$, and one isolated state much higher. We do not go high enough in energy to compare beyond that.
 \renewcommand{\arraystretch}{1.4}
 \begin{table}[H]
     \centering
@@ -942,13 +963,13 @@ The spectrum obtained in terms of the kaon mass is shown in Fig~\ref{fig:g2u_spe
 \begin{figure}[H]
     \centering
     \hspace*{-0.5in}\includegraphics[width=\textwidth]{figures/sigmas/g2u/staircase_mk.pdf}
-    \caption{The full spectrum for the isotriplet $S=-1$ $G_{2u}$ channel, obtained by fitting the energies and overlap factors of the diagonalized correlator matrix. An explanation of the plot features is given in the caption of Fig.~\ref{fig:g1g_spectrum}.}\label{fig:g2u_spectrum}
+    \caption[The spectrum for the isotriplet $S=-1$ $G_{2u}$ channel, obtained by fitting the energies and overlap factors of the diagonalized correlator matrix.]{The spectrum for the isotriplet $S=-1$ $G_{2u}$ channel, obtained by fitting the energies and overlap factors of the diagonalized correlator matrix. An explanation of the plot features is given in the caption of Fig.~\ref{fig:g1g_spectrum}.}\label{fig:g2u_spectrum}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{figures/sigmas/g2u/expvslat.pdf}
-    \caption{The only experimentally observed resonance in this channel compared with the finite-volume single-hadron-dominated stationary state we obtain from the lattice, in terms of the nucleon mass. For the experimental states, dark bands indicate experimental uncertainty and light bands indicate decay widths.}\label{fig:g2u_exp}
+    \caption[The only experimentally observed resonance in this channel compared with the finite-volume single-hadron-dominated stationary state we obtain from the lattice, in terms of the nucleon mass.]{The only experimentally observed resonance in this channel compared with the finite-volume single-hadron-dominated stationary state we obtain from the lattice, in terms of the nucleon mass. For the experimental states, dark bands indicate experimental uncertainty and light bands indicate decay widths.}\label{fig:g2u_exp}
 \end{figure}
 
 \begin{figure}[H]
@@ -978,7 +999,7 @@ The spectrum obtained in terms of the kaon mass is shown in Fig~\ref{fig:g2u_spe
     \includegraphics[width=0.18\textwidth]{figures/sigmas/g2u/fits/fit_19.pdf}
     \includegraphics[width=0.18\textwidth]{figures/sigmas/g2u/fits/fit_20.pdf}\\[-0.25cm]
     \includegraphics[width=0.215\textwidth]{figures/sigmas/g2u/fits/fit_23.pdf}
-    \caption{Effective energies for the rotated $28\times 28$ correlator matrix in the isotriplet $S=-1$ $G_{2u}$ symmetry channel. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown. The nucleon mass is used as a reference.}\label{fig:g2u_fits}
+    \caption[Effective energies for the rotated $28\times 28$ correlator matrix in the isotriplet $S=-1$ $G_{2u}$ symmetry channel. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown.]{Effective energies for the rotated $28\times 28$ correlator matrix in the isotriplet $S=-1$ $G_{2u}$ symmetry channel. Effective energy curves calculated from correlator fits are overlaid, and fit results are shown. The nucleon mass is used as a reference.}\label{fig:g2u_fits}
 \end{figure}
 
 \begin{figure}[H]
@@ -1010,11 +1031,11 @@ The spectrum obtained in terms of the kaon mass is shown in Fig~\ref{fig:g2u_spe
     \includegraphics[width=0.1975\textwidth]{figures/sigmas/g2u/zfactors/zfactor_isotriplet_pion_sigma-G2u_1-P011-A2m-SS_0-P0-1-1-G-SS_18.pdf}
     \includegraphics[width=0.18\textwidth]{figures/sigmas/g2u/zfactors/zfactor_isotriplet_pion_sigma-G2u_1-P011-A2m-SS_1-P0-1-1-G-SS_1.pdf}
     \includegraphics[width=0.18\textwidth]{figures/sigmas/g2u/zfactors/zfactor_isotriplet_pion_sigma-G2u_1-P111-A2m-SS_0-P-1-1-1-G-SS_4.pdf}
-    \caption{Overlap factors for the operators in our $28\times 28$ correlator matrix in the isotriplet $S=-1$ $G_{2u}$ symmetry channel.}\label{fig:g2u_zfactors}
+    \caption{Overlap factors for the operators used in our $28\times 28$ correlator matrix in the isotriplet $S=-1$ $G_{2u}$ symmetry channel.}\label{fig:g2u_zfactors}
 \end{figure}
 
 \renewcommand{\arraystretch}{1.2}
-\begin{table}
+\begin{table}[H]
     \centering
     \begin{tabu}{c|c|c|c|c}
         $E / E_N$ & $a_t E$ & Fit model & $(t_{\mathrm{min}}, {t_\mathrm{max}})$ & $\chi^2 / \rm{d.o.f.}$\\
@@ -1048,6 +1069,6 @@ The spectrum obtained in terms of the kaon mass is shown in Fig~\ref{fig:g2u_spe
         2.53(19)&0.453(21)&1{-}exp&$(7, 17)$&0.48\\
         2.87(23)&0.514(32)&1{-}exp&$(8, 16)$&1.86
     \end{tabu}
-    \caption{Fit details for the spectrum obtained in the isotriplet $S=-1$ $G_{2u}$ symmetry channel using the operator basis given in Table~\ref{table:g2u_ops}. Single-hadron-dominated energies are shown in red.}\label{table:g2u_fits}
+    \caption[Fit details for the spectrum obtained in the isotriplet $S=-1$ $G_{2u}$ symmetry channel using the operator basis given in Table~\ref{table:g2u_ops}.]{Fit details for the spectrum obtained in the isotriplet $S=-1$ $G_{2u}$ symmetry channel using the operator basis given in Table~\ref{table:g2u_ops}. Single-hadron-dominated energies are shown in red.}\label{table:g2u_fits}
 \end{table}
 \renewcommand{\arraystretch}{1.5}

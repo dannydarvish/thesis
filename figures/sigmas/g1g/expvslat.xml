@@ -15,4 +15,5 @@
         <Energies>1.224 2.12 2.18 2.18 2.22</Energies>
         <Uncertainties>0.0076 0.14 0.25 0.16 0.15</Uncertainties>
    </Lattice>
+   <YLims>1.0 3.0</YLims>
 </ExpVsLat>
