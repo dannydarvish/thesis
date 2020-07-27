@@ -1,6 +1,6 @@
 \section{QCD in the Continuum}
 \subsection{The QCD Lagrangian}
-We begin by defining the QCD Lagrangian~\cite{Fritzsch:1973pi} in Euclidean spacetime in terms of quark fields and gluon fields, and discuss the various transformation properties of those fields and the QCD action. As we will see, the advantage of working in Euclidean spacetime is that oscillating exponentials in time become decaying exponentials. This allows us to interpret the Boltzmann factor $e^{-S}$ (where $S$ is the action in Euclidean spacetime) as a probability distribution, allowing us to use Monte Carlo integration to evaluate path integrals in quantum field theory. Additionally, we will see that this gives us access to the low-lying energy spectrum of a theory by allowing us to fit two-point correlation functions to real decaying exponentials. The QCD Lagrangian $\mathcal L_{\rm{QCD}}$ can be written in terms of the fermionic part $\mathcal L_{\rm F}$ and pure-gluon part $\mathcal L_{\rm G}$. In a free theory (i.e. without gluons), the fermionic Lagrangian is
+We begin by defining the QCD Lagrangian~\cite{Fritzsch:1973pi} in Euclidean spacetime in terms of quark fields and gluon fields, and discuss the various transformation properties of those fields and the QCD action. As we will see, the advantage of working in Euclidean spacetime is that oscillating exponentials in time become decaying exponentials. This allows us to interpret the Boltzmann factor $e^{-S}$ (where $S$ is the action in Euclidean spacetime) as a probability distribution, allowing us to use Monte Carlo integration to evaluate path integrals in quantum field theory. Additionally, we will see that this gives us access to the low-lying energy spectrum of a theory by allowing us to fit two-point correlation functions to real decaying exponentials. The QCD Lagrangian $\mathcal L_{\rm{QCD}}$ can be written in terms of the fermionic part $\mathcal L_{\rm F}$ and pure-gluon part $\mathcal L_{\rm G}$. In a free theory (i.e.\ without gluons), the fermionic Lagrangian is
 \begin{equation}\label{eq:free}
     \mathcal L_{\text{F, free}} = \sum_{f} \overline \psi^{(f)}_{\alpha c}\left((\gamma_\mu)_{\alpha\beta} \partial_\mu + \delta_{\alpha\beta}m^{(f)}\right)\psi^{(f)}_{\beta c}(x),
 \end{equation}
@@ -101,7 +101,7 @@ In taking the limit $a\rightarrow 0$, the fermionic action will contain $\mathca
 \begin{equation}
     G(x, y)=P \exp \left(\mathrm{i} \int_{\mathcal{C}_{x y}} A \cdot d s\right),
 \end{equation}
-where $C_{xy}$ is a curve connecting two points $x$ and $y$, and $P$ denotes path-ordering. The link variables approximate this gauge transporter, i.e. $U_\mu(n) = G(n, n+\hat \mu) + \mathcal O(a)$, and are given by
+where $C_{xy}$ is a curve connecting two points $x$ and $y$, and $P$ denotes path-ordering. The link variables approximate this gauge transporter, i.e.\ $U_\mu(n) = G(n, n+\hat \mu) + \mathcal O(a)$, and are given by
 \begin{equation}
     U_{\mu}(n)=\exp \left(\mathrm{i} a A_{\mu}(n)\right).
 \end{equation}
@@ -123,7 +123,7 @@ and its inverse is
 \begin{equation}
     \widetilde M^{-1}(n|m) = a^{-4}\frac{m - ia^{-1}\sum_\mu \gamma_\mu \sin(p_\mu a)}{m^2 + a^{-2}\sum_\mu\sin(p_\mu a)^2}.
 \end{equation}
-If we examine this propagator in the massless case, $m=0$, we find a pole at $p^2 = 0$, as we would expect. However, we also find 15 additional poles at the corners of the first Brillouin zone, i.e. at $p=(\pi / a, 0,0,0),(0, \pi / a, 0,0), \ldots,(\pi / a, \pi / a, \pi / a, \pi / a)$. These extra poles are known as the \emph{doublers}. They are not present in the continuum (just take $a\rightarrow 0$ in the denominator of the propagator to see this), but on the lattice, we must deal with these unphysical poles. Wilson found a clever way to deal with these doublers~\cite{Wilson:1975id} by adding an additional term, now known as the \emph{Wilson term}, to the Dirac matrix. In momentum space, the Dirac matrix with the added Wilson term is (c.f. Eq.~(\ref{eq:ms_dirac}))
+If we examine this propagator in the massless case, $m=0$, we find a pole at $p^2 = 0$, as we would expect. However, we also find 15 additional poles at the corners of the first Brillouin zone, i.e.\ at $p=(\pi / a, 0,0,0),(0, \pi / a, 0,0), \ldots,(\pi / a, \pi / a, \pi / a, \pi / a)$. These extra poles are known as the \emph{doublers}. They are not present in the continuum (just take $a\rightarrow 0$ in the denominator of the propagator to see this), but on the lattice, we must deal with these unphysical poles. Wilson found a clever way to deal with these doublers~\cite{Wilson:1975id} by adding an additional term, now known as the \emph{Wilson term}, to the Dirac matrix. In momentum space, the Dirac matrix with the added Wilson term is (c.f. Eq.~(\ref{eq:ms_dirac}))
 \begin{equation}
     \widetilde{M}(p)=a^4\left(m +i \sum_{\mu=1}^{4} \gamma_{\mu} \frac{\sin \left(p_{\mu} a\right)}{a}+ \sum_{\mu=1}^{4}\frac{\left(1-\cos \left(p_{\mu} a\right)\right)}{a}\right).
 \end{equation}
@@ -135,7 +135,7 @@ After constructing a discretized version of the fermion action, it remains to co
 \begin{equation}
     P[U]=U_{\mu_{0}}\left(n_{0}\right) U_{\mu_{1}}\left(n_{0}+\hat{\mu}_{0}\right) \ldots U_{\mu_{k-1}}\left(n_{1}-\hat{\mu}_{k-1}\right) \equiv \prod_{(n, \mu) \in \mathcal{P}} U_{\mu}(n)
 \end{equation}
-along a path $\mathcal P$ on the lattice is the lattice analog to the continuum gauge transporter. This product shares the same transformation properties as the link variables and the continuum gauge transporter, i.e.
+along a path $\mathcal P$ on the lattice is the lattice analog to the continuum gauge transporter. This product shares the same transformation properties as the link variables and the continuum gauge transporter, i.e.\
 \begin{equation}
     P[U] \rightarrow \Omega\left(n_{0}\right) P[U] \Omega\left(n_{1}\right)^{\dagger}.
 \end{equation}
@@ -185,7 +185,7 @@ The clover term is named as such because it is constructed from four adjacent pl
     \label{fig:clover}
 \end{figure}
 
-In addition to Symanzik improvements, there are so-called \emph{tadpole} improvements~\cite{Lepage:1992xa} that can be made to the gauge action. These seek to correct contributions from QCD tadpole diagrams that appear at low energy, when the coupling is large. For a small coupling $g$, we may reasonably expand the link variables as $U_{\mu}(x) \equiv e^{i a g A_{\mu}(x)} \rightarrow 1+i a g A_{\mu}(x)$. It turns out that, however, that higher order terms are suppressed by powers of $g^2$, and so when the coupling is large, there will be contributions from QCD tadpoles. For a detailed presentation, see~\cite{Lepage:1992xa}. In order to deal with these tadpoles, we rescale the link variables as $U \rightarrow \frac{U}{u}$, where
+In addition to Symanzik improvements, there are so-called \emph{tadpole} improvements~\cite{Lepage:1992xa} that can be made to the gauge action. These seek to correct contributions from QCD tadpole diagrams that appear at low energy, when the coupling is large. For a small coupling $g$, we may reasonably expand the link variables as $U_{\mu}(x) \equiv e^{i a g A_{\mu}(x)} \rightarrow 1+i a g A_{\mu}(x)$. It turns out, however, that higher order terms are suppressed by powers of $g^2$, and so when the coupling is large, there will be contributions from QCD tadpoles. For a detailed presentation, see~\cite{Lepage:1992xa}. In order to deal with these tadpoles, we rescale the link variables as $U \rightarrow \frac{U}{u}$, where
 \begin{equation}
     u=\left\langle\frac{1}{3} \operatorname{Re} \operatorname{Tr} U_{\mu \nu}\right\rangle^{1 / 4}.
 \end{equation}

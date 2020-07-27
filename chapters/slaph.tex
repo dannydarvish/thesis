@@ -1,4 +1,4 @@
-In Ch.~\ref{ch:latticeqcd}, we saw that calculating two-point correlation functions on the lattice using the Monte Carlo method involves evaluating some function of the inverse of the Dirac matrix, i.e. some function of the quark propagator. The task of inverting the Dirac matrix is a formidable one. The Dirac matrix carries indices for spacetime, color, and Dirac spin, so for a theory of three colors and four Dirac indices on a $32^3\times 256$ lattice, this amounts to a complex-valued matrix of size $\sim 10^8\times 10^8$. Storing such a matrix in single precision would take roughly 80 petabytes, and so calculating the inverse directly is obvious unfeasible. In this chapter we will discuss methods to tackle this problem that involve stochastically estimating Dirac matrix inverses. We will see that the path integration over the quark fields can be done analytically, but it results in a complicated expression involving the gluon field. The path integration over the gluon field must be estimated using Monte Carlo methods.
+In Ch.~\ref{ch:latticeqcd}, we saw that calculating two-point correlation functions on the lattice using the Monte Carlo method involves evaluating some function of the inverse of the Dirac matrix, i.e.\ some function of the quark propagator. The task of inverting the Dirac matrix is a formidable one. The Dirac matrix carries indices for spacetime, color, and Dirac spin, so for a theory of three colors and four Dirac indices on a $32^3\times 256$ lattice, this amounts to a complex-valued matrix of size $\sim 10^8\times 10^8$. Storing such a matrix in single precision would take roughly 80 petabytes, and so calculating the inverse directly is obvious unfeasible. In this chapter we will discuss methods to tackle this problem that involve stochastically estimating Dirac matrix inverses. We will see that the path integration over the quark fields can be done analytically, but it results in a complicated expression involving the gluon field. The path integration over the gluon field must be estimated using Monte Carlo methods.
 \section{Quark Lines}
 Calculating a correlator on the lattice involves integrating first over quark fields which are complex Grassmann valued. Recall from Ch.~\ref{ch:latticeqcd} that such an integration results in some function $f$ of the Dirac matrix inverse and the determinant of the Dirac matrix. For example, a meson correlator involves an integral of the form
 \begin{equation}
@@ -44,7 +44,7 @@ and a same-time quark line is given by $Q_{jk}(t,t)$.
 \begin{figure}
     \centering
     \includegraphics[width=6in]{figures/quarklines.pdf}
-    \caption{The three types of quark lines that occur by integrating the quark fields when evaluating two-point temporal correlators. Figure taken from Ref.~\cite{spectroscopy}.}
+    \caption[The three types of quark lines that occur by integrating the quark fields when evaluating two-point temporal correlators.]{The three types of quark lines that occur by integrating the quark fields when evaluating two-point temporal correlators. Figure taken from Ref.~\cite{spectroscopy}.}
     \label{fig:quark_lines}
 \end{figure}
 \section{Motivating the Need for Stochastically Estimated All-to-All Propagators}
@@ -92,7 +92,7 @@ Therefore,
 \end{equation}
 If we choose noise vectors that are guaranteed to have unit modulus (such as $Z_2$, $Z_4$ or U(1) noise vectors), then it is evident that only one noise vector is needed, and $M^{-1}$ can be determined exactly by solving $N$ systems.
 
-This maximal dilution strategy solves $M^{-1}$ exactly, but requires the solution and storage of $N$ solution vectors, so it is no more feasible than computing the inverse outright. However, it suggests that weaker dilution schemes may greatly reduce the variance, and this is shown to be the case in Ref.~\cite{Morningstar:2011ka}. Diluting a noise vector is simply the application of projection matrices onto the noise vector, i.e.
+This maximal dilution strategy solves $M^{-1}$ exactly, but requires the solution and storage of $N$ solution vectors, so it is no more feasible than computing the inverse outright. However, it suggests that weaker dilution schemes may greatly reduce the variance, and this is shown to be the case in Ref.~\cite{Morningstar:2011ka}. Diluting a noise vector is simply the application of projection matrices onto the noise vector, i.e.\
 \begin{equation}
     \eta^{[a]} = P^{(a)} \eta,
 \end{equation}
@@ -215,7 +215,7 @@ where $l$ and $\overline l$ are compound indices labeling the quantum numbers of
     &\qquad\left.\times \overline{q}_{\overline{c \gamma}}^{\overline{C}}\left(\overline{\boldsymbol{x}}, t_{0}\right) \overline{q}_{\overline{b} \beta}^{\overline{B}}\left(\overline{\boldsymbol{x}}, t_{0}\right) \overline{q}_{\overline{a} \overline{\alpha}}^{\overline{A}}\left(\overline{\boldsymbol{x}}, t_{0}\right)\right\rangle,
     \end{aligned}
 \end{equation}
-where the $l$ and $\overline l$ have the same three-momentum $\bs p$. Computing the path integral over the Grassmann fields yields the following sum over various products of quark lines (i.e. the Wick contractions),
+where the $l$ and $\overline l$ have the same three-momentum $\bs p$. Computing the path integral over the Grassmann fields yields the following sum over various products of quark lines (i.e.\ the Wick contractions),
 \begin{eqnarray*}
 &&C_{l\overline{l}}(t)
 = c^{(l)}_{\alpha\beta\gamma}
@@ -261,7 +261,7 @@ Using Eq.~(\ref{eq:Qjk}), we can dramatically simplify the above expression for 
         \quad \times \varphi_{a \alpha x t}^{\left[b_{1}\right]}\left(\rho_{1}\right) \varphi_{b \beta x t}^{[b]}\left(\rho_{2}\right) \varphi_{c \gamma x t}^{\left[b_{3}\right]}\left(\rho_{3}\right),
         \end{array}
 \end{equation}
-where $b_1$, $b_2$, and $b_3$ are dilution indices, and we use a short-hand notation to denote $\varphi_k = \varphi(\rho_k)$, i.e. the sink vector corresponding to the noise vector $\rho_k$. The baryon correlator matrix element is then given by,
+where $b_1$, $b_2$, and $b_3$ are dilution indices, and we use a short-hand notation to denote $\varphi_k = \varphi(\rho_k)$, i.e.\ the sink vector corresponding to the noise vector $\rho_k$. The baryon correlator matrix element is then given by,
 \begin{equation}\label{eq:corr_fac}
     \begin{aligned}
         C_{l \overline{l}}\left(t_{F}-t_{0}\right) &=\left\langle\mathcal{B}_{l}^{\left[b_{1} b_{2} b_{3}\right]}\left(\varphi_{1}, \varphi_{2}, \varphi_{3} ; t_{F}\right)\right.\\
