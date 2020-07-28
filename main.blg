@@ -1,53 +1,52 @@
 This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
-The style file: plain.bst
+The style file: ieeetr.bst
 Database file #1: thebib.bib
-Warning--empty note in pittir33243
-Warning--empty booktitle in Kennedy:1987vx
-Warning--empty booktitle in Lepage:1989hd
+Warning--empty journal in Fallica2018
 Warning--empty journal in spectroscopy
 Warning--empty year in spectroscopy
-Warning--empty journal in Wilson:1974sk
-You've used 47 entries,
-            2118 wiz_defined-function locations,
-            814 strings with 12304 characters,
-and the built_in function-call counts, 16459 in all, are:
-= -- 1581
-> -- 881
-< -- 6
-+ -- 351
-- -- 302
-* -- 1240
-:= -- 2831
-add.period$ -- 142
-call.type$ -- 47
-change.case$ -- 289
+Warning--empty note in pittir33243
+Warning--empty booktitle in Lepage:1989hd
+You've used 57 entries,
+            1876 wiz_defined-function locations,
+            848 strings with 13418 characters,
+and the built_in function-call counts, 17162 in all, are:
+= -- 1764
+> -- 650
+< -- 0
++ -- 241
+- -- 184
+* -- 1108
+:= -- 2312
+add.period$ -- 60
+call.type$ -- 57
+change.case$ -- 55
 chr.to.int$ -- 0
-cite$ -- 53
-duplicate$ -- 554
-empty$ -- 1200
-format.name$ -- 302
-if$ -- 3317
+cite$ -- 62
+duplicate$ -- 994
+empty$ -- 1476
+format.name$ -- 184
+if$ -- 4288
 int.to.chr$ -- 0
-int.to.str$ -- 47
-missing$ -- 48
-newline$ -- 239
-num.names$ -- 94
-pop$ -- 244
+int.to.str$ -- 57
+missing$ -- 58
+newline$ -- 178
+num.names$ -- 57
+pop$ -- 167
 preamble$ -- 1
-purify$ -- 244
+purify$ -- 0
 quote$ -- 0
-skip$ -- 377
+skip$ -- 819
 stack$ -- 0
 substring$ -- 1076
-swap$ -- 77
-text.length$ -- 6
+swap$ -- 529
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 184
-warning$ -- 6
-while$ -- 158
-width$ -- 49
-write$ -- 513
-(There were 6 warnings)
+type$ -- 0
+warning$ -- 5
+while$ -- 156
+width$ -- 59
+write$ -- 565
+(There were 5 warnings)
