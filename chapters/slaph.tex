@@ -98,7 +98,7 @@ This maximal dilution strategy solves $M^{-1}$ exactly, but requires the solutio
 \end{equation}
 where $\eta$ is a noise vector and $P^{(a)}$ is a projection matrix. Maximal dilution corresponds to $N$ such matrices (think for example of the projectors $\vb e_i \otimes \vb e_i$ in the standard basis) and solves the system exactly, but weaker dilution schemes contain fewer projections, speeding up computation at the cost of increasing variance. In general, any complete set of projection matrices $P^{(a)}$ can be used to define a dilution scheme. Observe that
 \begin{equation}
-\begin{aligned} M_{i j}^{-1} &=M_{i k}^{-1} \delta_{k j}=\sum_{a} M_{i k}^{-1} P_{k j}^{(a)}=\sum_{a} M_{i k}^{-1} P_{k k^{\prime}}^{(a)} P_{k^{\prime} j}^{(a)} \\ &=\sum_{a} M_{i k}^{-1} P_{k k^{\prime}}^{(a)} \delta_{k^{\prime} j^{\prime}} P_{j^{\prime} j}^{(a)}=\sum_{a} M_{i k}^{-1} P_{k k^{\prime}}^{(a)} E\left(\eta_{k^{\prime}} \eta_{j^{\prime}}^{\prime \prime}\right) P_{j^{\prime} j}^{(a)} \\ &=\sum_{a} M_{i k}^{-1} E\left(P_{k k^{\prime}}^{(a)} \eta_{k^{\prime}} \eta_{j^{\prime}}^{*} P_{j^{\prime} j}^{(a)}\right). \end{aligned}
+\begin{aligned} M_{i j}^{-1} &=M_{i k}^{-1} \delta_{k j}=\sum_{a} M_{i k}^{-1} P_{k j}^{(a)}=\sum_{a} M_{i k}^{-1} P_{k k^{\prime}}^{(a)} P_{k^{\prime} j}^{(a)} \\ &=\sum_{a} M_{i k}^{-1} P_{k k^{\prime}}^{(a)} \delta_{k^{\prime} j^{\prime}} P_{j^{\prime} j}^{(a)}=\sum_{a} M_{i k}^{-1} P_{k k^{\prime}}^{(a)} E\left(\eta_{k^{\prime}} \eta_{j^{\prime}}^{*}\right) P_{j^{\prime} j}^{(a)} \\ &=\sum_{a} M_{i k}^{-1} E\left(P_{k k^{\prime}}^{(a)} \eta_{k^{\prime}} \eta_{j^{\prime}}^{*} P_{j^{\prime} j}^{(a)}\right). \end{aligned}
 \end{equation}
 Define
 \begin{equation}
