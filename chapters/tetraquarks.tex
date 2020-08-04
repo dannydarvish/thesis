@@ -59,14 +59,14 @@ The quantum numbers associated with the $\kappa$ are $I(J^{P})=\frac{1}{2}(0^+)$
   \begin{tabular}{l|l}
     \textbf{Single-Hadron Operators} & \textbf{Two-Hadron Operators}\\
     \hline
-    $K^{\rm{DDL}5}_{A_{1g}}$ & $K(0)^{\rm{SS}0}_{A_{1u}}\; \pi(0)^{\rm{SS}0}_{A_{1u}^+}$\\
-    $K^{\rm{TDO3}5}_{A_{1g}}$ & $K(0)^{\rm{SS}0}_{A_{1u}}\; \eta(0)^{\rm{SS}0}_{A_{1u}^+}$ \\
-    $K^{\rm{TDU}5}_{A_{1g}}$ & $K(0)^{\rm{SS}0}_{A_{1u}}\; \phi(0)^{\rm{SS}0}_{A_{1u}^+}$ \\
-    & $K(1)^{\rm{SS}1}_{A_2}\; \pi(1)^{\rm{SS}1}_{A_2^-}$ \\
-    & $K(1)^{\rm{SS}1}_{A_2}\; \eta(1)^{\rm{SS}1}_{A_2^+}$ \\
-    & $K(1)^{\rm{SS}1}_{A_2}\; \phi(1)^{\rm{SS}1}_{A_2^+}$ \\
-    & $K(2)^{\rm{SS}0}_{A_2}\; \pi(2)^{\rm{SS}0}_{A_2^-}$ \\
-    & $K(3)^{\rm{SS}0}_{A_2}\; \pi(3)^{\rm{SS}0}_{A_2^-}$
+    $K_{A_{1g}}^{DDL2}$ & $K(0)_{A_{1u}}^{SS0}\pi(0)_{A_{1u}^-}^{SS0}$\\
+    $K_{A_{1g}}^{TDO3}$ & $K(0)_{A_{1u}}^{SS0}\eta(0)_{A_{1u}^+}^{SS0}$\\
+    $K_{A_{1g}}^{TDU5}$ & $K(0)_{A_{1u}}^{SS0}\phi(0)_{A_{1u}^+}^{SS0}$\\
+    & $K(1)_{A_2}^{SS1}\pi(1)_{A_2^-}^{SS1}$\\
+    & $K(1)_{A_2}^{SS1}\eta(1)_{A_2^+}^{SS1}$\\
+    & $K(1)_{A_2}^{SS1}\phi(1)_{A_2^+}^{SS1}$\\
+    & $K(2)_{A_2}^{SS0}\pi(2)_{A_2^-}^{SS0}$\\
+    & $K(3)_{A_2}^{SS0}\pi(3)_{A_2^-}^{SS0}$
   \end{tabular}
   \caption[Operators used in the $\kappa$ channel, excluding tetraquark operators.]{Operators used in the $\kappa$ channel, excluding tetraquark operators. Particle names refer to \emph{flavor content} and should not be taken literally. $K$ refers to $u\overline s$, $\pi$ refers to $u\overline d$, $\eta$ refers to $u\overline u + d\overline d$, and $\phi$ refers to $s\overline s$ flavor structure. The number in parentheses following the particle name denotes the square of its total momentum in lattice units, the superscript denotes displacement type, and the subscript denotes octahedral irrep and $G$-parity.}
   \label{table:kappa_ops_no_tq}
@@ -224,16 +224,27 @@ Our final class of tetraquark operators used in this channel were single-site $\
   \begin{tabular}{l|l}
     \textbf{Single-Hadron Operators} & \textbf{Two-Hadron Operators}\\
     \hline
-    $\pi^{\rm{TDO}3}_{A_{1g}^-}$ & $K(0)^{\rm{SS}0}_{A_{1u}}\; \overline K(0)^{\rm{SS}0}_{A_{1u}}$\\
-    $\pi^{\rm{SD}2}_{A_{1g}^-}$ & $K(1)^{\rm{SS}1}_{A_{2}}\; \overline K(1)^{\rm{SS}1}_{A_{2}}$ \\
-    & $K(2)^{\rm{SS}0}_{A_{2}}\; \overline K(2)^{\rm{SS}0}_{A_{2}}$ \\
-    & $K(2)^{\rm{SS}1}_{A_{2}}\; \overline K(2)^{\rm{SS}1}_{A_{2}}$ \\
-    & $\eta(0)^{\rm{SS}0}_{A_{1u}^+}\; \pi(0)^{\rm{SS}0}_{A_{1u}^-}$ \\
-    & $\phi(0)^{\rm{SS}0}_{A_{1u}^+}\; \pi(0)^{\rm{SS}0}_{A_{1u}^-}$ \\
-    & $\eta(1)^{\rm{SS}0}_{A_{2}^+}\; \pi(1)^{\rm{SS}0}_{A_{2}^-}$ \\
-    & $\phi(1)^{\rm{SS}1}_{A_{2}^+}\; \pi(1)^{\rm{SS}1}_{A_{2}^-}$ \\
-    & $\eta(2)^{\rm{SS}1}_{A_{2}^+}\; \pi(2)^{\rm{SS}1}_{A_{2}^-}$ \\
-    & $\phi(2)^{\rm{SS}0}_{A_{2}^+}\; \pi(2)^{\rm{SS}0}_{A_{2}^-}$ 
+    % $\pi^{\rm{TDO}3}_{A_{1g}^-}$ & $K(0)^{\rm{SS}0}_{A_{1u}}\; \overline K(0)^{\rm{SS}0}_{A_{1u}}$\\
+    % $\pi^{\rm{SD}2}_{A_{1g}^-}$ & $K(1)^{\rm{SS}1}_{A_{2}}\; \overline K(1)^{\rm{SS}1}_{A_{2}}$ \\
+    % & $K(2)^{\rm{SS}0}_{A_{2}}\; \overline K(2)^{\rm{SS}0}_{A_{2}}$ \\
+    % & $K(2)^{\rm{SS}1}_{A_{2}}\; \overline K(2)^{\rm{SS}1}_{A_{2}}$ \\
+    % & $\eta(0)^{\rm{SS}0}_{A_{1u}^+}\; \pi(0)^{\rm{SS}0}_{A_{1u}^-}$ \\
+    % & $\phi(0)^{\rm{SS}0}_{A_{1u}^+}\; \pi(0)^{\rm{SS}0}_{A_{1u}^-}$ \\
+    % & $\eta(1)^{\rm{SS}0}_{A_{2}^+}\; \pi(1)^{\rm{SS}0}_{A_{2}^-}$ \\
+    % & $\phi(1)^{\rm{SS}1}_{A_{2}^+}\; \pi(1)^{\rm{SS}1}_{A_{2}^-}$ \\
+    % & $\eta(2)^{\rm{SS}1}_{A_{2}^+}\; \pi(2)^{\rm{SS}1}_{A_{2}^-}$ \\
+    % & $\phi(2)^{\rm{SS}0}_{A_{2}^+}\; \pi(2)^{\rm{SS}0}_{A_{2}^-}$ 
+    $\pi_{A_{1g}^-}^{SD2}$ & $K(0)_{A_{1u}}^{SS0}\overline K(0)_{A_{1u}}^{SS0}$\\
+$\pi_{A_{1g}^-}^{TDO3}$ & $K(1)_{A_2}^{SS1}\overline K(1)_{A_2}^{SS1}$\\
+ & $K(2)_{A_2}^{SS0}\overline K(2)_{A_2}^{SS0}$\\
+ & $K(2)_{A_2}^{SS1}\overline K(2)_{A_2}^{SS1}$\\
+ & $\eta(0)_{A_{1u}^+}^{SS0}\pi(0)_{A_{1u}^-}^{SS0}$\\
+ & $\eta(1)_{A_2^+}^{SS0}\pi(1)_{A_2^-}^{SS0}$\\
+ & $\eta(2)_{A_2^+}^{SS1}\pi(2)_{A_2^-}^{SS1}$\\
+ & $\phi(0)_{A_{1u}^+}^{SS0}\pi(0)_{A_{1u}^-}^{SS0}$\\
+ & $\phi(1)_{A_2^+}^{SS1}\pi(1)_{A_2^-}^{SS1}$\\
+ & $\phi(2)_{A_2^+}^{SS0}\pi(2)_{A_2^-}^{SS0}$
+
   \end{tabular}
   \caption[Operators used in the $a_0(980)$ channel, excluding tetraquark operators.]{Operators used in the $a_0(980)$ channel, excluding tetraquark operators. Particle names refer to \emph{flavor content} and should not be taken literally. $K$ refers to $u\overline s$, $\overline K$ refers to $s \overline u$, $\pi$ refers to $u\overline d$, $\eta$ refers to $u\overline u + d\overline d$, and $\phi$ refers to $s\overline s$ flavor structure. The number in parentheses following the particle name denotes the square of its total momentum in lattice units, the superscript denotes displacement type, and the subscript denotes octahedral irrep and $G$-parity.}
   \label{table:a0_ops_no_tq}

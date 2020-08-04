@@ -36,7 +36,10 @@ irrep_map = {
     'Ep' : 'E^+',
     'B1' : 'B_1',
     'B2' : 'B_2',
-    'T1up' : 'T_{1u}^+'
+    'T1up' : 'T_{1u}^+',
+    'A1up' : 'A_{1u}^+',
+    'A1g_1' : 'A_{1g}',
+    'A1gm_1' : 'A_{1g}^-',
 }
 
 particle_map = {
@@ -48,7 +51,8 @@ particle_map = {
     'nucleon' : 'N',
     'delta' : r'\Delta',
     'xi' : r'\Xi',
-    'eta' : r'\eta'
+    'eta' : r'\eta',
+    'phi' : r'\phi'
 }
 
 mom_map = {
@@ -71,9 +75,9 @@ mom_map = {
 sh_tex = []
 mh_tex = []
 for line in lines:
-    match = re.match(r'sigma P=\(0,0,0\) (.*) (.*)', line)
+    match = re.match(r'(sigma|pion|kaon) P=\(0,0,0\) (.*) (.*)', line)
     if match:
-        sh_tex.append(r'$\Sigma_{' + irrep_map[match[1]] + r'}^{' + match[2].replace('_', '') + r'}$')
+        sh_tex.append('$' + particle_map[match[1]] + '_{' + irrep_map[match[2]] + r'}^{' + match[3].replace('_', '') + r'}$')
     else:
         match = re.match('isotriplet_(.*?)_(.*?) .*? \[P=(\(.*?\))? (.*?) (.*?)\] \[P=(\(.*?\))? (.*?) (.*?)\]', line)
         if match:
@@ -81,6 +85,14 @@ for line in lines:
                 '_{' + irrep_map[match[4]] + '}^{' + match[5].replace('_','') + '}' +\
                     f'{particle_map[match[2]]}{mom_map[match[6]]}' +\
                         '_{' + irrep_map[match[7]] + '}^{' + match[8].replace('_','') + '}$')
+        else:
+            match = re.match('isodoublet_(.*?)_(.*?) .*? \[P=(\(.*?\))? (.*?) (.*?)\] \[P=(\(.*?\))? (.*?) (.*?)\]', line)
+            if match:
+                mh_tex.append(f'${particle_map[match[1]]}{mom_map[match[3]]}' +\
+                '_{' + irrep_map[match[4]] + '}^{' + match[5].replace('_','') + '}' +\
+                    f'{particle_map[match[2]]}{mom_map[match[6]]}' +\
+                        '_{' + irrep_map[match[7]] + '}^{' + match[8].replace('_','') + '}$')
+
         
 tex = r''
 for i in range(len(mh_tex)):
