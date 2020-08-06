@@ -311,7 +311,7 @@ In order to proceed in generating a set of gauge configurations $\{U_i\}$, we ma
 \begin{equation}
     T(U^\prime \leftarrow U)p(U) = T(U \leftarrow U^\prime)p(U^\prime),
 \end{equation}
-where $T(U^\prime \leftarrow U)$ is the probability of transitioning to a state $U^\prime$ if the current state is $U$. In this case, after a certain number of steps along the Markov chain (a process known as \emph{thermalization} or bringing the chain into \emph{equilibrium}), then all future states will be distributed according to $p(U)$.
+where $T(U^\prime \leftarrow U)$ is the probability of transitioning to a state $U^\prime$ if the current state is $U$. In this case, after taking a certain number of steps along the Markov chain (a process known as \emph{thermalization} or bringing the chain into \emph{equilibrium}), all future states will be distributed according to $p(U)$.
 
 A popular method of defining such a Markov chain is the Metropolis-Hastings method~\cite{Metropolis:1953am}, which relies on an accept-reject method of proposing new configurations by making small local changes to the current configuration. These small changes are necessary because large changes can cause the acceptance probability to be too low. The Metropolis-Hastings method works well in both pure gauge theories and in the quenched approximation where sea-quark effects are neglected and the fermion determinants are set to one. In a full theory, however, such a local updating scheme is not useful, since the fermion determinant is a non-local quantity.
 \subsection{Hybrid Monte Carlo}
