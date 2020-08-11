@@ -1,4 +1,4 @@
-In Ch.~\ref{ch:latticeqcd}, we saw that calculating two-point correlation functions on the lattice using the Monte Carlo method involves evaluating some function of the inverse of the Dirac matrix, i.e.\ some function of the quark propagator. The task of inverting the Dirac matrix is a formidable one. The Dirac matrix carries indices for spacetime, color, and Dirac spin, so for a theory of three colors and four Dirac indices on a $32^3\times 256$ lattice, this amounts to a complex-valued matrix of size $\sim 10^8\times 10^8$. Storing such a matrix in single precision would take roughly 80 petabytes, and so calculating the inverse directly is obvious unfeasible. In this chapter we will discuss methods to tackle this problem that involve stochastically estimating Dirac matrix inverses. We will see that the path integration over the quark fields can be done analytically, but it results in a complicated expression involving the gluon field. The path integration over the gluon field must be estimated using Monte Carlo methods.
+In Ch.~\ref{ch:latticeqcd}, we saw that calculating two-point correlation functions on the lattice using the Monte Carlo method involves evaluating some function of the inverse of the Dirac matrix, i.e.\ some function of the quark propagator. The task of inverting the Dirac matrix is a formidable one. The Dirac matrix carries indices for spacetime, color, and Dirac spin, so for a theory of three colors and four Dirac indices on a $32^3\times 256$ lattice, this amounts to a complex-valued matrix of size $\sim 10^8\times 10^8$. Storing such a matrix in single precision would take roughly 80 petabytes, and so calculating the inverse directly is obviously unfeasible. In this chapter we will discuss methods to tackle this problem that involve stochastically estimating Dirac matrix inverses. We will see that the path integration over the quark fields can be done analytically, but it results in a complicated expression involving the gluon field. The path integration over the gluon field must be estimated using Monte Carlo methods.
 \section{Quark Lines}
 Calculating a correlator on the lattice involves integrating first over quark fields which are complex Grassmann valued. Recall from Ch.~\ref{ch:latticeqcd} that such an integration results in some function $f$ of the Dirac matrix inverse and the determinant of the Dirac matrix. For example, a meson correlator involves an integral of the form
 \begin{equation}
@@ -44,7 +44,7 @@ and a same-time quark line is given by $Q_{jk}(t,t)$.
 \begin{figure}
     \centering
     \includegraphics[width=6in]{figures/quarklines.pdf}
-    \caption[The three types of quark lines that occur by integrating the quark fields when evaluating two-point temporal correlators.]{The three types of quark lines that occur by integrating the quark fields when evaluating two-point temporal correlators. Figure taken from Ref.~\cite{spectroscopy}.}
+    \caption[The three types of quark lines that occur by integrating the quark fields when evaluating two-point temporal correlators.]{The three types of quark lines that occur by integrating the quark fields when evaluating two-point temporal correlators. By convention, time flows from right to left, following how quantum source and sink operators are written in two-point functions. Figure taken from Ref.~\cite{spectroscopy}.}
     \label{fig:quark_lines}
 \end{figure}
 \section{Motivating the Need for Stochastically Estimated All-to-All Propagators}
@@ -216,7 +216,7 @@ where $l$ and $\overline l$ are compound indices labeling the quantum numbers of
     \end{aligned}
 \end{equation}
 where the $l$ and $\overline l$ have the same three-momentum $\bs p$. Computing the path integral over the Grassmann fields yields the following sum over various products of quark lines (i.e.\ the Wick contractions),
-\begin{eqnarray*}
+\begin{eqnarray}
 &&C_{l\overline{l}}(t)
 = c^{(l)}_{\alpha\beta\gamma}
 c^{(\overline{l})\ast}_{
@@ -224,30 +224,30 @@ c^{(\overline{l})\ast}_{
 \sum_{\bs{x}\overline{\bs{x}}}\ \varepsilon_{abc}
 \   \varepsilon_{\overline{a}\overline{b}\overline{c}} 
 e^{-i\bs{p}\cdot(\bs{x}-\overline{\bs{x}})}\  \nonumber\\
-&\times& \Bigl\langle {\cal Q}^{(A\overline{A})}_{
+&\times& \Bigl\langle {Q}^{(A\overline{A})}_{
 a\alpha ;\overline{a}\overline{\alpha}}
-{\cal Q}^{(B\overline{B})}_{b\beta ;\overline{b}\overline{\beta}}
-{\cal Q}^{(C\overline{C})}_{c\gamma ;\overline{c}\overline{\gamma}}
--{\cal Q}^{(A\overline{A})}_{a\alpha;\overline{a}\overline{\alpha}}
-{\cal Q}^{(B\overline{C})}_{b\beta   ;\overline{c}\overline{\gamma}}
-{\cal Q}^{(C\overline{B})}_{c\gamma ;\overline{b}\overline{\beta}}
+{Q}^{(B\overline{B})}_{b\beta ;\overline{b}\overline{\beta}}
+{Q}^{(C\overline{C})}_{c\gamma ;\overline{c}\overline{\gamma}}
+-{Q}^{(A\overline{A})}_{a\alpha;\overline{a}\overline{\alpha}}
+{Q}^{(B\overline{C})}_{b\beta   ;\overline{c}\overline{\gamma}}
+{Q}^{(C\overline{B})}_{c\gamma ;\overline{b}\overline{\beta}}
 \nonumber\\
-&-&{\cal Q}^{(A\overline{B})}_{a\alpha;\overline{b}\overline{\beta}}
-{\cal Q}^{(B\overline{A})}_{b\beta  ;\overline{a}\overline{\alpha}}
-{\cal Q}^{(C\overline{C})}_{c\gamma ;\overline{c}\overline{\gamma}}
-- {\cal Q}^{(A\overline{C})}_{a\alpha;\overline{c}\overline{\gamma}}
-{\cal Q}^{(B\overline{B})}_{b\beta ;\overline{b}\overline{\beta}}
-{\cal Q}^{(C\overline{A})}_{c\gamma ;\overline{a}\overline{\alpha}}
+&-&{Q}^{(A\overline{B})}_{a\alpha;\overline{b}\overline{\beta}}
+{Q}^{(B\overline{A})}_{b\beta  ;\overline{a}\overline{\alpha}}
+{Q}^{(C\overline{C})}_{c\gamma ;\overline{c}\overline{\gamma}}
+- {Q}^{(A\overline{C})}_{a\alpha;\overline{c}\overline{\gamma}}
+{Q}^{(B\overline{B})}_{b\beta ;\overline{b}\overline{\beta}}
+{Q}^{(C\overline{A})}_{c\gamma ;\overline{a}\overline{\alpha}}
 \nonumber\\
 &+&
-{\cal Q}^{(A\overline{C})}_{a\alpha;\overline{c}\overline{\gamma}}
-{\cal Q}^{(B\overline{A})}_{b\beta ;\overline{a}\overline{\alpha}}
-{\cal Q}^{(C\overline{B})}_{c\gamma ;\overline{b}\overline{\beta}}
-+{\cal Q}^{(A\overline{B})}_{a\alpha;\overline{b}\overline{\beta}}
-{\cal Q}^{(B\overline{C})}_{b\beta ;\overline{c}\overline{\gamma}}
-{\cal Q}^{(C\overline{A})}_{c\gamma ;\overline{a}\overline{\alpha}}
+{Q}^{(A\overline{C})}_{a\alpha;\overline{c}\overline{\gamma}}
+{Q}^{(B\overline{A})}_{b\beta ;\overline{a}\overline{\alpha}}
+{Q}^{(C\overline{B})}_{c\gamma ;\overline{b}\overline{\beta}}
++{Q}^{(A\overline{B})}_{a\alpha;\overline{b}\overline{\beta}}
+{Q}^{(B\overline{C})}_{b\beta ;\overline{c}\overline{\gamma}}
+{Q}^{(C\overline{A})}_{c\gamma ;\overline{a}\overline{\alpha}}
 \Bigr\rangle_U,
-\end{eqnarray*}
+\end{eqnarray}
 where we have defined $t\equiv t_F - t_0$, where time and spacial labels have been omitted, and where
 \begin{equation}
     \langle f(U)\rangle_{U}=\frac{\int \mathcal{D} U f(U) \operatorname{det}(M[U]) e^{-S_{G}[U]}}{\int D U \operatorname{det}(M[U]) e^{-S_{G}[U]}}.

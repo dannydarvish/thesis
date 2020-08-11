@@ -39,11 +39,11 @@ Now we write down the gluonic part of the QCD Lagrangian,
 where $g$ is the QCD coupling parameter. Using the decomposition of the gluon fields into their color components, we can similarly decompose the field strength tensor into its color components to gain more insight into the gluonic part of the Lagrangian:
 \begin{equation}
     \begin{aligned}
-        F_{\mu \nu}(x) &=\sum_{i=1}^{B} F_{\mu \nu}^{(i)}(x) T_{i}, \\
+        F_{\mu \nu}(x) &=\sum_{i=1}^{8} F_{\mu \nu}^{(i)}(x) T_{i}, \\
         F_{\mu \nu}^{(i)}(x) &=\partial_{\mu} A_{\nu}^{(i)}(x)-\partial_{\nu} A_{\mu}^{(i)}(x)-f_{i j k} A_{\mu}^{(j)}(x) A_{\nu}^{(k)}(x).
         \end{aligned}
 \end{equation}
-Plugging this into Eq.~(\ref{eq:Lg}), we find that the QCD Lagrangian contains 3- and 4-vertex gluonic self-interactions. This makes QCD and QED fundamentally different: in QED we have linear superposition since the massless vector boson (the photon) does not self-interact, whereas in QCD, linear superposition never applies due to the gluon self-interactions.
+Plugging this into Eq.~(\ref{eq:Lg}), we find that the QCD Lagrangian contains 3- and 4-gluon self-interactions. This makes QCD and QED fundamentally different: in QED we have linear superposition since the massless vector boson (the photon) does not self-interact, whereas in QCD, linear superposition never applies due to the gluon self-interactions.
 \subsection{Transformation Properties of the Quark and Gluon Fields}
 QCD is an SU(3) gauge theory, meaning the action is invariant under local SU(3) gauge transformations of the quark and gluon fields. Such a gauge transformation can be associated with a $3\times3$ unitary color-space transformation $\Omega(x)$ at each spacetime point $x$, which also has the property $\det[\Omega(x)] = 1$. In order to ensure gauge invariance, we demand that the quark fields transform as
 \begin{equation}\label{eq:quark_transf}
@@ -62,7 +62,7 @@ To facilitate our nonperturbative computations, we must formulate QCD on a space
 \begin{equation}
     \Lambda = \lbrace n = (n_1, n_2, n_3, n_4)\rbrace,
 \end{equation}
-where $n_i$ are integers. We will later also consider anisotropic lattices. Since a lattice has finite spacing, that implies a momentum cutoff, which also acts as an ultraviolet regulator for the theory. That is, the $i$ component momentum is restricted to $p_i \in (-\frac{\pi}{a}, \frac{\pi}{a}]$. Additionally, we will work with periodic boundary conditions, which discretizes the momentum $\bs p = \frac{2\pi \bs n}{L}$, where $\bs n$ is a vector of integers and $L$ is the length of the lattice. 
+where $n_i$ are integers. We will later also consider anisotropic lattices. Since a lattice has finite spacing, that implies a momentum cutoff, which also acts as an ultraviolet regulator for the theory. That is, the $i$ component of momentum is restricted to $p_i \in (-\frac{\pi}{a}, \frac{\pi}{a}]$. Additionally, we will work with periodic boundary conditions in all directions, which discretizes the momentum $\bs p = \frac{2\pi \bs n}{L}$, where $\bs n$ is a vector of integers and $L$ is the length of the lattice. 
 \subsection{Free Fermions}
 We begin with a naive approach to discretizing fermions on the lattice, which will then be improved upon. The continuum action for one free fermion with a bare mass $m$ can be written as
 \begin{equation}\label{eq:action_ff}
@@ -73,9 +73,9 @@ A first pass at discretizing Eq.~(\ref{eq:action_ff}) involves replacing the int
     \int d^4x \rightarrow a^4 \sum_n \\
     \psi(x) \rightarrow \psi(n) \\
     \overline\psi(x) \rightarrow \overline\psi(n) \\
-    \partial_{\mu} \psi(x) \rightarrow \frac{1}{2 a}(\psi(n+\hat{\mu})-\psi(n-\hat{\mu})).
+    \partial_{\mu} \psi(x) \rightarrow \frac{1}{2 a}(\psi(n+\hat{\mu})-\psi(n-\hat{\mu})),
 \end{gather}
-We immediately find that such a discretization scheme breaks local SU(3) gauge invariance, due to terms of the form $\overline\psi(n) \psi(n+\hat\mu)$.
+where $\hat\mu$ is the unit vector in the $\mu$-direction. We immediately find that such a discretization scheme breaks local SU(3) gauge invariance, due to terms of the form $\overline\psi(n) \psi(n+\hat\mu)$.
 \subsection{Gauge Fields and Link Variables}
 Though we expect that gauge invariance for the free fermion action is restored in the limit $a \rightarrow 0$, we wish to maintain exact gauge invariance for finite $a$ in the entire discretized action. In determining how to discretize the gluon fields, we are guided by this requirement. Under a local gauge transformation $\Omega(n)$,
 \begin{equation}
@@ -161,7 +161,7 @@ In the continuum limit $a\rightarrow 0$, it can be shown that this reduces to th
 \end{equation}
 The Wilson action is just one way to formulate a discretized gauge action. We will discuss different discretization strategies in order to reduce the discretization error to higher orders in $a$.
 \subsection{Improving the Discretized Action}\label{sec:improved_action}
-In our naively discretized theory, the fermionic action action contains $\mathcal O(a)$ lattice artifacts and the gauge action contains $\mathcal O(a^2)$ artifacts. By adding terms to the action which cancel these artifacts but which vanish in the continuum limit, we can improve discretization errors to higher orders in $a$. This is called \emph{Symanzik improvement}~\cite{Symanzik:1983dc}. For example, we make use of a \emph{clover improved}~\cite{Sheikholeslami:1985ij} action, which involves adding a term to the Wilson action,
+In our naively discretized theory, the fermionic action contains $\mathcal O(a)$ lattice artifacts and the gauge action contains $\mathcal O(a^2)$ artifacts. By adding terms to the action which cancel these artifacts but which vanish in the continuum limit, we can improve discretization errors to higher orders in $a$. This is called \emph{Symanzik improvement}~\cite{Symanzik:1983dc}. For example, we make use of a \emph{clover improved}~\cite{Sheikholeslami:1985ij} action, which involves adding a term to the Wilson action,
 \begin{equation}
     c_{\mathrm{sw}} a^{5} \sum_{n \in \Lambda} \sum_{\mu<\nu} \bar{\psi}(n) \frac{1}{2} \sigma_{\mu \nu} \widehat{F}_{\mu \nu}(n) \psi(n),
 \end{equation}
@@ -189,11 +189,11 @@ In addition to Symanzik improvements, there are so-called \emph{tadpole} improve
 \begin{equation}
     u=\left\langle\frac{1}{3} \operatorname{Re} \operatorname{Tr} U_{\mu \nu}\right\rangle^{1 / 4}.
 \end{equation}
-$u$ is both a parameter of the action and an observable, so we must iteratively tune $u$ in the action such that the $u$ we observe is the same as the $u$ we put into the action.
+Here, $u$ is both a parameter of the action and an observable, so we must iteratively tune $u$ in the action such that the $u$ we observe is the same as the $u$ we put into the action.
 
 In practice, our lattices are anisotropic~\cite{Edwards:2008ja, Lin:2008pr}. The motivation for this is that the primary observables we measure are temporal correlators whose signal-to-noise ratios decrease as time separation increases. To combat this issue, we could use a finer lattice in order to sample the correlators at more time separations. The computational cost of refining the lattice in every direction is large, however, so we choose to refine only the temporal direction. That is, we choose an anisotropy $\xi \equiv \frac{a_s}{a_t} > 1$, where $a_s$ is the spatial lattice spacing and $a_t$ is the temporal lattice spacing. $\xi$ is in fact a quantity that undergoes renormalization, so the anisotropy enters into the gauge action as a parameter $\gamma_g$ and into the fermionic action as a parameter $\gamma_f$. Both of these parameters must be tuned to produce the desired renormalized anisotropy.
 
-Finally, we write down the action we use in this work. The gauge action is a Symanzik-improved L\"uscher-Weisz action~\cite{Luscher:1984xn,Luscher:1985zq}, and uses tadpole improvement coefficients from~\cite{Morningstar:1997ff, Morningstar:1999rf, Lin:2008pr,Edwards:2008ja}:
+Finally, we write down the action we use in this work. The gauge action is a Symanzik-improved L\"uscher-Weisz action~\cite{Luscher:1984xn,Luscher:1985zq}, and uses tadpole improvement coefficients from~\cite{Edwards:2008ja,Lin:2008pr, Morningstar:1997ff, Morningstar:1999rf}:
 \begin{equation}
     S_{G}^{\xi}[U]=\frac{\beta}{3 \gamma_{g}}\left[\sum_{x, i \neq j}\left(\frac{5}{6 u_{s}^{4}} \Omega_{\mathcal{P}_{i j}}(x)-\frac{1}{12 u_{s}^{6}} \Omega_{\mathcal{R}_{i j}}(x)\right)+\sum_{x, i}\left(\frac{4}{3 u_{s}^{2} u_{t}^{2}} \Omega_{\mathcal{P}_{i t}}(x)-\frac{1}{12 u_{s}^{4} u_{t}^{2}} \Omega_{\mathcal{R}_{i t}}\right)\right].
 \end{equation}
@@ -204,7 +204,7 @@ Here, $P$ is a plaquette, $\Omega_P = \Re \Tr(1-P)$, $R$ is a $2\times 1$ planar
         &\left.-\frac{1}{2}\left[\frac{1}{2}\left(\frac{\gamma_{g}}{\gamma_{f}}+\frac{1}{\xi}\right) \frac{1}{\tilde{u}_{t} \tilde{u}_{s}^{2}} \sum_{s} \sigma_{t s} \hat{F}_{t s}+\frac{1}{\gamma_{f}} \frac{1}{\tilde{u}_{s}^{3}} \sum_{s<s^{\prime}} \sigma_{s s^{\prime}} \hat{F}_{s s^{\prime}}\right]\right\} \hat{\psi}(x).
         \end{aligned}
 \end{equation}
-Here, $\gamma_f$ is the bare anisotropy for the gauge sector, $\xi = \frac{a_s}{a_t}$ is the renormalized anisotropy, $\gamma_\mu$ and $\sigma_{\mu\nu} = \frac{1}{2}[\gamma_\mu, \gamma_\nu]$ are Dirac gamma matrices, $\tilde u_s$ is the spatial tadpole improvement factor, and $\tilde u_t$ is the temporal tadpole improvement factor. Hats denote dimensionless quantities that relate to dimensionful quantities by scaling with appropriate factors of the lattice spacing. $\hat{\psi}=a_{s}^{3 / 2} \psi$ where $\psi$ is the quark field, $\hat{m}_{0}=m_{0} a_{t}$ where $m_0$ is the bare quark mass, and $\hat{F}_{\mu \nu}=a_{\mu} a_{\nu} F_{\mu \nu}=\frac{1}{4} \operatorname{Im}\left(\mathcal{P}_{\mu \nu}(x)\right)$ where $F_{\mu\nu}$ is the field strength tensor. $\hat W$ is the \emph{Wilson operator}, and is given by
+Here, $\gamma_f$ is the bare anisotropy for the fermionic sector, $\xi = \frac{a_s}{a_t}$ is the renormalized anisotropy, $\gamma_\mu$ and $\sigma_{\mu\nu} = \frac{1}{2}[\gamma_\mu, \gamma_\nu]$ are Dirac gamma matrices, $\tilde u_s$ is the spatial tadpole improvement factor, and $\tilde u_t$ is the temporal tadpole improvement factor. Hats denote dimensionless quantities that relate to dimensionful quantities by scaling with appropriate factors of the lattice spacing. $\hat{\psi}=a_{s}^{3 / 2} \psi$ where $\psi$ is the quark field, $\hat{m}_{0}=m_{0} a_{t}$ where $m_0$ is the bare quark mass, and $\hat{F}_{\mu \nu}=a_{\mu} a_{\nu} F_{\mu \nu}=\frac{1}{4} \operatorname{Im}\left(\mathcal{P}_{\mu \nu}(x)\right)$ where $F_{\mu\nu}$ is the field strength tensor. $\hat W$ is the \emph{Wilson operator}, and is given by
 \begin{equation}
     \hat{W}_{\mu} \equiv \hat{\nabla}_{\mu}-\frac{1}{2} \gamma_{\mu} \hat{\Delta}_{\mu},
 \end{equation}
@@ -215,7 +215,7 @@ where
 This action has $\mathcal{O}\left(g^{2} a_{s}, g^{2} a_{t}, a_{s}^{2}, a_{t}^{2}\right)$ discretization errors. It is also important to mention that the link variables in the fermionic action are \emph{stout-smeared}~\cite{Morningstar:2003gk}, which we will discuss further in Chapter~\ref{ch:operators}. The use of smeared link variables in the action leads to better chiral behavior.
 \subsection{Parameter Tuning}\label{sec:tuning}
 \subsubsection{Anisotropy}
-The parameters we put into our action are bare parameters. We obtain these parameters by choosing a set of observables, and tuning the bare parameters in our action such that their desired values are produced. For example, we desire a renormalized anisotropy $\xi\approx 3.5$, and must tune the values $\gamma_g$ and $\gamma_f$ to obtain this. In order to tune $\gamma_g$, we measure the following quantities~\cite{Klassen:1998ua}:
+The parameters we put into our action are bare parameters. We obtain these parameters by choosing a set of observables, and tuning the bare parameters in our action such that their desired values are produced. For example, we desire a renormalized anisotropy $\xi\approx 3.5$ for a temporally fine lattice from which we can sample more correlator data points, and must tune the values $\gamma_g$ and $\gamma_f$ to obtain this. In order to tune $\gamma_g$, we measure the following quantities~\cite{Klassen:1998ua}:
 \begin{equation}
     \begin{aligned}
         R_{s s}(x, y)&=\frac{W_{s s}(x, y)}{W_{s s}(x+1, y)},\\
@@ -226,13 +226,13 @@ where $W_{\mu\nu}(x_\mu, x_\nu)$ is the expectation value of a Wilson loop of si
 \begin{equation}
     a_{t}^{2} E^{2}(\boldsymbol{p})=a_{t}^{2} m^{2}+\frac{a_{s}^{2} \boldsymbol{p}^{2}}{\xi^{2}}.
 \end{equation}
-We find that in order to attain $\xi\approx 3.5$, we set $\gamma_g = 4.3$ and $\gamma_f = 3.4$.
+Through an iterative process, we find that in order to attain $\xi\approx 3.5$, we set $\gamma_g = 4.3$ and $\gamma_f = 3.4$.
 \subsubsection{Gauge Coupling and Lattice Spacing}
 The renormalization scheme we use requires that the coupling and masses in the lattice QCD action vary (or run) with the ultraviolet cutoff such that observables tend to their physical values as the cutoff is removed. The lattice spacing acts as a cutoff by eliminating very small wavelengths from the theory.  The cutoff is proportional to the inverse lattice spacing, limiting momenta to the first Brillouin zone. We tune the inverse coupling $\beta$ in our action to obtain a desired lattice spacing. Determining the lattice spacing using a physical observable is known as \emph{setting the scale}. One way to set the scale is by choosing a particle, say the $\Omega$, and requiring that its mass measured on the lattice should equal its physical mass. That is, we calculate
 \begin{equation}
     a_t = \frac{a_t m}{m_{\rm{Phys}}},
 \end{equation}
-where $a_t m$ is the quantity we directly measure in a lattice calculation. In our calculations, this yields $a_t\approx 0.034$ fm, giving $a_s\approx 0.12$ fm, and we obtain these values by choosing $\beta = 1.5$.
+where $a_t m$ is the quantity we directly measure in a lattice calculation. In our calculations, this yields $a_t\approx 0.034$ fm, giving $a_s\approx 0.12$ fm, and we obtain these values by choosing $\beta = 1.5$ after an iterative process.
 \subsubsection{Quark Masses}
 As we will discuss further in Chapter~\ref{ch:operators}, we work in a theory of $N_f=2+1$ QCD, meaning there are three flavors of quarks, two of which have degenerate masses. These are the degenerate up and down quarks (collectively referred to as the \emph{light} quarks), and the strange quark. An important flaw of our calculations is that we work in a theory of an unphysically heavy pion. This is necessary for two reasons. First, finite volume corrections to the theory are exponentially suppressed by a factor of $e^{-m_\pi L}$, where $m_\pi$ is the mass of the pion (in general, it is the mass of the lightest state in the theory) and $L$ is the spatial extent of the lattice. It is necessary that the \emph{correlation length}, $m_\pi L$ is $>1$, but in practice, a good rule of thumb is to require $m_\pi L > 4$ or so. Second, inverting Dirac matrices (which we will soon see to be an important step of our calculation) becomes much more computationally difficult at lower pion masses, and increases the odds that the Dirac matrices will become ill-conditioned.
 
@@ -244,7 +244,7 @@ In order to tune the light and strange quark masses, we aim to set the following
 where $m_K$ is the mass of the kaon, $m_\pi$ is the mass of the pion, and $m_\Omega$ is the mass of the $\Omega$ baryon. These ratios are chosen because first-order chiral perturbation theory tells us that they should be proportional to their associated quark masses~\cite{Lin:2008pr}. $s_\Omega$ is set to its physical value, and $l_\Omega$ is lowered to a value 
 that is unphysical but allows calculations to remain possible. Using this method of tuning, the bare quark masses are set to be $a_t m_l = -0.0860$ for the light quarks, 
 and $a_t m_s = -0.0743$ for the strange quark. With these quark masses, our pion mass is 
-approximately 230 MeV.
+approximately 230 MeV, as opposed to its physical value of $\approx 135$ MeV.
 
 \section{Extracting Energies from Two-Point Correlation Functions}\label{sec:intro_corr}
 In order to do spectroscopy, the main observables we calculate on the lattice are time-ordered two-point correlation functions of the form
@@ -287,7 +287,7 @@ where $M[U]$ is the Dirac matrix which is a functional of the gauge links, and t
 \end{equation}
 where $f\left(M^{-1}[U]\right)$ is some function of the inverse of the Dirac matrix, given by the relevant Wick contractions.
 
-While the fermions are integrated out analytically, it is intractable to analytically integrate out the gauge fields. This is where the need for numerical integration arises. Numerically integrating over the gauge fields is nontrivial, however, since the integral in Eq.~(\ref{eq:gauge_int}) is of very high dimension due to the fact that we must integrate over a link variable at every single lattice site. The way to proceed is by use of Monte Carlo integration, which is immune to the so-called curse of dimensionality that precludes other standard numerical methods.
+While the fermions are integrated out analytically, it is intractable to analytically integrate out the gauge fields. This is where the need for numerical integration arises. Numerically integrating over the gauge fields is nontrivial, however, since the integral in Eq.~(\ref{eq:gauge_int}) is of very high dimension due to the fact that we must integrate over a link variable at every single lattice site. The way to proceed is by use of Monte Carlo integration, which is immune to the so-called ``curse of dimensionality'' that precludes other standard numerical methods.
 
 The strategy of Monte Carlo integration proceeds as follows. Consider a very high dimensional integral
 \begin{equation}
@@ -301,7 +301,7 @@ by the law of large numbers. For large $N_U$ and independently generated $U_k$, 
 \begin{equation}
     \sigma_{I_f} = \sqrt{\frac{V(f(U))}{N_U}},
 \end{equation}
-where $V(f(U))$ is the variance of $f(U)$ with respect to the probability density $p(U)$. This is where the advantage of working in Euclidean spacetime becomes apparent: the real Boltzmann factor $e^{-S_G[U]}$ functions as a probability distribution (up to a normalization constant). It turns out that it is also necessary to include the fermion determinant $\det M$ in the probability distribution, as including it as a part of the observable itself can lead to large statistical uncertainties due to the very large fluctuations about the mean value.~\cite{Gattringer:2010zz} Including the Dirac matrix determinant and the normalization factor, the probability distribution for calculating observables is
+where $V(f(U))$ is the variance of $f(U)$ with respect to the probability density $p(U)$. This is where the advantage of working in Euclidean spacetime becomes apparent: the real Boltzmann factor $e^{-S_G[U]}$ functions as a probability distribution (up to a normalization constant). It turns out that it is also necessary to include the fermion determinant $\det M$ in the probability distribution, as including it as a part of the observable itself can lead to large statistical uncertainties due to the very large fluctuations about the mean value~\cite{Gattringer:2010zz}. Including the Dirac matrix determinant and the normalization factor, the probability distribution for calculating observables is
 \begin{equation}\label{eq:pU}
     p(U)=\frac{\operatorname{det} M[U] e^{-S_{G}[U]}}{\int \mathcal{D}\left[U^{\prime}\right] \operatorname{det} M\left[U^{\prime}\right] e^{-S_{G}\left[U^{\prime}\right]}}.
 \end{equation}
@@ -313,7 +313,7 @@ In order to proceed in generating a set of gauge configurations $\{U_i\}$, we ma
 \end{equation}
 where $T(U^\prime \leftarrow U)$ is the probability of transitioning to a state $U^\prime$ if the current state is $U$. In this case, after taking a certain number of steps along the Markov chain (a process known as \emph{thermalization} or bringing the chain into \emph{equilibrium}), all future states will be distributed according to $p(U)$.
 
-A popular method of defining such a Markov chain is the Metropolis-Hastings method~\cite{Metropolis:1953am}, which relies on an accept-reject method of proposing new configurations by making small local changes to the current configuration. These small changes are necessary because large changes can cause the acceptance probability to be too low. The Metropolis-Hastings method works well in both pure gauge theories and in the quenched approximation where sea-quark effects are neglected and the fermion determinants are set to one. In a full theory, however, such a local updating scheme is not useful, since the fermion determinant is a non-local quantity.
+A popular method of defining such a Markov chain is the Metropolis-Hastings method~\cite{Metropolis:1953am}, which relies on an accept-reject method of proposing new configurations by making small local changes to the current configuration. These small changes are necessary because large changes can cause the acceptance probability to be too low. The Metropolis-Hastings method works well in both pure gauge theories and in the quenched approximation where sea-quark effects are neglected and the fermion determinants are set to one. In a full theory, however, such a local updating scheme is not useful, since the fermion determinant is a non-local quantity, causing small local changes in the fields to lead to large changes in the action.
 \subsection{Hybrid Monte Carlo}
 The need for a global updating scheme with a reasonable acceptance rate is solved by the Hybrid Monte Carlo Method~\cite{Kennedy:1987vx} (HMC) algorithm, which applies in the case of an even number of degenerate quarks, as in our case with the $u$ and $d$ quarks (ignore the strange quark for a moment). The HMC proceeds by representing the fermion determinant as an integral over so-called \emph{pseudofermion} fields $\phi$ and $\phi^\dagger$, which are complex-valued (rather than Grassmann-valued) fields with the same indices as the fermionic fields:
 \begin{equation}
@@ -323,7 +323,7 @@ The fermion determinant can be factored as
 \begin{equation}
     \operatorname{det} M^{(u)}[U] \operatorname{det} M^{(d)}[U]=\left(\operatorname{det} M^{(l)}[U]\right)^{2}=\int \mathcal{D} \phi^\dagger \mathcal{D}\phi\,\exp \left[\phi^{\dagger}\left(M^{(l) \dagger}[U] M^{(l)}[U]\right)^{-1} \phi\right],
 \end{equation}
-where the $u$ quark Dirac matrix $M^{(u)}$ and the $d$ quark Dirac matrix $M^{(d)}$ are equal collectively referred to as the \emph{light} quark Dirac matrix $M^{(l)}$. Here we have made use of $\gamma_5$-hermiticity of $M$, which is general feature of most discretized Dirac matrices~\cite{Gattringer:2010zz},
+where the $u$ quark Dirac matrix $M^{(u)}$ and the $d$ quark Dirac matrix $M^{(d)}$ are equal collectively referred to as the \emph{light} quark Dirac matrix $M^{(l)}$. Here we have made use of $\gamma_5$-hermiticity of $M$, which is a general feature of most discretized Dirac matrices~\cite{Gattringer:2010zz},
 \begin{equation}
     \gamma_5 M \gamma_5 = M^\dagger,
 \end{equation}
@@ -349,9 +349,9 @@ defining the fictitious Hamiltonian as
 \end{equation}
 The system is then evolved forward as in a molecular dynamics simulation using Hamilton's equations of motion. In principle, $H$ should be conserved in this process, but in practice, there will be some errors due to a finite time step. We solve this by adding in an accept-reject step at the end of the time evolution by introducing an acceptance probability,
 \begin{equation}
-    P_{\rm{accept}} = \min(1,e^{-\delta H}).
+    P_{\rm{accept}} = \min(1,e^{-\delta H}),
 \end{equation}
-The pseudofermion fields also need to be refreshed, which can be done by producing a normally-distributed vector $\chi$ with variance $\frac{1}{2}$ and then calculating $\phi = M^\dagger \chi$.
+where $\delta H$ is the change in $H$ after the evolution. The pseudofermion fields also need to be refreshed, which can be done by producing a normally-distributed vector $\chi$ with variance $\frac{1}{2}$ and then calculating $\phi = M^\dagger \chi$.
 \subsection{Rational Hybrid Monte Carlo}
 Introducing the Hybrid Monte Carlo method involved neglecting the strange quark. The generalization of HMC to include the strange quark is known as the Rational Hybrid Monte Carlo (RHMC) method~\cite{Clark:2006wq}. Just as before, the fermion determinant for the strange quark field is expressed as an integral over pseudofermion fields:
 \begin{equation}

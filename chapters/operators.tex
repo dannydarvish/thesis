@@ -79,7 +79,7 @@
     \subsection{LapH Smearing}
     Taming excited-state contamination in correlator measurements requires smearing not only the link variables, but the quark fields as well. Here, we outline one such method of doing so called Laplacian-Heaviside (LapH) smearing, introduced in Ref.~\cite{Morningstar:2011ka}.
     
-    Recall that one can approximate the second derivative of a single-variable function $f$ at a point $x$ as, $f^{\prime\prime}(x) \approx \frac{f(x+a) + f(x-a) - 2f(x)}{2a}$, for small $a$. Hence, taking a second derivative provides one convention for smearing a function, as it performs a weighted average of the function in the neighborhood of a point $x$. On the lattice, we look to the three-dimensional gauge-covariant Laplacian (GCL) to accomplish quark field smearing in a way that preserves the gauge symmetries of the action. In terms of stout smeared link variables, $\widetilde U_j(x)$, the gauge-covariant Laplacian is defined as,
+    Recall that one can approximate the second derivative of a single-variable function $f$ at a point $x$ as, $f^{\prime\prime}(x) \approx \frac{f(x+a) + f(x-a) - 2f(x)}{a^2}$, for small $a$. Hence, taking a second derivative provides one convention for smearing a function, as it performs a weighted average of the function in the neighborhood of a point $x$. On the lattice, we look to the three-dimensional gauge-covariant Laplacian (GCL) to accomplish quark field smearing in a way that preserves the gauge symmetries of the action. In terms of stout smeared link variables, $\widetilde U_j(x)$, the gauge-covariant Laplacian is defined as,
     \begin{equation}\label{eq:quark_smearing}
     \begin{aligned} \widetilde{\Delta} O(x) &=\sum_{k=1}^{3}\left(\widetilde{U}_{k}(x) O(x+\hat{k})+\widetilde{U}_{k}^{\dagger}(x-\hat{k}) O(x-\hat{k})-2 O(x)\right), \\ \overline{O}(x) \overleftarrow{\Delta} &=\sum_{k=1}^{3}\left(\overline{O}(x+\hat{k}) \widetilde{U}_{k}^{\dagger}(x)+\overline{O}(x-\hat{k}) \widetilde{U}_{k}(x-\hat{k})-2 \overline{O}(x)\right). \end{aligned}
     \end{equation}
@@ -96,7 +96,7 @@
         \caption[Effective masses (defined in Sec.~\ref{sec:eff_mass}) $M_i(t)$ of a single nucleon for three different smearing schemes and three different displacement schemes.]{Effective masses (defined in Sec.~\ref{sec:eff_mass}) $M_i(t)$ of a single nucleon for three different smearing schemes and three different displacement schemes. Black markers denote unsmeared operators and red markers denote smeared operators. Figure taken from Ref.~\cite{spectroscopy}.}\label{fig:meff-smearing}
     \end{figure}
     
-    Continuing, $\widetilde\Delta$ is Hermitian, and we denote its eigenvalues as $-\lambda^{(k)}$ (ordered by increasing $\lambda^{(k)}$) and their corresponding orthonormal eigenvectors as $v^{(k)}$. Then, if we define the smearing kernel in Eq.~(\ref{eq:quark_smearing}) as $K=\left(1+\frac{\sigma_{s}^{2}}{4 n_{\sigma}} \widetilde{\Delta}\right)^{n_{\sigma}}$, we can express the kernel in the eigenbasis of the GCL:
+    Continuing, $\widetilde\Delta$ is Hermitian, and we denote its eigenvalues as $-\lambda^{(k)}$ (ordered by increasing $\lambda^{(k)}$) and their corresponding orthonormal eigenvectors as $v^{(k)}$. Then, if we define the smearing kernel in Eq.~(\ref{eq:gauss_smear}) as $K=\left(1+\frac{\sigma_{s}^{2}}{4 n_{\sigma}} \widetilde{\Delta}\right)^{n_{\sigma}}$, we can express the kernel in the eigenbasis of the GCL:
     \begin{equation}
         K_{a b}(x, y)=\delta_{x_{4}, y_{4}} \sum_{k} w_{k}\,v_{a}^{(k)}(x) v_{b}^{(k)}(y)^{*},
     \end{equation}
@@ -472,14 +472,13 @@
     \end{table}
     
     \subsection{Isospin and Quark Flavor}
-    In the $\overline{\rm{MS}}$ renormalization scheme at a scale of $\sim 2$ GeV, the so-called ``current-quark mass'' of the up quark is $m_u = 2.16^{+0.49}_{-0.26}$ MeV and that of the down quark is $m_d = 4.67^{+0.48}_{-0.17}$ MeV~\cite{PhysRevD.98.030001}. While these masses differ by more than a factor of 2, their difference is very small compared to the next heaviest quark, which is the strange quark, measuring at $m_s = 93^{+11}_{-5}$ MeV~\cite{PhysRevD.98.030001}. Therefore, we find it justified to make an approximation and set $m_u = m_d$ in our calculations. Since pure QCD also conserves flavor (we do not include electroweak interactions), our theory now possesses an internal SU(2) symmetry, the conserved quantity of which is referred to as \emph{isospin}. This has the same mathematical structure as normal spin, and we can therefore think of it analogously, but it should be stressed that isospin has no relation to physical space and does not denote any kind of angular momentum. The up quark and down quark states can then be thought of as a doublet of states having total isospin $I=\frac{1}{2}$. Just like with SU(2) spin, isospin can be decomposed onto three axes. By convention, we assign the third isospin axis component of the up quark to be $I_3 = \frac{1}{2}$ and of the down quark to be $I_3 = -\frac{1}{2}$. Their corresponding antiparticles have the same $I$, but $I_3\rightarrow -I_3$. The work presented here is done in a theory of $N_f = 2 + 1$ QCD, meaning our theory contains two \emph{light} quarks, referring to the up and down quarks, and a strange quark. (The strange quark is sometimes referred to as a light quark in other contexts, such as in Ref.~\cite{PhysRevD.98.030001}.)
+    In the $\overline{\rm{MS}}$ renormalization scheme at a scale of $\sim 2$ GeV, the so-called ``current-quark mass'' of the up quark is $m_u = 2.16^{+0.49}_{-0.26}$ MeV and that of the down quark is $m_d = 4.67^{+0.48}_{-0.17}$ MeV~\cite{PhysRevD.98.030001}. While these masses differ by more than a factor of 2, their difference is very small compared to the next heaviest quark, which is the strange quark, measuring at $m_s = 93^{+11}_{-5}$ MeV~\cite{PhysRevD.98.030001}. Therefore, we find it justified to make an approximation and set $m_u = m_d$ in our calculations. Since pure QCD also conserves flavor (we do not include electroweak interactions), our theory now possesses an internal SU(2) symmetry, the conserved quantity of which is referred to as \emph{isospin}. This has the same mathematical structure as normal spin, and we can therefore think of it analogously, but it should be stressed that isospin has no relation to physical space and does not denote any kind of angular momentum. The up quark and down quark states can then be thought of as a doublet of states having total isospin $I=\frac{1}{2}$. Just like with SU(2) spin, isospin can be decomposed onto three axes. By convention, we assign the third isospin axis component of the up quark to be $I_3 = \frac{1}{2}$ and that of the down quark to be $I_3 = -\frac{1}{2}$. Their corresponding antiparticles have the same $I$, but $I_3\rightarrow -I_3$. The work presented here is done in a theory of $N_f = 2 + 1$ QCD, meaning our theory contains two \emph{light} quarks, referring to the up and down quarks, and a strange quark. (The strange quark is sometimes referred to as a light quark in other contexts, such as in Ref.~\cite{PhysRevD.98.030001}.)
     
-    Under an SU(2) isospin rotation of the form
+    An SU(2) isospin rotation is of the form
     \begin{equation}
         U_{R_{\tau}}=\exp{-i\alpha\tau_3}\exp{-i\beta\tau_2}\exp{-i\gamma\tau_3} = \exp (-i \boldsymbol{\varphi} \cdot \boldsymbol{\tau}),
     \end{equation}
-    where $\tau_1$, $\tau_2$, $\tau_3$ are the three generators of isospin rotations,
-    an operator $\overline O_{I_3}^{(I)}$ transforms according to the $I$ irreducible representation as
+    where $\tau_1$, $\tau_2$, $\tau_3$ are the three generators of isospin rotations, $\alpha$, $\beta$, and $\gamma$ are the Euler angles, and $\bs\varphi$ is the rotation vector. Under such an isospin rotation, an operator $\overline O_{I_3}^{(I)}$ transforms according to the $I$ irreducible representation as
     \begin{equation}
         U_{R_{\tau}}\overline O_{I_3}^{(I)}U_{R_{\tau}}^\dagger = \sum_{I_3^\prime} \overline O_{I_3^\prime}^{(I)} D^{(I)}_{I_3^\prime, I_3}(R_\tau),
     \end{equation}
@@ -502,7 +501,7 @@
         \left[\tau_3, \left[\tau_3, O_{I_3}^{(I)}\right] \right] + \frac{1}{2} \left[\tau_+, \left[\tau_-, O_{I_3}^{(I)}\right]\right] &+ \frac{1}{2}\left[\tau_-, \left[\tau_+, O_{I_3}^{(I)}\right]\right] = I(I + 1)  O_{I_3}^{(I)}.
     \end{align}
     \subsection{Charge Conjugation and $G$-Parity}
-    $C$-parity can only be a symmetry for electrically neutral states, but as electric charge is not a relevant quantity in pure QCD, we are motivated to generalize $C$-parity in order to account states in a charged isospin multiplet, such as the pion triplet. With $\mathcal C$ denoting the charge conjugation operator, $G$-parity can be explicitly defined as
+    $C$-parity can only be a symmetry for electrically neutral states, but as electric charge is not a relevant quantity in pure QCD, we are motivated to generalize $C$-parity in order to account for hadrons in a charged isospin multiplet with average charge of zero in the multiplet, such as the pion triplet. With $\mathcal C$ denoting the charge conjugation operator, $G$-parity can be explicitly defined as
     \begin{equation}
         U_G = \mathcal C e^{-i\pi\tau_2}.
     \end{equation}
@@ -730,10 +729,10 @@
     \begin{equation}
         \begin{aligned}
             \Phi_{\alpha \beta ; i j k}^{A B}(\bs p, t)&=\sum_{\bs x} e^{-i\bs p \cdot \bs (\bs x+\frac{1}{2}(\bs d_a + \bs d_b))}\delta_{a b}\left(\widetilde{\chi} \widetilde{D}_{i}^{(p) \dagger}\right)_{a \alpha}^{A}(\boldsymbol{x}, t)\left(\widetilde{D}_{j}^{(p)} \widetilde{D}_{k}^{(p)} \widetilde{\psi}\right)_{b \beta}^{B}(\boldsymbol{x}, t) \\
-            \overline{\Phi}_{\alpha \beta ; i j k}^{A B}(\bs p, t)&=\sum_{\bs x} e^{i\bs p \cdot \bs (\bs x+\frac{1}{2}(\bs d_a + \bs d_b))}\delta_{a b}\left(\widetilde{\chi} \widetilde{D}_{k}^{(p) \dagger} \widetilde{D}_{j}^{(p) \dagger}\right)_{b \beta}^{B}(\boldsymbol{x}, t)\left(\widetilde{D}_{i}^{(p)} \widetilde{\psi}\right)_{a \alpha}^{A}(\boldsymbol{x}, t).
+            \overline{\Phi}_{\alpha \beta ; i j k}^{A B}(\bs p, t)&=\sum_{\bs x} e^{i\bs p \cdot \bs (\bs x+\frac{1}{2}(\bs d_a + \bs d_b))}\delta_{a b}\left(\widetilde{\chi} \widetilde{D}_{k}^{(p) \dagger} \widetilde{D}_{j}^{(p) \dagger}\right)_{b \beta}^{B}(\boldsymbol{x}, t)\left(\widetilde{D}_{i}^{(p)} \widetilde{\psi}\right)_{a \alpha}^{A}(\boldsymbol{x}, t),
         \end{aligned}
     \end{equation}
-    The added phases in the momentum projections are required to maintain proper transformation under $G$-parity.
+    where $\bs d_\alpha$ and $\bs d_\beta$ are the displacement vectors of the quark and antiquark fields. They are included in the phases of the momentum projections in order to maintain proper transformation under $G$-parity.
     \begin{figure}
           \begin{center}
             \begin{tabular}{c c c c c}
@@ -950,7 +949,7 @@
     
     The details of obtaining the projection coefficients in Eq.~(\ref{eq:op_proj}) using the methods outlined here are given in Ref.~\cite{Basak:2005aq}.
     \section{Two-Hadron Operator Construction}
-    In order to study scattering and resonance phenomena, it is necessary to probe the spectrum in the region of two-particle energies. This requires the use of operators which create states having overlap onto two-particle states. However, (in this work) we only study the spectrum up to three-particle energy thresholds, and therefore do not design operators to create states with more than two particles. This is because methods currently available to study scattering phenomena on the lattice (e.g.~the method of L\"uscher~\cite{Luscher:1990ck}) are only rigorously valid for energies that lie below three-particle thresholds.
+    In order to study scattering and resonance phenomena, it is necessary to probe the spectrum in the region of two-particle energies. This requires the use of operators which create states having overlap onto two-particle states. However, (in this work) we only study the spectrum up to three-particle energy thresholds, and therefore do not design operators to create states with more than two particles. This is because the well-established methods currently available to study scattering phenomena on the lattice (e.g.~the method of L\"uscher~\cite{Luscher:1990ck}) are only rigorously valid for energies that lie below three-particle thresholds. Rapid progress is underway for three-particle scattering, however~\cite{Hansen:2019nir}. Some applications are given, for example, in Refs.~\cite{Horz:2019rrn} and \cite{Culver:2019vvu}.
 
     Once we have projected a single-hadron operator onto the relevant symmetry sectors, we are left with operators which can be written as $\mathcal O_{\bs p \Lambda \lambda i}^{I I_3 S}$ and its barred counterpart, where the relevant quantum numbers are isospin $I$, isospin projection $I_3$, strangeness $S$, momentum $\bs p$, octahedral irrep $\Lambda$, and octahedral irrep row $\lambda$. All other relevant labels (e.g.\ $G$-parity or displacement type), labeled by the compound index $i$.
     

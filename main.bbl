@@ -13,8 +13,8 @@ H.~Politzer, ``{Reliable Perturbative Results for Strong Interactions?},'' {\em
   Phys. Rev. Lett.}, vol.~30, pp.~1346--1349, 1973.
 
 \bibitem{PhysRevD.98.030001}
-M.~e.~a. Tanabashi, ``Review of particle physics,'' {\em Phys. Rev. D},
-  vol.~98, p.~030001, Aug 2018.
+M.~Tanabashi {\em et~al.}, ``{Review of Particle Physics},'' {\em Phys. Rev.
+  D}, vol.~98, no.~3, p.~030001, 2018.
 
 \bibitem{Wilson:1974sk}
 K.~G. Wilson, ``{Confinement of Quarks},'' {\em Phys. Rev. D}, pp.~45--59, 2
@@ -22,7 +22,7 @@ K.~G. Wilson, ``{Confinement of Quarks},'' {\em Phys. Rev. D}, pp.~45--59, 2
 
 \bibitem{Fallica2018}
 J.~Fallica, ``{Lambda Baryon Spectroscopy and Pion-Pion Scattering with Partial
-  Wave Mixing in Lattice QCD},'' 9 2018.
+  Wave Mixing in Lattice QCD (Ph.D. Thesis)},'' 2018.
 
 \bibitem{Morningstar:2011ka}
 C.~Morningstar, J.~Bulava, J.~Foley, K.~J. Juge, D.~Lenkner, M.~Peardon, and
@@ -72,12 +72,12 @@ H.-W. Lin {\em et~al.}, ``{First results from 2+1 dynamical quark flavors on an
   mass},'' {\em Phys. Rev. D}, vol.~79, p.~034502, 2009.
 
 \bibitem{Luscher:1984xn}
-M.~Luscher and P.~Weisz, ``{On-Shell Improved Lattice Gauge Theories},'' {\em
-  Commun. Math. Phys.}, vol.~97, p.~59, 1985.
+M.~L{\"u}scher and P.~Weisz, ``{On-Shell Improved Lattice Gauge Theories},''
+  {\em Commun. Math. Phys.}, vol.~97, p.~59, 1985.
 \newblock [Erratum: Commun.Math.Phys. 98, 433 (1985)].
 
 \bibitem{Luscher:1985zq}
-M.~Luscher and P.~Weisz, ``{Computation of the Action for On-Shell Improved
+M.~L{\"u}scher and P.~Weisz, ``{Computation of the Action for On-Shell Improved
   Lattice Gauge Theories at Weak Coupling},'' {\em Phys. Lett. B}, vol.~158,
   pp.~250--254, 1985.
 
@@ -140,9 +140,23 @@ A.~D. Hanlon, ``The {\ensuremath{\rho}} meson spectrum and k{\ensuremath{\pi}}
   scattering with partial wave mixing in lattice {QCD}.'' January 2018.
 
 \bibitem{Luscher:1990ck}
-M.~Luscher and U.~Wolff, ``{How to Calculate the Elastic Scattering Matrix in
-  Two-dimensional Quantum Field Theories by Numerical Simulation},'' {\em Nucl.
-  Phys. B}, vol.~339, pp.~222--252, 1990.
+M.~L{\"u}scher and U.~Wolff, ``{How to Calculate the Elastic Scattering Matrix
+  in Two-dimensional Quantum Field Theories by Numerical Simulation},'' {\em
+  Nucl. Phys. B}, vol.~339, pp.~222--252, 1990.
+
+\bibitem{Hansen:2019nir}
+M.~T. Hansen and S.~R. Sharpe, ``{Lattice QCD and Three-particle Decays of
+  Resonances},'' {\em Ann. Rev. Nucl. Part. Sci.}, vol.~69, pp.~65--107, 2019.
+
+\bibitem{Horz:2019rrn}
+B.~H{\"orz} and A.~Hanlon, ``{Two- and three-pion finite-volume spectra at
+  maximal isospin from lattice QCD},'' {\em Phys. Rev. Lett.}, vol.~123,
+  no.~14, p.~142002, 2019.
+
+\bibitem{Culver:2019vvu}
+C.~Culver, M.~Mai, R.~Brett, A.~Alexandru, and M.~Döring, ``{Three pion
+  spectrum in the $I=3$ channel from lattice QCD},'' {\em Phys. Rev. D},
+  vol.~101, no.~11, p.~114507, 2020.
 
 \bibitem{Foley:2005ac}
 J.~Foley, K.~Jimmy~Juge, A.~O'Cais, M.~Peardon, S.~M. Ryan, and J.-I.
@@ -160,7 +174,8 @@ W.~Wilcox, ``{Noise methods for flavor singlet quantities},'' in {\em
   pp.~127--141, 8 1999.
 
 \bibitem{Lepage:1989hd}
-G.~Lepage, ``{The Analysis of Algorithms for Lattice Field Theory},''
+G.~Lepage, ``{The Analysis of Algorithms for Lattice Field Theory},'' in {\em
+  {Theoretical Advanced Study Institute in Elementary Particle Physics}},
   pp.~97--120, 6 1989.
 
 \bibitem{Blossier:2009kd}
@@ -212,13 +227,13 @@ F.-K. Guo, L.~Liu, U.-G. Meissner, and P.~Wang, ``{Tetraquarks, hadronic
   QCD},'' {\em Phys. Rev. D}, vol.~88, p.~074506, 2013.
 
 \bibitem{Brett:2018jqw}
-R.~Brett, J.~Bulava, J.~Fallica, A.~Hanlon, B.~Hörz, and C.~Morningstar,
+R.~Brett, J.~Bulava, J.~Fallica, A.~Hanlon, B.~H{\"orz}, and C.~Morningstar,
   ``{Determination of $s$- and $p$-wave $I=1/2$ $K\pi$ scattering amplitudes in
   $N_{\mathrm{f}}=2+1$ lattice QCD},'' {\em Nucl. Phys. B}, vol.~932,
   pp.~29--51, 2018.
 
 \bibitem{Bulava:2016mks}
-J.~Bulava, B.~Fahy, B.~Hörz, K.~J. Juge, C.~Morningstar, and C.~H. Wong,
+J.~Bulava, B.~Fahy, B.~H{\"orz}, K.~J. Juge, C.~Morningstar, and C.~H. Wong,
   ``{$I=1$ and $I=2$ $\pi-\pi$ scattering phase shifts from $N_{\mathrm{f}} =
   2+1$ lattice QCD},'' {\em Nucl. Phys. B}, vol.~910, pp.~842--867, 2016.
 
@@ -235,7 +250,7 @@ D.~J. Wilson, R.~A. Briceno, J.~J. Dudek, R.~G. Edwards, and C.~E. Thomas,
 
 \bibitem{Morningstar:2017spu}
 C.~Morningstar, J.~Bulava, B.~Singha, R.~Brett, J.~Fallica, A.~Hanlon, and
-  B.~Hörz, ``{Estimating the two-particle $K$-matrix for multiple partial
+  B.~H{\"orz}, ``{Estimating the two-particle $K$-matrix for multiple partial
   waves and decay channels from finite-volume energies},'' {\em Nucl. Phys. B},
   vol.~924, pp.~477--507, 2017.
 

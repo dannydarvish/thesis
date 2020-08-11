@@ -3,7 +3,7 @@ In order to compute the low-lying finite-volume stationary states of QCD, we com
 \begin{equation}
     \mathcal{C}_{i j}(t)=\bra 0 \mathcal O_{i}\left(t+t_{0}\right) \overline{\mathcal O}_{j}\left(t_{0}\right)\ket 0,
 \end{equation}
-where $\mathcal O_i(t+t_0)$ are the operators which annihilate the states of interest at a time $t+t_0$ and $\overline{\mathcal O}_j(t_0)$ are the corresponding operators which create the states of interest at an earlier time $t_0$. The operators are engineered such that the correlator matrix is Hermitian.\footnote{This follows from the requirement that $\bra 0 O_i \ket n = \bra n \overline O_i \ket 0 ^*$.} Since the energies are determined from the exponential decay rates of these two-point correlators, we can rescale the operators without changing the energy spectrum. In order to dampen the effects of differing normalizations among the operators, we rescale $\mathcal C(t)$ to form the actual correlator matrix $C(t)$ which we analyze as follows,
+where $\mathcal O_i(t+t_0)$ are the operators which annihilate the states of interest at a time $t+t_0$ and $\overline{\mathcal O}_j(t_0)$ are the corresponding operators which create the states of interest at an earlier time $t_0$. The operators are engineered such that the correlator matrix is Hermitian\footnote{This follows from the requirement that $\bra 0 O_i \ket n = \bra n \overline O_i \ket 0 ^*$.}. Since the energies are determined from the exponential decay rates of these two-point correlators, we can rescale the operators without changing the energy spectrum. In order to dampen the effects of differing normalizations among the operators, we rescale $\mathcal C(t)$ to form the actual correlator matrix $C(t)$ which we analyze as follows,
 \begin{equation}
     C_{ij}(t) = \frac{\mathcal C_{ij}(t)}{\sqrt{\mathcal C_{ii}(\tau_N) \mathcal C_{jj}(\tau_N)}},
 \end{equation}
@@ -101,17 +101,17 @@ Fitting the diagonalized correlators is accomplished by forming fit ansatzes bas
 \begin{equation}\label{eq:single_exp}
     C(t) = Ae^{-E t}.
 \end{equation}
-This form is strictly incorrect for finite $t$ due to excited state contamination (i.e.\ subleading exponential contributions from higher-lying states), but it is approximately correct for sufficiently large $t$. The single exponential has the advantage that it has few fit parameters and is thus less sensitive to statistical noise, but it has the disadvantage that it is highly sensitive to the minimum time in the used in the fit domain. The fit domain must only include times at which the subleading contributions are negligible.
+This form is strictly incorrect for finite $t$ due to excited state contamination (i.e.\ subleading exponential contributions from higher-lying states), but it is approximately correct for sufficiently large $t$. The single exponential has the advantage that it has few fit parameters and is thus less sensitive to statistical noise, but it has the disadvantage that it is highly sensitive to the minimum time used in the fit domain. The fit domain must only include times at which the subleading contributions are negligible.
 
 We can account for the effects of higher-lying states by using a two-exponential fit,
 \begin{equation}
     C(t)=A e^{-E t}\left(1+B e^{-\Delta^{2} t}\right),
 \end{equation}
-where the term $\Delta^2$ is used to ensure that the gap to the next energy is positive. We can also attempt to account for higher-lying states by using an ansatz that mocks up these states as a sum of equally-spaced levels above the fit energy $E$:
+where the term $\Delta^2$ is used to ensure that the gap to the next energy is positive. We can also attempt to account for higher-lying states by using an ansatz that mocks up these states as a sum of equally-spaced levels above the fit energy $E$, which is a simple, approximate way to account for much excited state contamination with relatively few parameters:
 \begin{equation}
-    C(t)=\frac{A e^{-E t}}{1-B e^{-\Delta^{2} t}} = Ae^{-Et}\left(\sum_{n=0}^\infty B^n e^{-\Delta^{2n}t}\right).
+    C(t)=\frac{A e^{-E t}}{1-B e^{-\Delta^{2} t}} = Ae^{-Et}\left(\sum_{n=0}^\infty B^n e^{-\Delta^{2}t}\right).
 \end{equation}
-These forms have the advantage that they are less sensitive to the fit domain and more accurately model the theory, but they have the disadvantage that they contain more parameters and are more sensitive to statistical noise. For this reason, we must often resort to using a single-exponential fit for noisier correlators.
+These forms have the advantage that they are less sensitive to the fit domain and more accurately model the theory, but they have the disadvantage that they contain more parameters than the single exponential and are more sensitive to statistical noise. For this reason, we must often resort to using a single-exponential fit for noisier correlators.
 
 If we wish to account for thermal effects for mesons, we can also make any fit form symmetric, e.g.\
 \begin{equation}
@@ -156,7 +156,7 @@ where $\langle f \rangle_i$ denotes the average of $f$ over the $i^{\rm{th}}$ ja
 \end{equation}
 where $\langle f \rangle_i$ denotes the average of $f$ over the $i^{\rm{th}}$ bootstrap resampling, and $\langle f \rangle^B$ denotes the average of $\langle f \rangle_i$ over all bootstrap resamplings.
 \section{Correlated $\chi^2$ Minimization}
-For uncorrelated data, it is usually sufficient to fit the model parameters $\bs \alpha$ of a function $f(t;\bs \alpha)$ correlater data $C(t)$ by minimizing the uncorrelated $\chi^2$ metric defined by
+For uncorrelated data, it is usually sufficient to fit the model parameters $\bs \alpha$ of a function $f(t;\bs \alpha)$ correlator data $C(t)$ by minimizing the uncorrelated $\chi^2$ metric defined by
 \begin{equation}
     \chi^{2}=\sum_{t} \frac{(C(t)-f(t;\bs\alpha))^{2}}{\sigma_{t}^{2}},
 \end{equation}
